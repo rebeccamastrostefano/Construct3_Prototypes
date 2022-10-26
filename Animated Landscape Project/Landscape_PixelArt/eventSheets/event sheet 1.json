@@ -1,0 +1,144 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 920281115105798
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "leaf",
+					"sid": 255896410768096,
+					"parameters": {
+						"x": "leaf.X ",
+						"y": "leaf.Y +0.2"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "Smoke",
+					"sid": 892940320985099,
+					"parameters": {
+						"y": "Smoke.Y - random(0.2,-0.1)"
+					}
+				}
+			],
+			"sid": 786270710381996
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "leaf",
+					"sid": 150916107817777,
+					"parameters": {
+						"comparison": 4,
+						"y-co-ordinate": "236"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "leaf",
+					"sid": 753124168164569,
+					"parameters": {
+						"y": "leaf.Y -89"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "leaf",
+					"sid": 463147083700236,
+					"parameters": {
+						"x": "leaf.X +random(10,-10)"
+					}
+				}
+			],
+			"sid": 947046053516149
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "leaf",
+					"sid": 267560837543959,
+					"parameters": {
+						"comparison": 4,
+						"x-co-ordinate": "222"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "leaf",
+					"sid": 350454149913509,
+					"parameters": {
+						"x": "220"
+					}
+				}
+			],
+			"sid": 343316103030590
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "leaf",
+					"sid": 706892164326829,
+					"parameters": {
+						"comparison": 2,
+						"x-co-ordinate": "164"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "leaf",
+					"sid": 409309485078183,
+					"parameters": {
+						"x": "167"
+					}
+				}
+			],
+			"sid": 109375750956689
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "Smoke",
+					"sid": 916279699829632,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "-14"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "Smoke",
+					"sid": 612237651855137,
+					"parameters": {
+						"y": "58"
+					}
+				}
+			],
+			"sid": 853304126210431
+		}
+	],
+	"sid": 681982904835842
+}

@@ -1,0 +1,37 @@
+{
+	"name": "leaves",
+	"plugin-id": "Sprite",
+	"sid": 247766137696107,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 63,
+						"height": 24,
+						"originX": 0.6507936507936508,
+						"originY": -0.4166666666666667,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7413929,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 315773535973243,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

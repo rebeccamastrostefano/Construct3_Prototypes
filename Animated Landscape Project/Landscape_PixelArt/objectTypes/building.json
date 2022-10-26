@@ -1,0 +1,57 @@
+{
+	"name": "building",
+	"plugin-id": "Sprite",
+	"sid": 616740922458101,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 349,
+						"height": 301,
+						"originX": 0.5272206303724928,
+						"originY": 0.5083056478405316,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5920251,
+						"collisionPoly": {
+							"points": [
+								0.2664756446991404,
+								0.37209302325581395,
+								0.5272206303724928,
+								0.0033222591362126247,
+								0.7936962750716332,
+								0.36212624584717606,
+								0.8825214899713467,
+								0.5083056478405316,
+								0.8882521489971347,
+								0.760797342192691,
+								0.5272206303724928,
+								0.9933554817275747,
+								0.16905444126074498,
+								0.7541528239202658,
+								0.1489971346704872,
+								0.5083056478405316
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 963944024194121,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
