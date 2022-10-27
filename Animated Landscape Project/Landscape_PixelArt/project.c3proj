@@ -26,15 +26,15 @@
 	"uniqueId": "3474ahbqubm",
 	"objectTypes": {
 		"items": [
-			"building",
+			"Building",
 			"background",
-			"light",
-			"tree",
-			"leaf",
-			"leaves",
+			"Light",
+			"Tree",
+			"Leaf",
+			"Leaves",
 			"Smoke",
-			"vendinglight",
-			"man"
+			"VendingLight",
+			"Man"
 		],
 		"subfolders": []
 	},

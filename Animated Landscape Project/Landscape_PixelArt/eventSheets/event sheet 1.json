@@ -13,7 +13,7 @@
 			"actions": [
 				{
 					"id": "set-position",
-					"objectClass": "leaf",
+					"objectClass": "Leaf",
 					"sid": 255896410768096,
 					"parameters": {
 						"x": "leaf.X ",
@@ -36,7 +36,7 @@
 			"conditions": [
 				{
 					"id": "compare-y",
-					"objectClass": "leaf",
+					"objectClass": "Leaf",
 					"sid": 150916107817777,
 					"parameters": {
 						"comparison": 4,
@@ -47,7 +47,7 @@
 			"actions": [
 				{
 					"id": "set-y",
-					"objectClass": "leaf",
+					"objectClass": "Leaf",
 					"sid": 753124168164569,
 					"parameters": {
 						"y": "leaf.Y -89"
@@ -55,7 +55,7 @@
 				},
 				{
 					"id": "set-x",
-					"objectClass": "leaf",
+					"objectClass": "Leaf",
 					"sid": 463147083700236,
 					"parameters": {
 						"x": "leaf.X +random(10,-10)"
@@ -69,7 +69,7 @@
 			"conditions": [
 				{
 					"id": "compare-x",
-					"objectClass": "leaf",
+					"objectClass": "Leaf",
 					"sid": 267560837543959,
 					"parameters": {
 						"comparison": 4,
@@ -80,7 +80,7 @@
 			"actions": [
 				{
 					"id": "set-x",
-					"objectClass": "leaf",
+					"objectClass": "Leaf",
 					"sid": 350454149913509,
 					"parameters": {
 						"x": "220"
@@ -94,7 +94,7 @@
 			"conditions": [
 				{
 					"id": "compare-x",
-					"objectClass": "leaf",
+					"objectClass": "Leaf",
 					"sid": 706892164326829,
 					"parameters": {
 						"comparison": 2,
@@ -105,7 +105,7 @@
 			"actions": [
 				{
 					"id": "set-x",
-					"objectClass": "leaf",
+					"objectClass": "Leaf",
 					"sid": 409309485078183,
 					"parameters": {
 						"x": "167"
