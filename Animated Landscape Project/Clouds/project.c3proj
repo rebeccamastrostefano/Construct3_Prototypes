@@ -19,7 +19,11 @@
 	"objectTypes": {
 		"items": [
 			"sky",
-			"Cloud"
+			"Cloud",
+			"sun",
+			"bird",
+			"grass",
+			"flower"
 		],
 		"subfolders": []
 	},

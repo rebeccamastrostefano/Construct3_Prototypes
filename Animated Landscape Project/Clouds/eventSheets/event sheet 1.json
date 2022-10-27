@@ -1,5 +1,124 @@
 {
 	"name": "Event sheet 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 142518621447112
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "sun",
+					"sid": 215348320991430,
+					"parameters": {
+						"x": "sun.X + 1",
+						"y": "sun.Y"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Cloud",
+					"sid": 451014914633827,
+					"parameters": {
+						"x": "Cloud.X - 1",
+						"y": "Cloud.y"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "bird",
+					"sid": 449323605980530,
+					"parameters": {
+						"x": "bird.x + random(1,2)",
+						"y": "bird.Y -random(0.3,0.6) +random(0.3,0.6)"
+					}
+				}
+			],
+			"sid": 370190755702438
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "Cloud",
+					"sid": 179895851337123,
+					"parameters": {
+						"comparison": 2,
+						"x-co-ordinate": "-150"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Cloud",
+					"sid": 363105853191791,
+					"parameters": {
+						"x": "Cloud.X + 1200",
+						"y": "Cloud.y"
+					}
+				}
+			],
+			"sid": 601457078801285
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "sun",
+					"sid": 520034942199439,
+					"parameters": {
+						"comparison": 4,
+						"x-co-ordinate": "950"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "sun",
+					"sid": 945140576189130,
+					"parameters": {
+						"x": "sun.X -1000",
+						"y": "sun.Y"
+					}
+				}
+			],
+			"sid": 519481179858058
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "bird",
+					"sid": 901862625547557,
+					"parameters": {
+						"comparison": 4,
+						"x-co-ordinate": "950"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "bird",
+					"sid": 830819336269779,
+					"parameters": {
+						"x": "bird.X -1000",
+						"y": "bird.Y"
+					}
+				}
+			],
+			"sid": 741360009200279
+		}
+	],
 	"sid": 369003009203678
 }

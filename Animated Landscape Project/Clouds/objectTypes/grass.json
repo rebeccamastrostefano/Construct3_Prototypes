@@ -1,7 +1,7 @@
 {
-	"name": "Cloud",
+	"name": "grass",
 	"plugin-id": "Sprite",
-	"sid": 381956158086587,
+	"sid": 447133790972348,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,19 +11,31 @@
 			{
 				"frames": [
 					{
-						"width": 139,
-						"height": 87,
-						"originX": 0,
+						"width": 252,
+						"height": 12,
+						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8814107,
+						"imageSpriteId": 7132802,
+						"collisionPoly": {
+							"points": [
+								0.003968253968253968,
+								0,
+								0.996031746031746,
+								0,
+								0.996031746031746,
+								0.9166666666666666,
+								0.003968253968253968,
+								0.9166666666666666
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 313395779703498,
+				"sid": 825870826589446,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

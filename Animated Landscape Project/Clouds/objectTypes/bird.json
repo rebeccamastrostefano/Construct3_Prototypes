@@ -1,7 +1,7 @@
 {
-	"name": "Cloud",
+	"name": "bird",
 	"plugin-id": "Sprite",
-	"sid": 381956158086587,
+	"sid": 487208594934894,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,25 +11,37 @@
 			{
 				"frames": [
 					{
-						"width": 139,
-						"height": 87,
+						"width": 75,
+						"height": 34,
 						"originX": 0,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8814107,
+						"imageSpriteId": 7237625,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 75,
+						"height": 34,
+						"originX": 0,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9644020,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 313395779703498,
+				"sid": 717168328660953,
 				"name": "Animation 1",
-				"isLooping": false,
+				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 6
 			}
 		],
 		"subfolders": []
