@@ -1,0 +1,139 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 157289017072666,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Avatar",
+					"sid": 931360086180689,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 428994815799084
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 779061184825529,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Avatar",
+					"sid": 505154190181051,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 534087338965760
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "Avatar",
+					"sid": 636106250882122,
+					"behaviorType": "8Direction"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Avatar",
+					"sid": 717577684384345,
+					"parameters": {
+						"animation": "\"Walk\"",
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 886858629666676
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "Avatar",
+					"sid": 454806209647689,
+					"behaviorType": "8Direction",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Avatar",
+					"sid": 875676823818997,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 653296709438441
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 996632898731792
+				}
+			],
+			"actions": [
+				{
+					"id": "set-z-elevation",
+					"objectClass": "Bush",
+					"sid": 684320599082240,
+					"parameters": {
+						"z": "Bush.Y /1000"
+					}
+				},
+				{
+					"id": "set-z-elevation",
+					"objectClass": "Avatar",
+					"sid": 796481042737208,
+					"parameters": {
+						"z": "Avatar.Y/1000"
+					}
+				}
+			],
+			"sid": 254741069757590
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Avatar Animation",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [],
+			"sid": 739537545506599
+		}
+	],
+	"sid": 947564800106763
+}
