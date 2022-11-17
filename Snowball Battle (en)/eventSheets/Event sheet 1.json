@@ -419,6 +419,16 @@
 							"parameters": {
 								"object": "AvatarHitBox"
 							}
+						},
+						{
+							"id": "compare-distance-travelled",
+							"objectClass": "Snowball",
+							"sid": 869123384803858,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"comparison": 4,
+								"distance": "20"
+							}
 						}
 					],
 					"actions": [
