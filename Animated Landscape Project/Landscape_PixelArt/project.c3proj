@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 30802,
+	"savedWithRelease": 31702,
 	"name": "New project",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -11,7 +11,31 @@
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
-			"version": "r308.2",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Orbit",
+			"name": "Orbit",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "MoveTo",
+			"name": "Move To",
+			"author": "Scirra",
+			"version": "r317.2",
 			"bundled": false
 		},
 		{
@@ -19,7 +43,7 @@
 			"id": "blurhorizontal",
 			"name": "Blur horizontal",
 			"author": "Scirra",
-			"version": "r308.2",
+			"version": "r317.2",
 			"bundled": false
 		}
 	],
@@ -34,7 +58,11 @@
 			"Leaves",
 			"Smoke",
 			"VendingLight",
-			"Man"
+			"Man",
+			"Flies",
+			"Cat",
+			"Point1",
+			"Point2"
 		],
 		"subfolders": []
 	},
@@ -202,7 +230,8 @@
 		"preloadSounds": true,
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https",
-		"autoReloadScriptsOnPreview": false
+		"autoReloadScriptsOnPreview": false,
+		"exportFileStructure": "flat"
 	},
 	"viewportWidth": 640,
 	"viewportHeight": 360,

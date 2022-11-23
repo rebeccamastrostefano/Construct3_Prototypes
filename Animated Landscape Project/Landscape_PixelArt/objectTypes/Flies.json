@@ -1,19 +1,14 @@
 {
-	"name": "Leaf",
+	"name": "Flies",
 	"plugin-id": "Sprite",
-	"sid": 284223900064170,
+	"sid": 789875509814513,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Sin",
-			"name": "Sine",
-			"sid": 731936519038057
-		},
-		{
-			"behaviorId": "Sin",
-			"name": "Sine2",
-			"sid": 136705688476029
+			"behaviorId": "Orbit",
+			"name": "Orbit",
+			"sid": 320940837734836
 		}
 	],
 	"effectTypes": [],
@@ -22,33 +17,21 @@
 			{
 				"frames": [
 					{
-						"width": 7,
-						"height": 7,
+						"width": 2,
+						"height": 2,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1967858,
-						"collisionPoly": {
-							"points": [
-								1,
-								1,
-								0,
-								1,
-								0,
-								0,
-								1,
-								0
-							]
-						},
+						"imageSpriteId": 596535,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 221380578797073,
+				"sid": 742574410647679,
 				"name": "Animation 1",
-				"isLooping": false,
+				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,

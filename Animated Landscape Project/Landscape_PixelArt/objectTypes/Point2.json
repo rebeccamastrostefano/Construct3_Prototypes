@@ -1,52 +1,29 @@
 {
-	"name": "Leaf",
+	"name": "Point2",
 	"plugin-id": "Sprite",
-	"sid": 284223900064170,
+	"sid": 805114046861298,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Sin",
-			"name": "Sine",
-			"sid": 731936519038057
-		},
-		{
-			"behaviorId": "Sin",
-			"name": "Sine2",
-			"sid": 136705688476029
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 7,
-						"height": 7,
+						"width": 3,
+						"height": 3,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1967858,
-						"collisionPoly": {
-							"points": [
-								1,
-								1,
-								0,
-								1,
-								0,
-								0,
-								1,
-								0
-							]
-						},
+						"imageSpriteId": 337066,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 221380578797073,
+				"sid": 155208142449690,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
