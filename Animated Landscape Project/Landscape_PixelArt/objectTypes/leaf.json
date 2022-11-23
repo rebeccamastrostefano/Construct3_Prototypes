@@ -16,7 +16,16 @@
 			"sid": 136705688476029
 		}
 	],
-	"effectTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "brightness",
+			"name": "Brightness"
+		},
+		{
+			"effectId": "contrast",
+			"name": "Contrast"
+		}
+	],
 	"animations": {
 		"items": [
 			{

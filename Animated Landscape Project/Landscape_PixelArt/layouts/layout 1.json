@@ -173,6 +173,20 @@
 							}
 						}
 					},
+					"effects": {
+						"Brightness": {
+							"isEnabled": true,
+							"parameters": {
+								"brightness": 0.9
+							}
+						},
+						"Contrast": {
+							"isEnabled": true,
+							"parameters": {
+								"contrast": 0.9
+							}
+						}
+					},
 					"world": {
 						"x": 208,
 						"y": 220.42857142857142,
@@ -228,6 +242,20 @@
 								"magnitude-random": 7,
 								"enabled": true,
 								"live-preview": false
+							}
+						}
+					},
+					"effects": {
+						"Brightness": {
+							"isEnabled": true,
+							"parameters": {
+								"brightness": 0.9
+							}
+						},
+						"Contrast": {
+							"isEnabled": true,
+							"parameters": {
+								"contrast": 0.9
 							}
 						}
 					},
@@ -289,6 +317,20 @@
 							}
 						}
 					},
+					"effects": {
+						"Brightness": {
+							"isEnabled": true,
+							"parameters": {
+								"brightness": 0.9
+							}
+						},
+						"Contrast": {
+							"isEnabled": true,
+							"parameters": {
+								"contrast": 0.9
+							}
+						}
+					},
 					"world": {
 						"x": 185.5761766725138,
 						"y": 151.42382332748616,
@@ -344,6 +386,20 @@
 								"magnitude-random": 7,
 								"enabled": true,
 								"live-preview": false
+							}
+						}
+					},
+					"effects": {
+						"Brightness": {
+							"isEnabled": true,
+							"parameters": {
+								"brightness": 0.9
+							}
+						},
+						"Contrast": {
+							"isEnabled": true,
+							"parameters": {
+								"contrast": 0.9
 							}
 						}
 					},
@@ -405,6 +461,20 @@
 							}
 						}
 					},
+					"effects": {
+						"Brightness": {
+							"isEnabled": true,
+							"parameters": {
+								"brightness": 0.9
+							}
+						},
+						"Contrast": {
+							"isEnabled": true,
+							"parameters": {
+								"contrast": 0.9
+							}
+						}
+					},
 					"world": {
 						"x": 210.42857142857142,
 						"y": 159,
@@ -460,6 +530,20 @@
 								"magnitude-random": 7,
 								"enabled": true,
 								"live-preview": false
+							}
+						}
+					},
+					"effects": {
+						"Brightness": {
+							"isEnabled": true,
+							"parameters": {
+								"brightness": 0.9
+							}
+						},
+						"Contrast": {
+							"isEnabled": true,
+							"parameters": {
+								"contrast": 0.9
 							}
 						}
 					},
@@ -652,6 +736,20 @@
 					"uid": 5,
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"Contrast": {
+							"isEnabled": true,
+							"parameters": {
+								"contrast": 0.9
+							}
+						},
+						"Brightness": {
+							"isEnabled": true,
+							"parameters": {
+								"brightness": 0.85
+							}
+						}
+					},
 					"world": {
 						"x": 190,
 						"y": 151,
@@ -681,6 +779,20 @@
 					"uid": 11,
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"Contrast": {
+							"isEnabled": true,
+							"parameters": {
+								"contrast": 0.9
+							}
+						},
+						"Brightness": {
+							"isEnabled": true,
+							"parameters": {
+								"brightness": 0.9
+							}
+						}
+					},
 					"world": {
 						"x": 203.8449699475344,
 						"y": 215.43198282747932,
@@ -1070,8 +1182,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 432.99993896484375,
-						"y": 234.67559814453125,
+						"x": 425.49280207209256,
+						"y": 242.1827350372824,
 						"width": 3,
 						"height": 3,
 						"originX": 0.5,
@@ -1089,7 +1201,7 @@
 				{
 					"type": "Point2",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,

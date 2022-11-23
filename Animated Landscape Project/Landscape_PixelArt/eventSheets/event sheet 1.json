@@ -2,134 +2,119 @@
 	"name": "Event sheet 1",
 	"events": [
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Leaves",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 920281115105798
-				}
-			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "Leaf",
-					"sid": 528756134316113,
-					"parameters": {
-						"x": "leaf.X ",
-						"y": "leaf.Y +0.1"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 993846392734453
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Leaf",
+							"sid": 755512525197148,
+							"parameters": {
+								"x": "leaf.X ",
+								"y": "leaf.Y +0.1"
+							}
+						}
+					],
+					"sid": 490075647822042
 				},
 				{
-					"id": "set-y",
-					"objectClass": "Smoke",
-					"sid": 892940320985099,
-					"parameters": {
-						"y": "Smoke.Y - random(0.2,-0.1)"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-y",
+							"objectClass": "Leaf",
+							"sid": 176888258589037,
+							"parameters": {
+								"comparison": 4,
+								"y-co-ordinate": "236"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-y",
+							"objectClass": "Leaf",
+							"sid": 332954196663839,
+							"parameters": {
+								"y": "leaf.Y -89"
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "Leaf",
+							"sid": 302614404711554,
+							"parameters": {
+								"x": "leaf.X +random(10,-10)"
+							}
+						}
+					],
+					"sid": 366028193673241
 				},
 				{
-					"id": "set-opacity",
-					"objectClass": "Smoke",
-					"sid": 719678573958662,
-					"parameters": {
-						"opacity": "Smoke.Opacity - 0.2"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-x",
+							"objectClass": "Leaf",
+							"sid": 330469625684336,
+							"parameters": {
+								"comparison": 4,
+								"x-co-ordinate": "222"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "Leaf",
+							"sid": 160443284316367,
+							"parameters": {
+								"x": "220"
+							}
+						}
+					],
+					"sid": 568691344211100
 				},
 				{
-					"id": "set-size",
-					"objectClass": "Smoke",
-					"sid": 288120908594147,
-					"parameters": {
-						"width": "Smoke.Width +0.1",
-						"height": "Smoke.Height +0.1"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-x",
+							"objectClass": "Leaf",
+							"sid": 684653928439976,
+							"parameters": {
+								"comparison": 2,
+								"x-co-ordinate": "164"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "Leaf",
+							"sid": 481377211377138,
+							"parameters": {
+								"x": "167"
+							}
+						}
+					],
+					"sid": 189831329194869
 				}
 			],
-			"sid": 786270710381996
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-y",
-					"objectClass": "Leaf",
-					"sid": 150916107817777,
-					"parameters": {
-						"comparison": 4,
-						"y-co-ordinate": "236"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-y",
-					"objectClass": "Leaf",
-					"sid": 753124168164569,
-					"parameters": {
-						"y": "leaf.Y -89"
-					}
-				},
-				{
-					"id": "set-x",
-					"objectClass": "Leaf",
-					"sid": 463147083700236,
-					"parameters": {
-						"x": "leaf.X +random(10,-10)"
-					}
-				}
-			],
-			"sid": 947046053516149
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-x",
-					"objectClass": "Leaf",
-					"sid": 267560837543959,
-					"parameters": {
-						"comparison": 4,
-						"x-co-ordinate": "222"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-x",
-					"objectClass": "Leaf",
-					"sid": 350454149913509,
-					"parameters": {
-						"x": "220"
-					}
-				}
-			],
-			"sid": 343316103030590
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-x",
-					"objectClass": "Leaf",
-					"sid": 706892164326829,
-					"parameters": {
-						"comparison": 2,
-						"x-co-ordinate": "164"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-x",
-					"objectClass": "Leaf",
-					"sid": 409309485078183,
-					"parameters": {
-						"x": "167"
-					}
-				}
-			],
-			"sid": 109375750956689
+			"sid": 766287641977662
 		},
 		{
 			"eventType": "group",
@@ -137,225 +122,323 @@
 			"title": "Smoke",
 			"description": "",
 			"isActiveOnStart": true,
-			"children": [],
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-y",
+							"objectClass": "Smoke",
+							"sid": 192323700268969,
+							"parameters": {
+								"comparison": 2,
+								"y-co-ordinate": "10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-y",
+							"objectClass": "Smoke",
+							"sid": 925426190335320,
+							"parameters": {
+								"y": "58"
+							}
+						}
+					],
+					"sid": 121159463159902
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-y",
+							"objectClass": "Smoke",
+							"sid": 685881619370554,
+							"parameters": {
+								"comparison": 0,
+								"y-co-ordinate": "58"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "Smoke",
+							"sid": 446632314480692,
+							"parameters": {
+								"opacity": "100"
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "Smoke",
+							"sid": 949108166680213,
+							"parameters": {
+								"scale": "0.2"
+							}
+						}
+					],
+					"sid": 398309333047921
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 840514752263969
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "Smoke",
+							"sid": 763042501936442,
+							"parameters": {
+								"width": "Smoke.Width +0.1",
+								"height": "Smoke.Height +0.1"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "Smoke",
+							"sid": 856520246271128,
+							"parameters": {
+								"opacity": "Smoke.Opacity - 0.2"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "Smoke",
+							"sid": 136898373617644,
+							"parameters": {
+								"y": "Smoke.Y - random(0.2,-0.1)"
+							}
+						}
+					],
+					"sid": 542961329915912
+				}
+			],
 			"sid": 880440421552502
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Cat",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "compare-y",
-					"objectClass": "Smoke",
-					"sid": 936691504130393,
-					"parameters": {
-						"comparison": 2,
-						"y-co-ordinate": "10"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-y",
-					"objectClass": "Smoke",
-					"sid": 612237651855137,
-					"parameters": {
-						"y": "58"
-					}
-				}
-			],
-			"sid": 853304126210431
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-y",
-					"objectClass": "Smoke",
-					"sid": 430867096010473,
-					"parameters": {
-						"comparison": 0,
-						"y-co-ordinate": "58"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-opacity",
-					"objectClass": "Smoke",
-					"sid": 909271216778910,
-					"parameters": {
-						"opacity": "100"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 526384356686756
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "Cat",
+							"sid": 193402290154586,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Point1",
+								"image-point": "0",
+								"mode": "add-waypoint"
+							}
+						}
+					],
+					"sid": 968587216157851
 				},
 				{
-					"id": "set-scale",
-					"objectClass": "Smoke",
-					"sid": 331201339450754,
-					"parameters": {
-						"scale": "0.2"
-					}
-				}
-			],
-			"sid": 459340665447110
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 154858226416790
-				}
-			],
-			"actions": [
-				{
-					"id": "move-to-object",
-					"objectClass": "Cat",
-					"sid": 772045061505848,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"object": "Point1",
-						"image-point": "0",
-						"mode": "add-waypoint"
-					}
-				}
-			],
-			"sid": 673466426496378
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-x",
-					"objectClass": "Cat",
-					"sid": 588377397317616,
-					"parameters": {
-						"comparison": 0,
-						"x-co-ordinate": "Point1.X"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-x",
+							"objectClass": "Cat",
+							"sid": 755002035464148,
+							"parameters": {
+								"comparison": 0,
+								"x-co-ordinate": "Point1.X"
+							}
+						},
+						{
+							"id": "compare-y",
+							"objectClass": "Cat",
+							"sid": 310097152433824,
+							"parameters": {
+								"comparison": 0,
+								"y-co-ordinate": "Point1.y"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Cat",
+							"sid": 638220216748213,
+							"parameters": {
+								"animation": "\"Sitting1\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 897322525438139
 				},
 				{
-					"id": "compare-y",
-					"objectClass": "Cat",
-					"sid": 247570789872093,
-					"parameters": {
-						"comparison": 0,
-						"y-co-ordinate": "Point1.y"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Cat",
-					"sid": 172464581145006,
-					"parameters": {
-						"animation": "\"Sitting1\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 774606672500253
-		},
-		{
-			"eventType": "block",
-			"conditions": [],
-			"actions": [],
-			"sid": 861609935029888
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-animation-finished",
-					"objectClass": "Cat",
-					"sid": 451968357630667,
-					"parameters": {
-						"animation": "\"Sitting1\""
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "stop-animation",
-					"objectClass": "Cat",
-					"sid": 576259229502379
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "Cat",
+							"sid": 882310276122586,
+							"parameters": {
+								"animation": "\"Sitting1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "Cat",
+							"sid": 679174207988669,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Point2",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 665301898688228
 				},
 				{
-					"id": "move-to-object",
-					"objectClass": "Cat",
-					"sid": 213417230347318,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"object": "Point2",
-						"image-point": "0",
-						"mode": "direct"
-					}
-				}
-			],
-			"sid": 377635486536016
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-x",
-					"objectClass": "Cat",
-					"sid": 226018033835356,
-					"parameters": {
-						"comparison": 0,
-						"x-co-ordinate": "Point2.X"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-within-angle",
+							"objectClass": "Cat",
+							"sid": 970465633476571,
+							"parameters": {
+								"within": "Cat.MoveTo.MovingAngle",
+								"angle": "150"
+							}
+						},
+						{
+							"id": "is-moving",
+							"objectClass": "Cat",
+							"sid": 625121406557204,
+							"behaviorType": "MoveTo"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Cat",
+							"sid": 615959658034437,
+							"parameters": {
+								"animation": "\"Left\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 608014161851781
 				},
 				{
-					"id": "compare-y",
-					"objectClass": "Cat",
-					"sid": 882540565342914,
-					"parameters": {
-						"comparison": 0,
-						"y-co-ordinate": "Point2.Y"
-					}
-				}
-			],
-			"actions": [
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 538675948830950
+						},
+						{
+							"id": "is-moving",
+							"objectClass": "Cat",
+							"sid": 521711396367637,
+							"behaviorType": "MoveTo"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Cat",
+							"sid": 539214216459258,
+							"parameters": {
+								"animation": "\"Right\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 983877551559592
+				},
 				{
-					"id": "set-animation",
-					"objectClass": "Cat",
-					"sid": 132947752909394,
-					"parameters": {
-						"animation": "\"Sitting2\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 448686639563003
-		},
-		{
-			"eventType": "block",
-			"conditions": [
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-x",
+							"objectClass": "Cat",
+							"sid": 888321623853803,
+							"parameters": {
+								"comparison": 0,
+								"x-co-ordinate": "Point2.X"
+							}
+						},
+						{
+							"id": "compare-y",
+							"objectClass": "Cat",
+							"sid": 280337597830296,
+							"parameters": {
+								"comparison": 0,
+								"y-co-ordinate": "Point2.Y"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Cat",
+							"sid": 917476695029141,
+							"parameters": {
+								"animation": "\"Sitting2\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 571387247298232
+				},
 				{
-					"id": "on-animation-finished",
-					"objectClass": "Cat",
-					"sid": 233862777381418,
-					"parameters": {
-						"animation": "\"Sitting2\""
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "Cat",
+							"sid": 940032967419955,
+							"parameters": {
+								"animation": "\"Sitting2\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "Cat",
+							"sid": 350007970841321,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Point1",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 669791615585550
 				}
 			],
-			"actions": [
-				{
-					"id": "move-to-object",
-					"objectClass": "Cat",
-					"sid": 164454653852064,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"object": "Point1",
-						"image-point": "0",
-						"mode": "direct"
-					}
-				}
-			],
-			"sid": 510332799090391
+			"sid": 340182005498064
 		}
 	],
 	"sid": 681982904835842

@@ -40,6 +40,22 @@
 		},
 		{
 			"type": "effect",
+			"id": "contrast",
+			"name": "Contrast",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "brightness",
+			"name": "Brightness",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "effect",
 			"id": "blurhorizontal",
 			"name": "Blur horizontal",
 			"author": "Scirra",
