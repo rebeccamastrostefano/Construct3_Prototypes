@@ -2,7 +2,7 @@
 	"name": "Layout 1",
 	"layers": [
 		{
-			"name": "Layer 0",
+			"name": "Terrain",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
@@ -38,7 +38,41 @@
 						"angle": 0,
 						"zElevation": -10
 					}
-				},
+				}
+			],
+			"sid": 465839609656819,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "MainLayer",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
 				{
 					"type": "Bush",
 					"properties": {
@@ -61,10 +95,10 @@
 					"world": {
 						"x": 650.7679221413352,
 						"y": 227.79919294877482,
-						"width": 108,
-						"height": 36,
+						"width": 72,
+						"height": 28,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.9642857142857143,
 						"color": [
 							1,
 							1,
@@ -97,10 +131,10 @@
 					"world": {
 						"x": 715.3133766867898,
 						"y": 129.6173747669567,
-						"width": 108,
-						"height": 36,
+						"width": 72,
+						"height": 28,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.9642857142857143,
 						"color": [
 							1,
 							1,
@@ -133,10 +167,10 @@
 					"world": {
 						"x": 183.495194868608,
 						"y": 281.4355565851385,
-						"width": 108,
-						"height": 36,
+						"width": 72,
+						"height": 28,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.9642857142857143,
 						"color": [
 							1,
 							1,
@@ -169,10 +203,10 @@
 					"world": {
 						"x": 704.4042857776989,
 						"y": 355.0719202215022,
-						"width": 108,
-						"height": 36,
+						"width": 72,
+						"height": 28,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.9642857142857143,
 						"color": [
 							1,
 							1,
@@ -205,10 +239,10 @@
 					"world": {
 						"x": 188.0406494140626,
 						"y": 391.43555658513856,
-						"width": 108,
-						"height": 36,
+						"width": 72,
+						"height": 28,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.9642857142857143,
 						"color": [
 							1,
 							1,
@@ -241,10 +275,10 @@
 					"world": {
 						"x": 90.76792214133536,
 						"y": 84.1628293124113,
-						"width": 108,
-						"height": 36,
+						"width": 72,
+						"height": 28,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.9642857142857143,
 						"color": [
 							1,
 							1,
@@ -277,10 +311,10 @@
 					"world": {
 						"x": 975,
 						"y": 307,
-						"width": 108,
-						"height": 36,
+						"width": 72,
+						"height": 28,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.9642857142857143,
 						"color": [
 							1,
 							1,
@@ -313,10 +347,10 @@
 					"world": {
 						"x": 732,
 						"y": 647,
-						"width": 108,
-						"height": 36,
+						"width": 72,
+						"height": 28,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.9642857142857143,
 						"color": [
 							1,
 							1,
@@ -349,10 +383,10 @@
 					"world": {
 						"x": 481,
 						"y": 540,
-						"width": 108,
-						"height": 36,
+						"width": 72,
+						"height": 28,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.9642857142857143,
 						"color": [
 							1,
 							1,
@@ -385,10 +419,10 @@
 					"world": {
 						"x": 470,
 						"y": 765,
-						"width": 108,
-						"height": 36,
+						"width": 72,
+						"height": 28,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.9642857142857143,
 						"color": [
 							1,
 							1,
@@ -421,10 +455,10 @@
 					"world": {
 						"x": 741,
 						"y": 717,
-						"width": 108,
-						"height": 36,
+						"width": 72,
+						"height": 28,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.9642857142857143,
 						"color": [
 							1,
 							1,
@@ -457,10 +491,10 @@
 					"world": {
 						"x": 1130,
 						"y": 519,
-						"width": 108,
-						"height": 36,
+						"width": 72,
+						"height": 28,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.9642857142857143,
 						"color": [
 							1,
 							1,
@@ -493,10 +527,10 @@
 					"world": {
 						"x": 1001,
 						"y": 421,
-						"width": 108,
-						"height": 36,
+						"width": 72,
+						"height": 28,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.9642857142857143,
 						"color": [
 							1,
 							1,
@@ -529,10 +563,10 @@
 					"world": {
 						"x": 1584,
 						"y": 904,
-						"width": 108,
-						"height": 36,
+						"width": 72,
+						"height": 28,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.9642857142857143,
 						"color": [
 							1,
 							1,
@@ -565,10 +599,10 @@
 					"world": {
 						"x": 1454,
 						"y": 598,
-						"width": 108,
-						"height": 36,
+						"width": 72,
+						"height": 28,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.9642857142857143,
 						"color": [
 							1,
 							1,
@@ -601,10 +635,10 @@
 					"world": {
 						"x": 1109,
 						"y": 193,
-						"width": 108,
-						"height": 36,
+						"width": 72,
+						"height": 28,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.9642857142857143,
 						"color": [
 							1,
 							1,
@@ -637,10 +671,10 @@
 					"world": {
 						"x": 1173,
 						"y": 95,
-						"width": 108,
-						"height": 36,
+						"width": 72,
+						"height": 28,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.9642857142857143,
 						"color": [
 							1,
 							1,
@@ -673,10 +707,10 @@
 					"world": {
 						"x": 1162,
 						"y": 320,
-						"width": 108,
-						"height": 36,
+						"width": 72,
+						"height": 28,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.9642857142857143,
 						"color": [
 							1,
 							1,
@@ -709,10 +743,10 @@
 					"world": {
 						"x": 1433,
 						"y": 272,
-						"width": 108,
-						"height": 36,
+						"width": 72,
+						"height": 28,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.9642857142857143,
 						"color": [
 							1,
 							1,
@@ -745,46 +779,10 @@
 					"world": {
 						"x": 621,
 						"y": 512,
-						"width": 108,
-						"height": 36,
+						"width": 72,
+						"height": 28,
 						"originX": 0.5,
-						"originY": 1,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Bush",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 24,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 685,
-						"y": 414,
-						"width": 108,
-						"height": 36,
-						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.9642857142857143,
 						"color": [
 							1,
 							1,
@@ -817,10 +815,10 @@
 					"world": {
 						"x": 1063,
 						"y": 817,
-						"width": 108,
-						"height": 36,
+						"width": 72,
+						"height": 28,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.9642857142857143,
 						"color": [
 							1,
 							1,
@@ -853,10 +851,10 @@
 					"world": {
 						"x": 945,
 						"y": 591,
-						"width": 108,
-						"height": 36,
+						"width": 72,
+						"height": 28,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.9642857142857143,
 						"color": [
 							1,
 							1,
@@ -889,10 +887,10 @@
 					"world": {
 						"x": 1581,
 						"y": 796,
-						"width": 108,
-						"height": 36,
+						"width": 72,
+						"height": 28,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.9642857142857143,
 						"color": [
 							1,
 							1,
@@ -925,10 +923,10 @@
 					"world": {
 						"x": 1318,
 						"y": 754,
-						"width": 108,
-						"height": 36,
+						"width": 72,
+						"height": 28,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.9642857142857143,
 						"color": [
 							1,
 							1,
@@ -961,10 +959,10 @@
 					"world": {
 						"x": 223,
 						"y": 680,
-						"width": 108,
-						"height": 36,
+						"width": 72,
+						"height": 28,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.9642857142857143,
 						"color": [
 							1,
 							1,
@@ -997,10 +995,10 @@
 					"world": {
 						"x": 300,
 						"y": 896,
-						"width": 108,
-						"height": 36,
+						"width": 72,
+						"height": 28,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.9642857142857143,
 						"color": [
 							1,
 							1,
@@ -1036,6 +1034,12 @@
 						},
 						"DestroyOutsideLayout": {
 							"properties": {}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
@@ -1830,6 +1834,656 @@
 					}
 				},
 				{
+					"type": "Snowball",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "OnGround",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 52,
+					"instanceVariables": {},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": false
+							}
+						},
+						"DestroyOutsideLayout": {
+							"properties": {}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 384,
+						"y": 423,
+						"width": 31,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.281181301846279,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Snowball",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "OnGround",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 53,
+					"instanceVariables": {},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": false
+							}
+						},
+						"DestroyOutsideLayout": {
+							"properties": {}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 149,
+						"y": 531,
+						"width": 31,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.281181301846279,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Snowball",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "OnGround",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 57,
+					"instanceVariables": {},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": false
+							}
+						},
+						"DestroyOutsideLayout": {
+							"properties": {}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1331,
+						"y": 419,
+						"width": 31,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.281181301846279,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Snowball",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "OnGround",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 58,
+					"instanceVariables": {},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": false
+							}
+						},
+						"DestroyOutsideLayout": {
+							"properties": {}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1341,
+						"y": 152,
+						"width": 31,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.281181301846279,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Snowball",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "OnGround",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 59,
+					"instanceVariables": {},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": false
+							}
+						},
+						"DestroyOutsideLayout": {
+							"properties": {}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 853,
+						"y": 562,
+						"width": 31,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.281181301846279,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Snowball",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "OnGround",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 60,
+					"instanceVariables": {},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": false
+							}
+						},
+						"DestroyOutsideLayout": {
+							"properties": {}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 849,
+						"y": 701,
+						"width": 31,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.281181301846279,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Snowball",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "OnGround",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 61,
+					"instanceVariables": {},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": false
+							}
+						},
+						"DestroyOutsideLayout": {
+							"properties": {}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 321,
+						"y": 703,
+						"width": 31,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.281181301846279,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Snowball",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "OnGround",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 64,
+					"instanceVariables": {},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": false
+							}
+						},
+						"DestroyOutsideLayout": {
+							"properties": {}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 854,
+						"y": 834,
+						"width": 31,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.281181301846279,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Snowball",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "OnGround",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 65,
+					"instanceVariables": {},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": false
+							}
+						},
+						"DestroyOutsideLayout": {
+							"properties": {}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1501,
+						"y": 653,
+						"width": 31,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.281181301846279,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Snowball",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "OnGround",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 66,
+					"instanceVariables": {},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": false
+							}
+						},
+						"DestroyOutsideLayout": {
+							"properties": {}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1261,
+						"y": 604,
+						"width": 31,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.281181301846279,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Snowball",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "OnGround",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 67,
+					"instanceVariables": {},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": false
+							}
+						},
+						"DestroyOutsideLayout": {
+							"properties": {}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1594,
+						"y": 418,
+						"width": 31,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.281181301846279,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Snowball",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "OnGround",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 68,
+					"instanceVariables": {},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": false
+							}
+						},
+						"DestroyOutsideLayout": {
+							"properties": {}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 785,
+						"y": 251,
+						"width": 31,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.281181301846279,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Snowball",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "OnGround",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 69,
+					"instanceVariables": {},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": false
+							}
+						},
+						"DestroyOutsideLayout": {
+							"properties": {}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 351,
+						"y": 108,
+						"width": 31,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.281181301846279,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Avatar",
 					"properties": {
 						"initially-visible": true,
@@ -1839,7 +2493,9 @@
 						"live-preview": false
 					},
 					"uid": 2,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"RightFootForward": true
+					},
 					"behaviors": {
 						"8Direction": {
 							"properties": {
@@ -1941,9 +2597,172 @@
 				1,
 				1
 			],
-			"isTransparent": false,
+			"isTransparent": true,
 			"parallaxX": 1,
 			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "GUI",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Counter",
+					"properties": {
+						"text": "...",
+						"enable-bbcode": true,
+						"font": "fantasy",
+						"size": 25,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.33725490196078434,
+							0.3176470588235294,
+							0.4235294117647059,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 41,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 15,
+						"y": 15,
+						"width": 200,
+						"height": 60,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HitIcon",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 24,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -34,
+						"y": 455,
+						"width": 35.12252301638722,
+						"height": 33.71056229211035,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Footprint",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 48,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -15,
+						"y": 350,
+						"width": 14.092602106989604,
+						"height": 7.659190727488114,
+						"originX": 1.4074074074074074,
+						"originY": -0.3939393939393939,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "SnowballIcon",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 3,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 56,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 710,
+						"y": 40,
+						"width": 100,
+						"height": 32,
+						"originX": 0.15,
+						"originY": 0.46875,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 957803244210082,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
