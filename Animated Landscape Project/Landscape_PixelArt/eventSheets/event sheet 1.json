@@ -286,7 +286,8 @@
 							}
 						}
 					],
-					"sid": 897322525438139
+					"sid": 897322525438139,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -313,7 +314,8 @@
 							}
 						}
 					],
-					"sid": 665301898688228
+					"sid": 665301898688228,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -345,7 +347,8 @@
 							}
 						}
 					],
-					"sid": 608014161851781
+					"sid": 608014161851781,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -373,7 +376,8 @@
 							}
 						}
 					],
-					"sid": 983877551559592
+					"sid": 983877551559592,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -408,7 +412,8 @@
 							}
 						}
 					],
-					"sid": 571387247298232
+					"sid": 571387247298232,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -435,7 +440,143 @@
 							}
 						}
 					],
-					"sid": 669791615585550
+					"sid": 669791615585550,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "Cat",
+							"sid": 609608461564968,
+							"parameters": {
+								"animation": "\"Sitting1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "Cat",
+							"sid": 845234014261663,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Point2",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Cat",
+							"sid": 263823835877286,
+							"parameters": {
+								"animation": "\"Left\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 241620501969811
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "Cat",
+							"sid": 444444058018418,
+							"parameters": {
+								"animation": "\"Sitting2\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "Cat",
+							"sid": 108612170178392,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Point1",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Cat",
+							"sid": 867461850413248,
+							"parameters": {
+								"animation": "\"Right\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 859500715898308
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-arrived",
+							"objectClass": "Cat",
+							"sid": 806178127472905,
+							"behaviorType": "MoveTo"
+						}
+					],
+					"actions": [],
+					"sid": 796465872362312,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-within-angle",
+									"objectClass": "Cat",
+									"sid": 281728213054152,
+									"parameters": {
+										"within": "Cat.MoveTo.MovingAngle",
+										"angle": "150"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Cat",
+									"sid": 522026221229594,
+									"parameters": {
+										"animation": "\"Sitting2\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 324540075510934
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 403024186739580
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Cat",
+									"sid": 919506626342872,
+									"parameters": {
+										"animation": "\"Sitting1\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 649063841364309
+						}
+					]
 				}
 			],
 			"sid": 340182005498064
