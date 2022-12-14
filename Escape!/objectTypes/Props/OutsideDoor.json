@@ -1,0 +1,114 @@
+{
+	"name": "OutsideDoor",
+	"plugin-id": "Sprite",
+	"sid": 896948201881791,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 209746791188820
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 25,
+						"height": 90,
+						"originX": 0.62,
+						"originY": 0.9777777777777777,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7332253,
+						"collisionPoly": {
+							"points": [
+								0.16999999999999996,
+								0,
+								1,
+								0,
+								1,
+								1,
+								0.19000000000000003,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 603532631505075,
+				"name": "Closed",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 25,
+						"height": 90,
+						"originX": 0.62,
+						"originY": 0.9777777777777777,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9356323,
+						"collisionPoly": {
+							"points": [
+								0.16999999999999996,
+								0,
+								1,
+								0,
+								1,
+								1,
+								0.19000000000000003,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 54,
+						"height": 94,
+						"originX": 0.8440366972477065,
+						"originY": 0.9576719576719577,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3052273,
+						"collisionPoly": {
+							"points": [
+								0.05504587155963303,
+								0.9444444444444444,
+								0.9587155963302755,
+								0.9550264550264554,
+								0.94954128440367,
+								0.8730158730158728,
+								0.05504587155963303,
+								0.8544973544973551
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 542885958706770,
+				"name": "Open",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

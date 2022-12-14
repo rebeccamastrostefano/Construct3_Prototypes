@@ -1,0 +1,49 @@
+{
+	"name": "Railing",
+	"plugin-id": "Sprite",
+	"sid": 956281103128161,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 285,
+						"height": 12,
+						"originX": 0.4833595412080288,
+						"originY": 0.9375,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 963375,
+						"collisionPoly": {
+							"points": [
+								0.00875649181750725,
+								0.7499999801317854,
+								0.9894859961353989,
+								0.7499999801317853,
+								0.9877347362526683,
+								1,
+								0.00875658801943445,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 392786759506508,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

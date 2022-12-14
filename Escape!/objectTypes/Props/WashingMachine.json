@@ -1,0 +1,60 @@
+{
+	"name": "WashingMachine",
+	"plugin-id": "Sprite",
+	"sid": 730578480855960,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 961459763211942
+		},
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 937668291710903
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 50,
+						"height": 56,
+						"originX": 0.5,
+						"originY": 0.875,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4399032,
+						"collisionPoly": {
+							"points": [
+								0.19634615384615384,
+								0.579498626373627,
+								0.8350000000000011,
+								0.5752060439560444,
+								0.8450000000000008,
+								0.881696428571428,
+								0.20000000000000004,
+								0.8883928571428565
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 942036409129973,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

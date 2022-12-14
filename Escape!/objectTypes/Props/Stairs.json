@@ -1,0 +1,53 @@
+{
+	"name": "Stairs",
+	"plugin-id": "Sprite",
+	"sid": 518992854664331,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 426,
+						"height": 106,
+						"originX": 1.480859375,
+						"originY": 1.9640625,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6075793,
+						"collisionPoly": {
+							"points": [
+								0.03203125,
+								0,
+								1,
+								0.8875,
+								0.47578125,
+								1,
+								1,
+								1,
+								0.23359375,
+								1,
+								0.47109375,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 577345226794437,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

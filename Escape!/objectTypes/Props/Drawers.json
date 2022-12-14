@@ -1,0 +1,64 @@
+{
+	"name": "Drawers",
+	"plugin-id": "Sprite",
+	"sid": 146995535672432,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 512680952305599
+		},
+		{
+			"behaviorId": "TileMovement",
+			"name": "TileMovement",
+			"sid": 949175549926103
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 25,
+						"height": 33,
+						"originX": 0.56,
+						"originY": 0.9393939393939394,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4818996,
+						"collisionPoly": {
+							"points": [
+								0.08999999761581418,
+								0.6856060540033909,
+								0.09056833308091863,
+								0.3831784131081222,
+								0.09340914052062435,
+								0.17200416077759434,
+								0.9290910441369687,
+								0.1831956168581363,
+								0.9299997882313252,
+								0.9583333113177462,
+								0.1900000254842961,
+								0.9545453170333282
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 320517247514886,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

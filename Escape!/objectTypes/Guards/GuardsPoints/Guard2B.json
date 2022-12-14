@@ -1,0 +1,37 @@
+{
+	"name": "Guard2B",
+	"plugin-id": "Sprite",
+	"sid": 926648555331304,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 3,
+						"height": 3,
+						"originX": 0.6666666666666666,
+						"originY": 0.6666666666666666,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4360599,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 262687928564287,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

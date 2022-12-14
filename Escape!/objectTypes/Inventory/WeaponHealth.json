@@ -1,0 +1,89 @@
+{
+	"name": "WeaponHealth",
+	"plugin-id": "Sprite",
+	"sid": 747560164661974,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [
+					{
+						"frames": [
+							{
+								"width": 32,
+								"height": 11,
+								"originX": 0.5,
+								"originY": 0.5454545454545454,
+								"originalSource": "",
+								"exportFormat": "lossless",
+								"exportQuality": 0.8,
+								"imageSpriteId": 9110101,
+								"useCollisionPoly": true,
+								"duration": 1
+							}
+						],
+						"sid": 751963289113726,
+						"name": "Full",
+						"isLooping": false,
+						"isPingPong": false,
+						"repeatCount": 1,
+						"repeatTo": 0,
+						"speed": 5
+					},
+					{
+						"frames": [
+							{
+								"width": 32,
+								"height": 11,
+								"originX": 0.5,
+								"originY": 0.5454545454545454,
+								"originalSource": "",
+								"exportFormat": "lossless",
+								"exportQuality": 0.8,
+								"imageSpriteId": 38703,
+								"useCollisionPoly": true,
+								"duration": 1
+							}
+						],
+						"sid": 739637541649183,
+						"name": "1",
+						"isLooping": false,
+						"isPingPong": false,
+						"repeatCount": 1,
+						"repeatTo": 0,
+						"speed": 5
+					},
+					{
+						"frames": [
+							{
+								"width": 32,
+								"height": 11,
+								"originX": 0.5,
+								"originY": 0.5454545454545454,
+								"originalSource": "",
+								"exportFormat": "lossless",
+								"exportQuality": 0.8,
+								"imageSpriteId": 4906030,
+								"useCollisionPoly": true,
+								"duration": 1
+							}
+						],
+						"sid": 145788410606764,
+						"name": "0",
+						"isLooping": false,
+						"isPingPong": false,
+						"repeatCount": 1,
+						"repeatTo": 0,
+						"speed": 5
+					}
+				],
+				"subfolders": [],
+				"name": "Weapon"
+			}
+		]
+	}
+}

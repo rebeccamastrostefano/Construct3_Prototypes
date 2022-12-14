@@ -1,0 +1,59 @@
+{
+	"name": "Weapon",
+	"plugin-id": "Sprite",
+	"sid": 818244589782255,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 847597087648359
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 40,
+						"height": 84,
+						"originX": 0.42564102564102557,
+						"originY": 0.5357142857142857,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9404882,
+						"collisionPoly": {
+							"points": [
+								1,
+								0,
+								0,
+								0,
+								1,
+								0,
+								1,
+								0,
+								1,
+								1,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 978171665881104,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

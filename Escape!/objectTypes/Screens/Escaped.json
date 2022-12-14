@@ -1,0 +1,55 @@
+{
+	"name": "Escaped",
+	"plugin-id": "Sprite",
+	"sid": 104445138003572,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 177,
+						"height": 132,
+						"originX": 0.4915254237288136,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7993754,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.11299435028248588,
+								0.022727272727272728,
+								0.8305084745762712,
+								0,
+								0,
+								0,
+								0.9774011299435028,
+								0.8636363636363636,
+								0.11299435028248588,
+								0.9772727272727273,
+								0,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 331362160268897,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

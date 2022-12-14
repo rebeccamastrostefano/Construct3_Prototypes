@@ -1,0 +1,450 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 31702,
+	"name": "Escape",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "TileMovement",
+			"name": "Tile movement",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "MoveTo",
+			"name": "Move To",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Drag & Drop",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "LOS",
+			"name": "Line of sight",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direction",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "bound",
+			"name": "Bound to layout",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		}
+	],
+	"uniqueId": "qsqqyypiub9",
+	"objectTypes": {
+		"items": [
+			"Map",
+			"Keyboard",
+			"Prisoner"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"Bars",
+					"Bed",
+					"CameraRoomStuff",
+					"CelLDoor",
+					"Drawers",
+					"KitchenStuff",
+					"LaundryStuff",
+					"Lights",
+					"Railing",
+					"Toilet",
+					"Sink",
+					"Stairs",
+					"Tables",
+					"Nets",
+					"KitchenDoor",
+					"LaundryDoor",
+					"CameraRoomDoor",
+					"Ladder",
+					"OutsideDoor",
+					"Mouse",
+					"WashingMachine",
+					"FreezerDoor"
+				],
+				"subfolders": [],
+				"name": "Props"
+			},
+			{
+				"items": [
+					"DragDrop",
+					"PressEtoCollectBrush",
+					"PressEtoCollectKey",
+					"PressEtoKillGuard1",
+					"PressEtoSearchBed",
+					"PressEtoSearchToilet",
+					"UseKeytoOpenKitchen",
+					"UseKeytoOpenFreezer",
+					"UsePintoOpen",
+					"TutorialKill",
+					"PressEtoCollectHook",
+					"PressEtoCollectRope",
+					"PressEtoCollectKnife",
+					"UseKeytoOpenLaundry",
+					"UseKeytoOpenCamera",
+					"PressEtoKillGuard2",
+					"PressEtoKillGuard3",
+					"PressEtoKillGuard4",
+					"PressEtoKillGuard5",
+					"PressEToInteractWithButton",
+					"Escape"
+				],
+				"subfolders": [],
+				"name": "Texts"
+			},
+			{
+				"items": [
+					"CloseWindow",
+					"TutorialWindow",
+					"TutorialWindow2",
+					"Escaped"
+				],
+				"subfolders": [],
+				"name": "Screens"
+			},
+			{
+				"items": [
+					"Inventory",
+					"Point1",
+					"Point2",
+					"Point3",
+					"Point4",
+					"WeaponHealth"
+				],
+				"subfolders": [],
+				"name": "Inventory"
+			},
+			{
+				"items": [
+					"Hook",
+					"Key",
+					"Pin",
+					"RazorBlade",
+					"Rope",
+					"ToothBrush",
+					"Weapon",
+					"GrapplingHook",
+					"Knife"
+				],
+				"subfolders": [],
+				"name": "Collectables"
+			},
+			{
+				"items": [
+					"ExclamationPoint"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"Guard1",
+							"Guard2",
+							"Guard5",
+							"Guard4",
+							"Guard3"
+						],
+						"subfolders": [],
+						"name": "Guards"
+					},
+					{
+						"items": [
+							"Guard2A",
+							"Guard2B",
+							"Guard3A",
+							"Guard3B",
+							"Guard4A",
+							"Guard4B",
+							"Guard5A",
+							"Guard5B"
+						],
+						"subfolders": [],
+						"name": "GuardsPoints"
+					},
+					{
+						"items": [
+							"LOS1",
+							"LOS2",
+							"LOS3",
+							"LOS4",
+							"LOS5"
+						],
+						"subfolders": [],
+						"name": "GuardsLOS"
+					}
+				],
+				"name": "Guards"
+			},
+			{
+				"items": [
+					"Button",
+					"InvisibleWalls",
+					"ScrollObject",
+					"ScrollObject2",
+					"Trapdoor",
+					"Wall"
+				],
+				"subfolders": [],
+				"name": "InvisibleWallsandInteractiveObjects"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Layout 1"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"Event sheet 1"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [],
+			"subfolders": []
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 231141485837585,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 356691010610327,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 659821121345859,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				},
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 117303918864795,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 975226496215271,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 373940065663168,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 287570149838306,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Timeline 1"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": true,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-integer-scale",
+		"fullscreenQuality": "low",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "landscape",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"compositingMode": "standard",
+		"sampling": "nearest",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"autoReloadScriptsOnPreview": false,
+		"exportFileStructure": "folders"
+	},
+	"viewportWidth": 640,
+	"viewportHeight": 360,
+	"firstLayout": null
+}

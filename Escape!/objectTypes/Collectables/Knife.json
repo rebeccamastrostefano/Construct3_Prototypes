@@ -1,0 +1,51 @@
+{
+	"name": "Knife",
+	"plugin-id": "Sprite",
+	"sid": 314252627267442,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "IsAvatarNear",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 684820421137823
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 205173753852079
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 14,
+						"height": 32,
+						"originX": 0.42857142857142855,
+						"originY": 0.47058823529411764,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9396647,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 825068475074931,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

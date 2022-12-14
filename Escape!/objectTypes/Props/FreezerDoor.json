@@ -1,0 +1,124 @@
+{
+	"name": "FreezerDoor",
+	"plugin-id": "Sprite",
+	"sid": 711952275499186,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "IsAvatarNear",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 498072527500795
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 289061638980179
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 33,
+						"height": 27,
+						"originX": 0.5151515151515151,
+						"originY": 0.9259259259259259,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3066363,
+						"collisionPoly": {
+							"points": [
+								0.9545454545454546,
+								0.9351851851851849,
+								0.9545454545454546,
+								0.9259259259259256,
+								0.05681818181818181,
+								0.9351851851851849,
+								0.04166666666666666,
+								0.7731481481481473,
+								0.9583333333333334,
+								0.75925925925926
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 943046179983486,
+				"name": "Closed",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 33,
+						"height": 27,
+						"originX": 0.5151515151515151,
+						"originY": 0.9259259259259259,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8004139,
+						"collisionPoly": {
+							"points": [
+								0.9507575757575758,
+								0.9490740740740738,
+								0.04545454545454544,
+								0.9351851851851849,
+								0.045454545454545456,
+								0.7824074074074066,
+								0.9583333333333334,
+								0.7731481481481486
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 33,
+						"height": 37,
+						"originX": 0.5151515151515151,
+						"originY": 0.8798798798798799,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4810249,
+						"collisionPoly": {
+							"points": [
+								0.1856060606060613,
+								0.5641891891891893,
+								0.03409090909090909,
+								0.570945945945946,
+								0.045454545454545456,
+								0.6959459459459468,
+								0.17045454545454558,
+								0.6925675675675673
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 960875203003831,
+				"name": "Open",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,56 @@
+{
+	"name": "Rope",
+	"plugin-id": "Sprite",
+	"sid": 758263761596520,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "IsAvatarNear",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 572000376334251
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 580323703288109
+		},
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 673713045165692
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 72,
+						"height": 57,
+						"originX": 0.5277777777777778,
+						"originY": 0.42105263157894735,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7680140,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 994008105796391,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

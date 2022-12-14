@@ -1,0 +1,84 @@
+{
+	"name": "LOS4",
+	"plugin-id": "Sprite",
+	"sid": 819845997476189,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "IsAvatarDown",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 240032993089849
+		},
+		{
+			"name": "IsAvatarUp",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 686683058797200
+		},
+		{
+			"name": "IsAvatarLeft",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 401328404872400
+		},
+		{
+			"name": "IsAvatarRight",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 787455503204243
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "LOS",
+			"name": "LineOfSight",
+			"sid": 640467472491330
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 10,
+						"height": 8,
+						"originX": 0.9,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9764730,
+						"collisionPoly": {
+							"points": [
+								0,
+								1,
+								0,
+								0,
+								1,
+								0,
+								1,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 877766615274714,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

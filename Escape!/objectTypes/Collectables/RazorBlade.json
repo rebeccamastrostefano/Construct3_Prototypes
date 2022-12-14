@@ -1,0 +1,68 @@
+{
+	"name": "RazorBlade",
+	"plugin-id": "Sprite",
+	"sid": 222005552916294,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 379482535257653
+		},
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 136407038084340
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 26,
+						"height": 33,
+						"originX": 0.5,
+						"originY": 0.48484848484848486,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3037845,
+						"collisionPoly": {
+							"points": [
+								0.15384615384615385,
+								0.12121212121212122,
+								0.5,
+								0.06060606060606061,
+								0.7307692307692307,
+								0.18181818181818182,
+								0.8461538461538461,
+								0.5,
+								0.8076923076923077,
+								0.8484848484848485,
+								0.5,
+								0.9393939393939394,
+								0.2692307692307692,
+								0.7575757575757576,
+								0.15384615384615385,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 745035507571677,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

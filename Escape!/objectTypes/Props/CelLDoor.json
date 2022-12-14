@@ -1,0 +1,130 @@
+{
+	"name": "CelLDoor",
+	"plugin-id": "Sprite",
+	"sid": 717424599668407,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "IsAvatarNear",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 556937608881218
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 332735172096101
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 79,
+						"height": 63,
+						"originX": 0.4936708860759494,
+						"originY": 0.9206349206349206,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8180151,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.8095236427569559,
+								1,
+								0.8095240787223461,
+								1,
+								1,
+								1,
+								1,
+								0.5949367088607594,
+								1,
+								1.0375064261707034e-7,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 421524859522865,
+				"name": "Closed",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 79,
+						"height": 63,
+						"originX": 0.4936708860759494,
+						"originY": 0.9206349206349206,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2489935,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.8095236427569559,
+								1,
+								0.8095240787223461,
+								1,
+								1,
+								1,
+								1,
+								0.5949367088607594,
+								1,
+								1.0375064261707034e-7,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 79,
+						"height": 100,
+						"originX": 0.4936708860759494,
+						"originY": 0.9206349206349206,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4835384,
+						"collisionPoly": {
+							"points": [
+								0.012658266142617449,
+								0.20999993830257155,
+								0.1202531106026048,
+								0.220000243213435,
+								0.09493657831736968,
+								0.815,
+								1.0375064261707034e-7,
+								0.815
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 769171951070129,
+				"name": "Open",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

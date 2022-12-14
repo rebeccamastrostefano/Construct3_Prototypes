@@ -1,0 +1,80 @@
+{
+	"name": "Button",
+	"plugin-id": "Sprite",
+	"sid": 906891915689264,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "IsAvatarNear",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 114564950754720
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 11,
+						"height": 11,
+						"originX": 0.45454545454545453,
+						"originY": 0.5454545454545454,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5271980,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 478479275584676,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 8,
+						"height": 8,
+						"originX": 0.375,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 794348,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 11,
+						"height": 11,
+						"originX": 0.36363636363636365,
+						"originY": 0.45454545454545453,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7576095,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 830946704100218,
+				"name": "Interaction",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

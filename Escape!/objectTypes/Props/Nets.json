@@ -1,0 +1,55 @@
+{
+	"name": "Nets",
+	"plugin-id": "Sprite",
+	"sid": 215038171718316,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 588332657017044
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 20,
+						"height": 60,
+						"originX": 0.13953488372093023,
+						"originY": 0.9745762711864406,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 296642,
+						"collisionPoly": {
+							"points": [
+								0.06976744186046512,
+								0.8728813559322032,
+								0.23837209302325582,
+								0.8771186440677962,
+								0.23837209302325546,
+								0.978813559322034,
+								0.06395348837209301,
+								0.9724576271186441
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 848101218854021,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

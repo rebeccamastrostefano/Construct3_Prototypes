@@ -1,0 +1,48 @@
+{
+	"name": "GrapplingHook",
+	"plugin-id": "Sprite",
+	"sid": 226151803076217,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 628144754386073
+		},
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 570509853659665
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 36,
+						"height": 54,
+						"originX": 0.4166666666666667,
+						"originY": 0.4444444444444444,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1068442,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 958076191678619,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

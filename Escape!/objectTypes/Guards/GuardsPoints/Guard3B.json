@@ -1,0 +1,37 @@
+{
+	"name": "Guard3B",
+	"plugin-id": "Sprite",
+	"sid": 930396798586561,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 3,
+						"height": 3,
+						"originX": 0.6666666666666666,
+						"originY": 0.6666666666666666,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3538952,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 793263053476288,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

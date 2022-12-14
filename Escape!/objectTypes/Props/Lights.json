@@ -1,0 +1,90 @@
+{
+	"name": "Lights",
+	"plugin-id": "Sprite",
+	"sid": 579155720968011,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 488544077670704
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 25,
+						"height": 100,
+						"originX": 0.2222222222222222,
+						"originY": 0.9805825242718447,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2459425,
+						"collisionPoly": {
+							"points": [
+								0.12037037037037039,
+								0.8325242718446599,
+								0.36111111111111127,
+								0.8349514563106794,
+								0.3518518518518521,
+								0.9830097087378641,
+								0.11111111111111113,
+								0.9830097087378641
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 627810741273390,
+				"name": "Off",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 50,
+						"height": 100,
+						"originX": 0.12,
+						"originY": 0.99,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 716816,
+						"collisionPoly": {
+							"points": [
+								0.3101851851851852,
+								0.83252427184466,
+								0.43055555555555564,
+								0.8349514563106795,
+								0.42592592592592604,
+								0.9830097087378641,
+								0.3055555555555556,
+								0.9830097087378641
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 842039102635835,
+				"name": "On",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
