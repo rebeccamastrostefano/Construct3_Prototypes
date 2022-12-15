@@ -853,9 +853,9 @@
 								{
 									"id": "key-is-down",
 									"objectClass": "Keyboard",
-									"sid": 845639731882786,
+									"sid": 542341135261733,
 									"parameters": {
-										"key": 68
+										"key": 39
 									}
 								}
 							],
@@ -873,6 +873,41 @@
 								}
 							],
 							"sid": 831946310323781
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Prisoner",
+									"sid": 808479372508897,
+									"parameters": {
+										"object": "WashingMachine"
+									}
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 330474086095303,
+									"parameters": {
+										"key": 68
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "move-to-position",
+									"objectClass": "WashingMachine",
+									"sid": 320005137767937,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"x": "1657",
+										"y": "WashingMachine.Y",
+										"mode": "direct"
+									}
+								}
+							],
+							"sid": 901066345799423
 						}
 					],
 					"sid": 891053879018495
