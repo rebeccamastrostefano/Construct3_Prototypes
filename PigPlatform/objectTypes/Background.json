@@ -1,0 +1,62 @@
+{
+	"name": "Background",
+	"plugin-id": "Sprite",
+	"sid": 249178133914890,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "blurhorizontal",
+			"name": "BlurHorizontal"
+		},
+		{
+			"effectId": "brightness",
+			"name": "Brightness"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 751,
+						"height": 700,
+						"originX": 0.5,
+						"originY": 0.38785714285714284,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3446924,
+						"collisionPoly": {
+							"points": [
+								0.041463414634146344,
+								0.05151227678571429,
+								0.6170731707317073,
+								0.47270089285714284,
+								0.13414634146341464,
+								0.38785714285714284,
+								0.6317073170731707,
+								0.3181640625,
+								0.1073170731707317,
+								0.6393582589285715,
+								0.12439024390243902,
+								0.38785714285714284
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 409043199589708,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

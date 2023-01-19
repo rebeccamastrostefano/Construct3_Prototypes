@@ -1,0 +1,20 @@
+{
+	"name": "Platform3",
+	"plugin-id": "NinePatch",
+	"sid": 830380924557100,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 96,
+		"height": 51,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 8244516,
+		"useCollisionPoly": true
+	}
+}

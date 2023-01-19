@@ -1,0 +1,89 @@
+{
+	"name": "Waterfall",
+	"plugin-id": "Sprite",
+	"sid": 906391106298144,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 11,
+						"height": 48,
+						"originX": 0.45454545454545453,
+						"originY": 0.0625,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8374831,
+						"collisionPoly": {
+							"points": [
+								1,
+								0.3125,
+								1,
+								0,
+								1,
+								0,
+								1,
+								0.020833333333333332,
+								1,
+								1,
+								1,
+								1,
+								0.6363636363636364,
+								0.5,
+								0,
+								0.020833333333333332
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 14,
+						"height": 52,
+						"originX": 0.5714285714285714,
+						"originY": 0.07692307692307693,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5736498,
+						"collisionPoly": {
+							"points": [
+								1,
+								0.28846153846153844,
+								1,
+								0,
+								1,
+								0,
+								1,
+								0.019230769230769232,
+								1,
+								0.9807692307692307,
+								1,
+								1,
+								0,
+								0.46153846153846156,
+								0,
+								0.019230769230769232
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 927127246025405,
+				"name": "Animation 1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

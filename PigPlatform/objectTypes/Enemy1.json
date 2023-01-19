@@ -1,0 +1,87 @@
+{
+	"name": "Enemy1",
+	"plugin-id": "Sprite",
+	"sid": 717296377960612,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 20,
+						"height": 33,
+						"originX": 0.55,
+						"originY": 0.9393939393939394,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3567417,
+						"collisionPoly": {
+							"points": [
+								0.050000000000000114,
+								0.17272729584665,
+								0.6100000381469732,
+								0.028787901907256226,
+								0.9,
+								0.030303030303030304,
+								0.8350000381469731,
+								0.546969731648763,
+								0.7774999618530275,
+								0.9560605829412295,
+								0.5024999618530274,
+								0.956060582941229,
+								0.14749984741210936,
+								0.9575757113370037,
+								0.15,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 20,
+						"height": 34,
+						"originX": 0.6,
+						"originY": 0.9411764705882353,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9435806,
+						"collisionPoly": {
+							"points": [
+								0.050000000000000114,
+								0.17272729584665,
+								0.6100000381469732,
+								0.028787901907256226,
+								0.9,
+								0.030303030303030304,
+								0.8350000381469731,
+								0.546969731648763,
+								0.7975000381469729,
+								0.9678253337023738,
+								0.04999980926513675,
+								0.9663992183093727,
+								0.15,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 163216429543213,
+				"name": "Walk",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 3
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Platforms",
+	"plugin-id": "NinePatch",
+	"sid": 506195679118939,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "jumpthru",
+			"name": "Jumpthru",
+			"sid": 609540690045470
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"Platform2",
+		"Platform1",
+		"Platform3"
+	]
+}

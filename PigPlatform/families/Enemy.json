@@ -1,0 +1,25 @@
+{
+	"name": "Enemy",
+	"plugin-id": "Sprite",
+	"sid": 186649932944133,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 632614436894590
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 679492806860333
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"Enemy1",
+		"Enemy2",
+		"Enemy3",
+		"Enemy5"
+	]
+}

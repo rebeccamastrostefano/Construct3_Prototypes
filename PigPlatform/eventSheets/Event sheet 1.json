@@ -1,0 +1,1486 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Berries",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 732711572215460
+		},
+		{
+			"eventType": "variable",
+			"name": "Health",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 312787489000335
+		},
+		{
+			"eventType": "variable",
+			"name": "Corn",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 952059763981537
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "PigMovements",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-falling",
+							"objectClass": "Pig",
+							"sid": 686828374944402,
+							"behaviorType": "Platform",
+							"isInverted": true
+						},
+						{
+							"id": "is-enabled",
+							"objectClass": "Pig",
+							"sid": 605669666016551,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [],
+					"sid": 159236527380711,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 986703481891369,
+									"parameters": {
+										"key": 39
+									}
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 568862396864197,
+									"parameters": {
+										"key": 68
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Pig",
+									"sid": 645821850805323,
+									"parameters": {
+										"animation": "\"Walk\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-mirrored",
+									"objectClass": "Pig",
+									"sid": 970603406242365,
+									"parameters": {
+										"state": "not-mirrored"
+									}
+								}
+							],
+							"sid": 783471617369971,
+							"isOrBlock": true
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-falling",
+							"objectClass": "Pig",
+							"sid": 743041865039373,
+							"behaviorType": "Platform",
+							"isInverted": true
+						},
+						{
+							"id": "is-enabled",
+							"objectClass": "Pig",
+							"sid": 953980351056664,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [],
+					"sid": 161927504819520,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 418979423672192,
+									"parameters": {
+										"key": 65
+									}
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 213847317535419,
+									"parameters": {
+										"key": 37
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Pig",
+									"sid": 866325038157317,
+									"parameters": {
+										"animation": "\"Walk\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-mirrored",
+									"objectClass": "Pig",
+									"sid": 718718280383138,
+									"parameters": {
+										"state": "mirrored"
+									}
+								}
+							],
+							"sid": 657413005121959,
+							"isOrBlock": true
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 669583335583204,
+							"parameters": {
+								"key": 38
+							}
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 150516662798739,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Pig",
+							"sid": 352744654356653,
+							"parameters": {
+								"animation": "\"Jump\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Pig",
+							"sid": 476966460094878,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 610922272742151,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 978547784932446,
+							"parameters": {
+								"key": 37
+							}
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 601125541741826,
+							"parameters": {
+								"key": 65
+							}
+						}
+					],
+					"actions": [],
+					"sid": 317321267013681,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-falling",
+									"objectClass": "Pig",
+									"sid": 861465193823607,
+									"behaviorType": "Platform"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "Pig",
+									"sid": 804992953201185,
+									"parameters": {
+										"state": "mirrored"
+									}
+								}
+							],
+							"sid": 181145771331504
+						}
+					],
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 707825239079130,
+							"parameters": {
+								"key": 39
+							}
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 585989119949776,
+							"parameters": {
+								"key": 68
+							}
+						}
+					],
+					"actions": [],
+					"sid": 314500090182246,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-falling",
+									"objectClass": "Pig",
+									"sid": 857587422766467,
+									"behaviorType": "Platform"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "Pig",
+									"sid": 281548081075683,
+									"parameters": {
+										"state": "not-mirrored"
+									}
+								}
+							],
+							"sid": 283199149798775
+						}
+					],
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving",
+							"objectClass": "Pig",
+							"sid": 528490574583360,
+							"behaviorType": "Platform",
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Pig",
+							"sid": 122111115669862,
+							"parameters": {
+								"instance-variable": "Spitting"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Pig",
+							"sid": 858715761445594,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 681600392862370
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-landed",
+							"objectClass": "Pig",
+							"sid": 927440706885541,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Pig",
+							"sid": 442166956170218,
+							"parameters": {
+								"animation": "\"Land\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 647083640413649
+				}
+			],
+			"sid": 498037603621119
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Ambient",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 331674324328443
+						}
+					],
+					"actions": [
+						{
+							"id": "start-animation",
+							"objectClass": "Waterfall",
+							"sid": 626033632053183,
+							"parameters": {
+								"from": "current-frame"
+							}
+						}
+					],
+					"sid": 426849762470060
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 632488481692817
+						}
+					],
+					"actions": [
+						{
+							"id": "start-animation",
+							"objectClass": "End",
+							"sid": 199349355786951,
+							"parameters": {
+								"from": "current-frame"
+							}
+						}
+					],
+					"sid": 670036413267493
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Pig",
+							"sid": 779975558510461,
+							"parameters": {
+								"object": "Void"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 718000338894404
+						}
+					],
+					"sid": 263632884466174
+				}
+			],
+			"sid": 723953318473430
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Objects",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Berries",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Pig",
+									"sid": 959652117201143,
+									"parameters": {
+										"object": "Berry"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 427329551479885,
+									"parameters": {
+										"variable": "Berries",
+										"value": "Berries +1"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Berry",
+									"sid": 582941431572507
+								}
+							],
+							"sid": 624907067582789
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 280681251214816
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "NBerries",
+									"sid": 629594738277302,
+									"parameters": {
+										"text": "Berries"
+									}
+								}
+							],
+							"sid": 669336434103676
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 206489840568913,
+									"parameters": {
+										"key": 70
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 300899800425303,
+									"parameters": {
+										"variable": "Berries",
+										"comparison": 5,
+										"value": "1"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Pig",
+									"sid": 451671395712853,
+									"parameters": {
+										"instance-variable": "Spitting"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Pig",
+									"sid": 659739134670551,
+									"parameters": {
+										"animation": "\"Spit\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Pig",
+									"sid": 374120795485769,
+									"parameters": {
+										"instance-variable": "Spitting",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 186570874476172
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-animation-finished",
+									"objectClass": "Pig",
+									"sid": 295360346381902,
+									"parameters": {
+										"animation": "\"Spit\""
+									}
+								},
+								{
+									"id": "is-mirrored",
+									"objectClass": "Pig",
+									"sid": 414014886521890
+								}
+							],
+							"actions": [
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Pig",
+									"sid": 871129331963400,
+									"parameters": {
+										"object": "BerryBullet",
+										"layer": "\"Objects\"",
+										"image-point": "1",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 487802302679871,
+									"parameters": {
+										"variable": "Berries",
+										"value": "Berries -1"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Pig",
+									"sid": 558899149659250,
+									"parameters": {
+										"instance-variable": "Spitting",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "BerryBullet",
+									"sid": 248417405105628,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "180"
+									}
+								}
+							],
+							"sid": 329268818258666
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-animation-finished",
+									"objectClass": "Pig",
+									"sid": 826316397080879,
+									"parameters": {
+										"animation": "\"Spit\""
+									}
+								},
+								{
+									"id": "is-mirrored",
+									"objectClass": "Pig",
+									"sid": 578801406534822,
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Pig",
+									"sid": 606316797458495,
+									"parameters": {
+										"object": "BerryBullet",
+										"layer": "\"Objects\"",
+										"image-point": "1",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 128847761666666,
+									"parameters": {
+										"variable": "Berries",
+										"value": "Berries -1"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Pig",
+									"sid": 516222899884860,
+									"parameters": {
+										"instance-variable": "Spitting",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 492880646266115
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "BerryBullet",
+									"sid": 546615181952468,
+									"parameters": {
+										"object": "Enemy"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "BerryBullet",
+									"sid": 786792523663556
+								},
+								{
+									"id": "flash",
+									"objectClass": "Enemy",
+									"sid": 453490727144705,
+									"behaviorType": "Flash",
+									"parameters": {
+										"on-time": "0.1",
+										"off-time": "0.1",
+										"duration": "1.0"
+									}
+								},
+								{
+									"id": "stop",
+									"objectClass": "Enemy",
+									"sid": 969534682072037,
+									"behaviorType": "MoveTo"
+								}
+							],
+							"sid": 123423865710873
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-flash-ended",
+									"objectClass": "Enemy",
+									"sid": 723982978439777,
+									"behaviorType": "Flash"
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Enemy",
+									"sid": 800461290729730
+								}
+							],
+							"sid": 640578631438455
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-on-screen",
+									"objectClass": "BerryBullet",
+									"sid": 765682473544837,
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "BerryBullet",
+									"sid": 674268128218272
+								}
+							],
+							"sid": 170644866856849
+						}
+					],
+					"sid": 695006809711315
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Corn",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Pig",
+									"sid": 282547697680040,
+									"parameters": {
+										"object": "Corn"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 346819635976250,
+									"parameters": {
+										"variable": "Corn",
+										"value": "Corn +1"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Corn",
+									"sid": 859058229049611
+								}
+							],
+							"sid": 946605517537243
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 228809442056001,
+									"parameters": {
+										"variable": "Corn",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "CornUI",
+									"sid": 540548754333092,
+									"parameters": {
+										"animation": "\"Still\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 981567264245724
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 714836784852010,
+									"parameters": {
+										"variable": "Corn",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "CornUI2",
+									"sid": 786612848061693,
+									"parameters": {
+										"animation": "\"Still\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 504302638292778
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 181693653331887,
+									"parameters": {
+										"variable": "Corn",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "CornUI3",
+									"sid": 332758283554933,
+									"parameters": {
+										"animation": "\"Still\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 862259880985183
+						}
+					],
+					"sid": 199951124799043
+				}
+			],
+			"sid": 595322170072635
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Enemies",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Enemy1",
+							"sid": 471525712247959,
+							"parameters": {
+								"object": "Point1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "Enemy1",
+							"sid": 988591950374363,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Point2",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Enemy1",
+							"sid": 942118687753055,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 813768503028775
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Enemy1",
+							"sid": 859023713143897,
+							"parameters": {
+								"object": "Point2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "Enemy1",
+							"sid": 419619706236912,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Point1",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Enemy1",
+							"sid": 541315934874255,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 656642014458532
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Enemy2",
+							"sid": 719315745899374,
+							"parameters": {
+								"object": "Point3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "Enemy2",
+							"sid": 234489607757322,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Point4",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Enemy2",
+							"sid": 333666619197768,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 724627178385841
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Enemy2",
+							"sid": 363531646333258,
+							"parameters": {
+								"object": "Point4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "Enemy2",
+							"sid": 273550721156617,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Point3",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Enemy2",
+							"sid": 851235204491517,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 483313755071620
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Enemy3",
+							"sid": 194572925942009,
+							"parameters": {
+								"object": "Point5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "Enemy3",
+							"sid": 821933330196312,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Point6",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Enemy3",
+							"sid": 866530861960183,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 869143023094785
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Enemy3",
+							"sid": 649727470741609,
+							"parameters": {
+								"object": "Point6"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "Enemy3",
+							"sid": 733723299607138,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Point5",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Enemy3",
+							"sid": 373997692885390,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 262046014962301
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Enemy5",
+							"sid": 769361597187067,
+							"parameters": {
+								"object": "Point9"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "Enemy5",
+							"sid": 181396117938053,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Point10",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Enemy5",
+							"sid": 818523585727016,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 869155723746553
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Enemy5",
+							"sid": 459018325172247,
+							"parameters": {
+								"object": "Point10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "Enemy5",
+							"sid": 553678573030643,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Point9",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Enemy5",
+							"sid": 401079576969094,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 284480467999465
+				}
+			],
+			"sid": 691981544566639
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Health",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Pig",
+							"sid": 969068185105113,
+							"parameters": {
+								"object": "Enemy"
+							}
+						},
+						{
+							"id": "is-flashing",
+							"objectClass": "Enemy",
+							"sid": 374442648205050,
+							"behaviorType": "Flash",
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 459977234686506,
+							"parameters": {
+								"variable": "Health",
+								"value": "Health-1"
+							}
+						},
+						{
+							"id": "flash",
+							"objectClass": "Pig",
+							"sid": 371157876059857,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.0"
+							}
+						}
+					],
+					"sid": 896225596285136
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 268781784769465,
+							"parameters": {
+								"variable": "Health",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Health3",
+							"sid": 199018035272418,
+							"parameters": {
+								"animation": "\"1\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Health2",
+							"sid": 385872006664708,
+							"parameters": {
+								"animation": "\"1\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Health",
+							"sid": 606933276327362,
+							"parameters": {
+								"animation": "\"1\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 755430230413885
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 640380889161721,
+							"parameters": {
+								"variable": "Health",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Health3",
+							"sid": 503772739491280,
+							"parameters": {
+								"animation": "\"0\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 131844643221642
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 880564461921543,
+							"parameters": {
+								"variable": "Health",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Health2",
+							"sid": 367356013080324,
+							"parameters": {
+								"animation": "\"0\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 847242115411188
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 712127819665775,
+							"parameters": {
+								"variable": "Health",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 368970659826247
+						}
+					],
+					"sid": 891963926812775
+				}
+			],
+			"sid": 701793016726343
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Pig",
+					"sid": 365823283191282,
+					"parameters": {
+						"object": "End"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Pig",
+					"sid": 467920811960641,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "EndLayout",
+					"sid": 850674610748110,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Completed",
+					"sid": 117368805478942,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 447788770566898
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 247848403451748,
+					"parameters": {
+						"variable": "Corn",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "EndLayout",
+					"sid": 809736595064443,
+					"parameters": {
+						"animation": "\"1\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 580946376994633
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 933422368055251,
+					"parameters": {
+						"variable": "Corn",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "EndLayout",
+					"sid": 556023249354121,
+					"parameters": {
+						"animation": "\"2\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 495514591139039
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 356799603940405,
+					"parameters": {
+						"variable": "Corn",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "EndLayout",
+					"sid": 817129269303707,
+					"parameters": {
+						"animation": "\"3\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 489772750033340
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 261557640374410,
+					"parameters": {
+						"variable": "Corn",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "EndLayout",
+					"sid": 641194396624425,
+					"parameters": {
+						"animation": "\"0\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 287020738344997
+		}
+	],
+	"sid": 962518363612352
+}

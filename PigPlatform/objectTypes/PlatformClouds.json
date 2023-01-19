@@ -1,0 +1,60 @@
+{
+	"name": "PlatformClouds",
+	"plugin-id": "Sprite",
+	"sid": 743704986381984,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "jumpthru",
+			"name": "Jumpthru",
+			"sid": 524793240846190
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 986983736468980
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 50,
+						"height": 20,
+						"originX": 0.46,
+						"originY": 0.95,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4052902,
+						"collisionPoly": {
+							"points": [
+								0.002512562814070351,
+								0.5421686746987949,
+								0.9849246231155782,
+								0.5421686746987954,
+								0.9824120603015079,
+								0.9759036144578315,
+								0.007537688442211055,
+								0.9698795180722893
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 808010268723717,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,63 @@
+{
+	"name": "BerryBullet",
+	"plugin-id": "Sprite",
+	"sid": 978727430979883,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 277330723876125
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 5,
+						"height": 4,
+						"originX": 0.6,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4550285,
+						"collisionPoly": {
+							"points": [
+								0.32,
+								0.41428571428571415,
+								0.44000000000000006,
+								0.3857142857142857,
+								0.5599999999999999,
+								0.3857142857142857,
+								0.72,
+								0.47142857142857153,
+								0.5599999999999999,
+								0.5285714285714285,
+								0.44000000000000006,
+								0.5857142857142856,
+								0.24000000000000005,
+								0.5285714285714285,
+								0.07999999999999999,
+								0.47142857142857153
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 820351746107159,
+				"name": "Still",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 2
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,63 @@
+{
+	"name": "Hay",
+	"plugin-id": "Sprite",
+	"sid": 407813354203380,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 691392865107489
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 29,
+						"height": 19,
+						"originX": 0.4827586206896552,
+						"originY": 0.8421052631578947,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5672965,
+						"collisionPoly": {
+							"points": [
+								0.2413793103448276,
+								0.3544891995173119,
+								0.46551722590386474,
+								0.15325076218359954,
+								0.7302230308795798,
+								0.2585139555089608,
+								0.7931034482758621,
+								0.5,
+								0.9219067246628578,
+								0.8204334601529242,
+								0.5050709939148071,
+								0.899380757712728,
+								0.16734279918864098,
+								0.7910216954470422,
+								0.2413793103448276,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 692257434096416,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
