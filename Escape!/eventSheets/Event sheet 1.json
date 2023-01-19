@@ -853,9 +853,9 @@
 								{
 									"id": "key-is-down",
 									"objectClass": "Keyboard",
-									"sid": 845639731882786,
+									"sid": 542341135261733,
 									"parameters": {
-										"key": 68
+										"key": 39
 									}
 								}
 							],
@@ -873,6 +873,41 @@
 								}
 							],
 							"sid": 831946310323781
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Prisoner",
+									"sid": 808479372508897,
+									"parameters": {
+										"object": "WashingMachine"
+									}
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 330474086095303,
+									"parameters": {
+										"key": 68
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "move-to-position",
+									"objectClass": "WashingMachine",
+									"sid": 320005137767937,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"x": "1657",
+										"y": "WashingMachine.Y",
+										"mode": "direct"
+									}
+								}
+							],
+							"sid": 901066345799423
 						}
 					],
 					"sid": 891053879018495
@@ -3360,16 +3395,16 @@
 							"conditions": [
 								{
 									"id": "is-on-layer",
-									"objectClass": "ToothBrush",
-									"sid": 337387355857290,
+									"objectClass": "RazorBlade",
+									"sid": 689479749770282,
 									"parameters": {
 										"layer": "\"GUI\""
 									}
 								},
 								{
 									"id": "is-on-layer",
-									"objectClass": "RazorBlade",
-									"sid": 133809729858646,
+									"objectClass": "ToothBrush",
+									"sid": 963068240419871,
 									"parameters": {
 										"layer": "\"GUI\""
 									}
@@ -3377,9 +3412,25 @@
 							],
 							"actions": [
 								{
+									"id": "set-visible",
+									"objectClass": "DragDrop",
+									"sid": 769984304761661,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "TutorialWindow",
+									"sid": 527912950984582,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
 									"id": "set-enabled",
 									"objectClass": "Prisoner",
-									"sid": 514270663333812,
+									"sid": 333356991094067,
 									"behaviorType": "8Direction",
 									"parameters": {
 										"state": "disabled"
@@ -3388,23 +3439,7 @@
 								{
 									"id": "stop-animation",
 									"objectClass": "Prisoner",
-									"sid": 671101385070058
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "DragDrop",
-									"sid": 751972837207416,
-									"parameters": {
-										"visibility": "visible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "TutorialWindow",
-									"sid": 767388920275636,
-									"parameters": {
-										"visibility": "visible"
-									}
+									"sid": 958615642368758
 								}
 							],
 							"sid": 317286180519949
@@ -3415,14 +3450,14 @@
 								{
 									"id": "else",
 									"objectClass": "System",
-									"sid": 658195214648429
+									"sid": 807653815449016
 								}
 							],
 							"actions": [
 								{
 									"id": "set-visible",
 									"objectClass": "DragDrop",
-									"sid": 790479922022780,
+									"sid": 429676965707389,
 									"parameters": {
 										"visibility": "invisible"
 									}
@@ -3430,13 +3465,13 @@
 								{
 									"id": "set-visible",
 									"objectClass": "TutorialWindow",
-									"sid": 176875269326620,
+									"sid": 651559732329645,
 									"parameters": {
 										"visibility": "invisible"
 									}
 								}
 							],
-							"sid": 750014698910165
+							"sid": 597079105321506
 						},
 						{
 							"eventType": "block",
@@ -3494,10 +3529,6 @@
 										"off-time": "0.1",
 										"duration": "1"
 									}
-								},
-								{
-									"callFunction": "CheckOccupiedPin",
-									"sid": 458327369149523
 								}
 							],
 							"sid": 982119028716941
@@ -3558,10 +3589,6 @@
 										"off-time": "0.1",
 										"duration": "2"
 									}
-								},
-								{
-									"callFunction": "CheckOccupiedPin",
-									"sid": 444982243351120
 								}
 							],
 							"sid": 233176436955446
@@ -4206,8 +4233,8 @@
 							],
 							"actions": [
 								{
-									"callFunction": "CheckOccupiedRazor",
-									"sid": 486100127443811
+									"callFunction": "CheckOccupiedToothBrush",
+									"sid": 311304148025835
 								}
 							],
 							"sid": 383306835854738
@@ -4286,31 +4313,6 @@
 								}
 							],
 							"sid": 554888054053371
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-on-layer",
-									"objectClass": "ToothBrush",
-									"sid": 862066718089321,
-									"parameters": {
-										"layer": "\"GUI\""
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "ToothBrush",
-									"sid": 933303503974665,
-									"parameters": {
-										"instance-variable": "IsAvatarNear",
-										"value": "false"
-									}
-								}
-							],
-							"sid": 530353402266371
 						},
 						{
 							"eventType": "block",
@@ -4397,16 +4399,16 @@
 							],
 							"actions": [
 								{
+									"callFunction": "CheckOccupiedToothBrush",
+									"sid": 677690198154365
+								},
+								{
 									"id": "move-to-layer",
 									"objectClass": "ToothBrush",
-									"sid": 645036276934236,
+									"sid": 788625219845597,
 									"parameters": {
 										"layer": "\"GUI\""
 									}
-								},
-								{
-									"callFunction": "CheckOccupiedToothBrush",
-									"sid": 947153728551276
 								},
 								{
 									"id": "destroy",
@@ -6995,9 +6997,9 @@
 												{
 													"id": "set-animation",
 													"objectClass": "Guard5",
-													"sid": 243075294739911,
+													"sid": 268233148756694,
 													"parameters": {
-														"animation": "\"IdleD\"",
+														"animation": "\"IdleU\"",
 														"from": "beginning"
 													}
 												},
@@ -7025,9 +7027,9 @@
 												{
 													"id": "set-animation",
 													"objectClass": "Guard5",
-													"sid": 624168228999608,
+													"sid": 307065917021503,
 													"parameters": {
-														"animation": "\"IdleU\"",
+														"animation": "\"IdleD\"",
 														"from": "beginning"
 													}
 												},
