@@ -32,6 +32,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.5714285714285714,
+								"y": 0
+							}
+						],
 						"duration": 1
 					},
 					{
@@ -56,6 +63,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.5714285714285714,
+								"y": 0
+							}
+						],
 						"duration": 1
 					},
 					{
@@ -80,6 +94,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.5714285714285714,
+								"y": 0
+							}
+						],
 						"duration": 1
 					},
 					{
@@ -104,6 +125,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.5714285714285714,
+								"y": 0
+							}
+						],
 						"duration": 1
 					}
 				],
@@ -121,7 +149,7 @@
 						"width": 54,
 						"height": 56,
 						"originX": 0.7592592592592593,
-						"originY": 0.9821428571428571,
+						"originY": 0.9464285714285714,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -139,13 +167,20 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 1.1111111111111112,
+								"y": 0.9821428571428571
+							}
+						],
 						"duration": 1
 					},
 					{
 						"width": 48,
 						"height": 54,
-						"originX": 0.75,
-						"originY": 0.9814814814814815,
+						"originX": 0.7592592592592593,
+						"originY": 0.9464285714285714,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -163,13 +198,20 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 1.1041666666666667,
+								"y": 0.9814814814814815
+							}
+						],
 						"duration": 1
 					},
 					{
 						"width": 35,
 						"height": 52,
 						"originX": 0.5428571428571428,
-						"originY": 0.9807692307692307,
+						"originY": 0.9230769230769231,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -187,13 +229,20 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 1.1428571428571428,
+								"y": 0.9615384615384616
+							}
+						],
 						"duration": 1
 					},
 					{
 						"width": 71,
 						"height": 58,
-						"originX": 0.29577464788732394,
-						"originY": 0.7758620689655172,
+						"originX": 0.30985915492957744,
+						"originY": 0.7241379310344828,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -205,12 +254,19 @@
 								1,
 								0,
 								1,
-								0.7438732531361473,
+								0.6847599150603121,
 								0,
-								0.757644692203585
+								0.6837530665878213
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.6901408450704225,
+								"y": 0.7586206896551724
+							}
+						],
 						"duration": 1
 					}
 				],

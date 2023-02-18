@@ -1,5 +1,5 @@
 {
-	"name": "MoveLeft",
+	"name": "Bounce",
 	"plugin-id": "Sprite",
 	"sid": 965580926154239,
 	"isGlobal": false,
@@ -18,7 +18,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4347612,
+						"imageSpriteId": 7858624,
 						"collisionPoly": {
 							"points": [
 								1,

@@ -27,6 +27,9 @@
 	],
 	"effectTypes": [],
 	"members": [
-		"Gem1"
+		"Gem1",
+		"Gem2",
+		"Gem3",
+		"Gem4"
 	]
 }

@@ -1,0 +1,148 @@
+{
+	"name": "SpellIcon",
+	"plugin-id": "Sprite",
+	"sid": 655530080063813,
+	"isGlobal": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 27,
+						"height": 28,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4915004,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								0,
+								0,
+								1,
+								0,
+								0,
+								0.9642857142857143,
+								0,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 27,
+						"height": 28,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1809723,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								0,
+								0,
+								1,
+								0,
+								0,
+								0.9642857142857143,
+								0,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 304934233321983,
+				"name": "LightSpell",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 27,
+						"height": 28,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4613361,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								0,
+								0,
+								1,
+								0,
+								0,
+								1,
+								0,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 27,
+						"height": 28,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7339260,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								0,
+								0,
+								1,
+								0,
+								0,
+								1,
+								0,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 648350686078868,
+				"name": "HeavySpell",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"name": "IconsUI",
+	"plugin-id": "Sprite",
+	"sid": 119290453001608,
+	"instanceVariables": [
+		{
+			"name": "Active",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 731805102656194
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"PotionIconUI",
+		"SpellIcon",
+		"SummonIcon"
+	]
+}

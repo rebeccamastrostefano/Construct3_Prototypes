@@ -14,6 +14,10 @@
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
-		"LightSpellIcon"
+		"LightSpellIcon",
+		"SpellIcon",
+		"HeavySpell",
+		"FollowBall",
+		"ShiedlSPell"
 	]
 }

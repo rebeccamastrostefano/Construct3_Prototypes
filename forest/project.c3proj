@@ -64,6 +64,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "LOS",
 			"name": "Line of sight",
 			"author": "Scirra",
@@ -132,17 +139,14 @@
 			"Hero",
 			"Keyboard",
 			"ForestBackground",
-			"Hitbox",
 			"Mouse",
 			"HealthBar",
-			"Hit",
 			"ManaBar",
 			"UIInventory",
 			"UIPotions",
 			"SoulsCount",
 			"GemAltar1",
 			"E",
-			"Gem1",
 			"Void",
 			"House",
 			"Lantern",
@@ -156,10 +160,16 @@
 			"SoulsIconMain",
 			"Flag",
 			"Skeleton",
-			"MoveRight",
-			"MoveLeft",
+			"Bounce",
 			"Jump",
-			"Hound"
+			"Hound",
+			"HoundHealtybar",
+			"SkeletonHealtybar",
+			"GemAltar2",
+			"GemAltar3",
+			"GemAltar4",
+			"Nimm",
+			"NimmHealth"
 		],
 		"subfolders": [
 			{
@@ -169,16 +179,28 @@
 					"Slots",
 					"Tag",
 					"ManaIcon",
-					"HealthIcon"
+					"HealthIcon",
+					"PotionIconUI"
 				],
 				"subfolders": [],
 				"name": "Inventory"
 			},
 			{
-				"items": [
-					"LightSpellIcon"
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"SpellIcon",
+							"HeavySpell",
+							"FollowBall",
+							"SummonIcon",
+							"LightSpellIcon",
+							"ShiedlSPell"
+						],
+						"subfolders": [],
+						"name": "Spells"
+					}
 				],
-				"subfolders": [],
 				"name": "Spells"
 			},
 			{
@@ -212,6 +234,26 @@
 				],
 				"subfolders": [],
 				"name": "Extract"
+			},
+			{
+				"items": [
+					"HitMelee",
+					"Hitbox",
+					"HitHero",
+					"HitboxNimm"
+				],
+				"subfolders": [],
+				"name": "HitBox"
+			},
+			{
+				"items": [
+					"Gem1",
+					"Gem2",
+					"Gem3",
+					"Gem4"
+				],
+				"subfolders": [],
+				"name": "Gems"
 			}
 		]
 	},
@@ -224,7 +266,8 @@
 			"ExtractFam",
 			"Gems",
 			"Spells",
-			"Enemy"
+			"Enemy",
+			"IconsUI"
 		],
 		"subfolders": []
 	},

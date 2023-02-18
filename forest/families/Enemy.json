@@ -2,7 +2,29 @@
 	"name": "Enemy",
 	"plugin-id": "Sprite",
 	"sid": 374855505346221,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "State",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 108215302710647
+		},
+		{
+			"name": "HealthEenemy",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 813202282732519
+		},
+		{
+			"name": "SoulsDrop",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 747933929950497
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Platform",
@@ -23,6 +45,11 @@
 			"behaviorId": "LOS",
 			"name": "LineOfSight",
 			"sid": 521384918358384
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 146555365316703
 		}
 	],
 	"effectTypes": [],
