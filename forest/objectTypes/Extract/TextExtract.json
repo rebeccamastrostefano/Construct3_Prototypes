@@ -1,0 +1,17 @@
+{
+	"name": "TextExtract",
+	"plugin-id": "Text",
+	"sid": 686350575896519,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "TextIndex",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 704834806760594
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

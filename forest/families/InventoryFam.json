@@ -1,0 +1,14 @@
+{
+	"name": "InventoryFam",
+	"plugin-id": "Sprite",
+	"sid": 502719236205126,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Slots",
+		"Inventory",
+		"Tag",
+		"TagExtract"
+	]
+}

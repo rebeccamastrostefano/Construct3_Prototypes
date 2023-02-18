@@ -1,0 +1,45 @@
+{
+	"name": "Inventory",
+	"plugin-id": "Sprite",
+	"sid": 221586830522619,
+	"isGlobal": true,
+	"instanceVariables": [
+		{
+			"name": "FilledSlots",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 153137759247290
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 206,
+						"height": 142,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3640719,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 152167499561739,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

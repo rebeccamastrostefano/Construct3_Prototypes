@@ -1,0 +1,33 @@
+{
+	"name": "Enemy",
+	"plugin-id": "Sprite",
+	"sid": 374855505346221,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 528839949641922
+		},
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 687588118155301
+		},
+		{
+			"behaviorId": "jumpthru",
+			"name": "Jumpthru",
+			"sid": 709857404653496
+		},
+		{
+			"behaviorId": "LOS",
+			"name": "LineOfSight",
+			"sid": 521384918358384
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"Skeleton",
+		"Hound"
+	]
+}

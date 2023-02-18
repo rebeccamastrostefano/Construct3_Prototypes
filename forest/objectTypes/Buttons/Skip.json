@@ -1,0 +1,16 @@
+{
+	"name": "Skip",
+	"plugin-id": "Button",
+	"sid": 827250563162688,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "DialogIndex",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 536379887628257
+		}
+	],
+	"behaviorTypes": []
+}

@@ -1,0 +1,32 @@
+{
+	"name": "Gems",
+	"plugin-id": "Sprite",
+	"sid": 997722108844743,
+	"instanceVariables": [
+		{
+			"name": "OnExtract",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 428667803718528
+		},
+		{
+			"name": "Index",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 892537800879612
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 125674462078205
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"Gem1"
+	]
+}

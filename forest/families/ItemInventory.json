@@ -1,0 +1,27 @@
+{
+	"name": "ItemInventory",
+	"plugin-id": "Sprite",
+	"sid": 760218778243905,
+	"instanceVariables": [
+		{
+			"name": "Picked",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 894228157027014
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 607773815247532
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"Gem1",
+		"HealthIcon",
+		"ManaIcon"
+	]
+}
