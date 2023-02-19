@@ -1,0 +1,15 @@
+{
+	"name": "UI",
+	"plugin-id": "Sprite",
+	"sid": 928027355192654,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"HealthBar",
+		"ManaBar",
+		"UIInventory",
+		"UIPotions",
+		"SoulsIconMain"
+	]
+}

@@ -2,7 +2,7 @@
 	"name": "ShiedlSPell",
 	"plugin-id": "Sprite",
 	"sid": 387420099128110,
-	"isGlobal": false,
+	"isGlobal": true,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],

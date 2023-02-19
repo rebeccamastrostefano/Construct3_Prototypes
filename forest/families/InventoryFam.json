@@ -3,7 +3,13 @@
 	"plugin-id": "Sprite",
 	"sid": 502719236205126,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 875762237993592
+		}
+	],
 	"effectTypes": [],
 	"members": [
 		"Slots",

@@ -154,11 +154,7 @@
 			"Keyboard",
 			"ForestBackground",
 			"Mouse",
-			"HealthBar",
 			"ManaBar",
-			"UIInventory",
-			"UIPotions",
-			"SoulsCount",
 			"GemAltar1",
 			"E",
 			"Void",
@@ -171,7 +167,6 @@
 			"DoorHouseInt",
 			"DialogBox",
 			"Dialog",
-			"SoulsIconMain",
 			"Flag",
 			"Skeleton",
 			"Bounce",
@@ -271,7 +266,9 @@
 					"HitboxNimm",
 					"HitLight",
 					"HitHeavy",
-					"HitboxShield"
+					"HitboxShield",
+					"HitHeroLaser",
+					"HitHeroLaser2"
 				],
 				"subfolders": [],
 				"name": "HitBox"
@@ -285,6 +282,17 @@
 				],
 				"subfolders": [],
 				"name": "Gems"
+			},
+			{
+				"items": [
+					"HealthBar",
+					"UIInventory",
+					"UIPotions",
+					"SoulsCount",
+					"SoulsIconMain"
+				],
+				"subfolders": [],
+				"name": "UI"
 			}
 		]
 	},
@@ -299,7 +307,8 @@
 			"Spells",
 			"Enemy",
 			"IconsUI",
-			"EnemyFind"
+			"EnemyFind",
+			"UI"
 		],
 		"subfolders": []
 	},

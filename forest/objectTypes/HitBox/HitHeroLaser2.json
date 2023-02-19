@@ -1,8 +1,8 @@
 {
-	"name": "FollowBall",
+	"name": "HitHeroLaser2",
 	"plugin-id": "Sprite",
-	"sid": 669331127059073,
-	"isGlobal": true,
+	"sid": 934293460156185,
+	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
@@ -11,35 +11,19 @@
 			{
 				"frames": [
 					{
-						"width": 24,
-						"height": 22,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 250,
+						"height": 250,
+						"originX": 1.004,
+						"originY": 0.496,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1922772,
-						"collisionPoly": {
-							"points": [
-								0,
-								0,
-								1,
-								0,
-								0,
-								0,
-								1,
-								0,
-								0,
-								1,
-								0,
-								0
-							]
-						},
+						"imageSpriteId": 7650102,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 360290302574397,
+				"sid": 371602603662069,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

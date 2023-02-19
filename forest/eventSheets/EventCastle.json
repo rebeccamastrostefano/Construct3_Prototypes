@@ -131,6 +131,45 @@
 					"parameters": {
 						"visibility": "invisible"
 					}
+				},
+				{
+					"id": "move-to-layer",
+					"objectClass": "Hitbox",
+					"sid": 485098493379848,
+					"parameters": {
+						"layer": "\"Hero\""
+					}
+				},
+				{
+					"id": "move-to-layer",
+					"objectClass": "Hero",
+					"sid": 463667756530328,
+					"parameters": {
+						"layer": "\"Hero\""
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "Items",
+					"sid": 574244084986197
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "ItemInventory",
+					"sid": 425904971921788
+				},
+				{
+					"id": "move-to-layer",
+					"objectClass": "IconsUI",
+					"sid": 244916927185229,
+					"parameters": {
+						"layer": "\"UI\""
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "IconsUI",
+					"sid": 746652892368754
 				}
 			],
 			"sid": 294126701831520
@@ -384,6 +423,14 @@
 								"y": "Spot.y",
 								"create-hierarchy": false,
 								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "FireColumn",
+							"sid": 239842466132861,
+							"parameters": {
+								"collisions": "disabled"
 							}
 						}
 					],
@@ -1848,6 +1895,11 @@
 								"comparison": 0,
 								"value": "0"
 							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 566492663549007
 						}
 					],
 					"actions": [
@@ -1916,10 +1968,10 @@
 								{
 									"id": "add-to-eventvar",
 									"objectClass": "System",
-									"sid": 957126646158620,
+									"sid": 225328363533796,
 									"parameters": {
 										"variable": "Souls",
-										"value": "50"
+										"value": "200"
 									}
 								},
 								{

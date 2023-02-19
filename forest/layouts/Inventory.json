@@ -52,7 +52,11 @@
 					"instanceVariables": {
 						"FilledSlots": 0
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 128.09244124343604,
 						"y": 47.21190691053755,
@@ -129,7 +133,11 @@
 						"Filled": false,
 						"Index": 0
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 182.09244124343604,
 						"y": 137.21190691053755,
@@ -161,7 +169,11 @@
 						"Filled": false,
 						"Index": 1
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 236.09244124343604,
 						"y": 137.21190691053755,
@@ -193,7 +205,11 @@
 						"Filled": false,
 						"Index": 2
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 290.09244124343604,
 						"y": 137.21190691053755,
@@ -225,7 +241,11 @@
 						"Filled": false,
 						"Index": 5
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 290.09244124343604,
 						"y": 191.21190691053755,
@@ -257,7 +277,11 @@
 						"Filled": false,
 						"Index": 4
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 236.09244124343604,
 						"y": 191.21190691053755,
@@ -289,7 +313,11 @@
 						"Filled": false,
 						"Index": 3
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 182.09244124343604,
 						"y": 191.21190691053755,
@@ -321,7 +349,11 @@
 						"Filled": false,
 						"Index": 6
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 182.09244124343604,
 						"y": 245.21190691053755,
@@ -353,7 +385,11 @@
 						"Filled": false,
 						"Index": 7
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 236.09244124343604,
 						"y": 245.21190691053755,
@@ -385,7 +421,11 @@
 						"Filled": false,
 						"Index": 8
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 290.09244124343604,
 						"y": 245.21190691053755,
@@ -414,7 +454,11 @@
 					},
 					"uid": 58,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 202.01585628856165,
 						"y": 81.21191131379078,
@@ -770,7 +814,7 @@
 					},
 					"uid": 139,
 					"instanceVariables": {
-						"Picked": true,
+						"Picked": false,
 						"Index": 3
 					},
 					"behaviors": {

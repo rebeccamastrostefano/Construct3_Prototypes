@@ -130,8 +130,8 @@
 					{
 						"width": 88,
 						"height": 17,
-						"originX": -1.3636363636363635,
-						"originY": -88.11764705882354,
+						"originX": 0,
+						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -169,8 +169,8 @@
 					{
 						"width": 88,
 						"height": 17,
-						"originX": -1.3750000000000002,
-						"originY": -86.05882352941177,
+						"originX": 0,
+						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -208,8 +208,8 @@
 					{
 						"width": 88,
 						"height": 17,
-						"originX": -0.2727272727272727,
-						"originY": -94.3529411764706,
+						"originX": 0,
+						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,

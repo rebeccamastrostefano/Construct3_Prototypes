@@ -250,8 +250,8 @@
 						"imagePoints": [
 							{
 								"name": "Image Point 1",
-								"x": 0.5,
-								"y": 0.5
+								"x": 0.64,
+								"y": 0.20833333333333334
 							}
 						],
 						"duration": 1
@@ -269,8 +269,8 @@
 						"imagePoints": [
 							{
 								"name": "Image Point 1",
-								"x": 0.06933333333333333,
-								"y": 0.54
+								"x": 0.08533333333333333,
+								"y": 0.22
 							}
 						],
 						"duration": 20
@@ -654,7 +654,7 @@
 						"width": 46,
 						"height": 64,
 						"originX": 0.5,
-						"originY": 0.8958333333333334,
+						"originY": 0.71875,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -672,8 +672,8 @@
 					{
 						"width": 49,
 						"height": 61,
-						"originX": 0.5,
-						"originY": 0.8958333333333334,
+						"originX": 0.5102040816326531,
+						"originY": 0.7540983606557377,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,

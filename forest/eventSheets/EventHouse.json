@@ -419,6 +419,11 @@
 										"x": "Exit.X -30",
 										"y": "10"
 									}
+								},
+								{
+									"id": "move-to-bottom",
+									"objectClass": "Inventory",
+									"sid": 939203719969743
 								}
 							],
 							"sid": 757947459920693
@@ -1318,6 +1323,16 @@
 									"id": "is-visible",
 									"objectClass": "ExtractUI",
 									"sid": 340608679096961
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "TextExtract",
+									"sid": 752164806017888,
+									"parameters": {
+										"instance-variable": "TextIndex",
+										"comparison": 0,
+										"value": "\"Extract\""
+									}
 								}
 							],
 							"actions": [
@@ -1328,6 +1343,14 @@
 									"behaviorType": "DragDrop",
 									"parameters": {
 										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "TextExtract",
+									"sid": 973497815152261,
+									"parameters": {
+										"text": "\"15\""
 									}
 								}
 							],
@@ -1365,13 +1388,24 @@
 							"conditions": [
 								{
 									"id": "on-drop",
-									"objectClass": "Gems",
-									"sid": 861034158835984,
+									"objectClass": "Gem1",
+									"sid": 614157084281248,
 									"behaviorType": "DragDrop"
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 937284731365556,
+									"disabled": true,
+									"parameters": {
+										"variable": "Souls",
+										"comparison": 5,
+										"value": "15"
+									}
 								}
 							],
 							"actions": [],
-							"sid": 724789576096262,
+							"sid": 456215284452162,
 							"children": [
 								{
 									"eventType": "block",
@@ -1379,17 +1413,17 @@
 										{
 											"id": "cursor-is-over-object",
 											"objectClass": "Mouse",
-											"sid": 474629218153412,
+											"sid": 501368006379667,
 											"parameters": {
 												"object": "ExtractGemSpot"
 											}
 										},
 										{
-											"id": "pick-children",
-											"objectClass": "Slots",
-											"sid": 157281907000038,
+											"id": "pick-parent",
+											"objectClass": "Gem1",
+											"sid": 784448635540673,
 											"parameters": {
-												"child": "Gems",
+												"parent": "Slots",
 												"which": "own"
 											}
 										}
@@ -1397,8 +1431,8 @@
 									"actions": [
 										{
 											"id": "set-position-to-another-object",
-											"objectClass": "Gems",
-											"sid": 403565832661777,
+											"objectClass": "Gem1",
+											"sid": 822808826650565,
 											"parameters": {
 												"object": "ExtractGemSpot",
 												"image-point-optional": "0"
@@ -1407,15 +1441,15 @@
 										{
 											"id": "wait",
 											"objectClass": "System",
-											"sid": 849484695437172,
+											"sid": 868801799227265,
 											"parameters": {
 												"seconds": "0.2"
 											}
 										},
 										{
 											"id": "set-boolean-instvar",
-											"objectClass": "Gems",
-											"sid": 319922117062497,
+											"objectClass": "Gem1",
+											"sid": 992093310422490,
 											"parameters": {
 												"instance-variable": "OnExtract",
 												"value": "true"
@@ -1424,14 +1458,14 @@
 										{
 											"id": "set-boolean-instvar",
 											"objectClass": "Slots",
-											"sid": 422058561457104,
+											"sid": 412138054873208,
 											"parameters": {
 												"instance-variable": "Filled",
 												"value": "false"
 											}
 										}
 									],
-									"sid": 668614956165638
+									"sid": 586050265329097
 								},
 								{
 									"eventType": "block",
@@ -1439,24 +1473,23 @@
 										{
 											"id": "else",
 											"objectClass": "System",
-											"sid": 468958531232587
+											"sid": 196366246321945
 										},
 										{
-											"id": "compare-instance-variable",
-											"objectClass": "Slots",
-											"sid": 493999870049535,
+											"id": "pick-parent",
+											"objectClass": "Gem1",
+											"sid": 392540657733517,
 											"parameters": {
-												"instance-variable": "Index",
-												"comparison": 0,
-												"value": "Inventory.FilledSlots"
+												"parent": "Slots",
+												"which": "own"
 											}
 										}
 									],
 									"actions": [
 										{
 											"id": "set-position-to-another-object",
-											"objectClass": "Gems",
-											"sid": 347154588296679,
+											"objectClass": "Gem1",
+											"sid": 538897302115066,
 											"parameters": {
 												"object": "Slots",
 												"image-point-optional": "0"
@@ -1464,15 +1497,15 @@
 										},
 										{
 											"id": "set-boolean-instvar",
-											"objectClass": "Gems",
-											"sid": 253672643477492,
+											"objectClass": "Gem1",
+											"sid": 408595949354317,
 											"parameters": {
 												"instance-variable": "OnExtract",
 												"value": "false"
 											}
 										}
 									],
-									"sid": 644136592644148
+									"sid": 710876622473295
 								}
 							]
 						},
@@ -1486,16 +1519,6 @@
 									"parameters": {
 										"instance-variable": "OnExtract"
 									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "TextExtract",
-									"sid": 494580240287739,
-									"parameters": {
-										"instance-variable": "TextIndex",
-										"comparison": 0,
-										"value": "\"Extract\""
-									}
 								}
 							],
 							"actions": [
@@ -1508,14 +1531,6 @@
 										"layer": "\"Extract\"",
 										"image-point": "1",
 										"create-hierarchy": false
-									}
-								},
-								{
-									"id": "set-text",
-									"objectClass": "TextExtract",
-									"sid": 685458341184775,
-									"parameters": {
-										"text": "\"30\""
 									}
 								}
 							],
@@ -1547,17 +1562,6 @@
 									"parameters": {
 										"instance-variable": "OnExtract"
 									}
-								},
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 579552840675798,
-									"disabled": true,
-									"parameters": {
-										"variable": "Souls",
-										"comparison": 5,
-										"value": "30"
-									}
 								}
 							],
 							"actions": [],
@@ -1567,21 +1571,20 @@
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "compare-instance-variable",
-											"objectClass": "Slots",
-											"sid": 114910219303411,
-											"parameters": {
-												"instance-variable": "Index",
-												"comparison": 0,
-												"value": "Inventory.FilledSlots"
-											}
-										},
-										{
 											"id": "is-boolean-instance-variable-set",
 											"objectClass": "Gem1",
 											"sid": 830119924318442,
 											"parameters": {
 												"instance-variable": "OnExtract"
+											}
+										},
+										{
+											"id": "pick-parent",
+											"objectClass": "Gem1",
+											"sid": 606162953615533,
+											"parameters": {
+												"parent": "Slots",
+												"which": "own"
 											}
 										}
 									],
@@ -1643,15 +1646,6 @@
 											}
 										},
 										{
-											"id": "add-to-instvar",
-											"objectClass": "Inventory",
-											"sid": 481823944194647,
-											"parameters": {
-												"instance-variable": "FilledSlots",
-												"value": "1"
-											}
-										},
-										{
 											"id": "set-boolean-instvar",
 											"objectClass": "Slots",
 											"sid": 773465995041189,
@@ -1687,21 +1681,137 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "on-drop",
+									"objectClass": "Gem2",
+									"sid": 894815581256689,
+									"behaviorType": "DragDrop"
+								}
+							],
+							"actions": [],
+							"sid": 432823944170110,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "cursor-is-over-object",
+											"objectClass": "Mouse",
+											"sid": 345131075037878,
+											"parameters": {
+												"object": "ExtractGemSpot"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 397312893082852,
+											"disabled": true,
+											"parameters": {
+												"variable": "Souls",
+												"comparison": 5,
+												"value": "15"
+											}
+										},
+										{
+											"id": "pick-parent",
+											"objectClass": "Gem2",
+											"sid": 221837092334394,
+											"parameters": {
+												"parent": "Slots",
+												"which": "own"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position-to-another-object",
+											"objectClass": "Gem2",
+											"sid": 689494845734677,
+											"parameters": {
+												"object": "ExtractGemSpot",
+												"image-point-optional": "0"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 108980345263482,
+											"parameters": {
+												"seconds": "0.2"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Gem2",
+											"sid": 924042799020373,
+											"parameters": {
+												"instance-variable": "OnExtract",
+												"value": "true"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Slots",
+											"sid": 268372779993466,
+											"parameters": {
+												"instance-variable": "Filled",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 527531105156967
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 484569945951056
+										},
+										{
+											"id": "pick-parent",
+											"objectClass": "Gem2",
+											"sid": 583884706184247,
+											"parameters": {
+												"parent": "Slots",
+												"which": "own"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position-to-another-object",
+											"objectClass": "Gem2",
+											"sid": 678577732708849,
+											"parameters": {
+												"object": "Slots",
+												"image-point-optional": "0"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Gem2",
+											"sid": 190575831072437,
+											"parameters": {
+												"instance-variable": "OnExtract",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 118202457780959
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
 									"id": "is-boolean-instance-variable-set",
 									"objectClass": "Gem2",
 									"sid": 229045176537704,
 									"parameters": {
 										"instance-variable": "OnExtract"
-									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "TextExtract",
-									"sid": 365332406170211,
-									"parameters": {
-										"instance-variable": "TextIndex",
-										"comparison": 0,
-										"value": "\"Extract\""
 									}
 								}
 							],
@@ -1715,14 +1825,6 @@
 										"layer": "\"Extract\"",
 										"image-point": "1",
 										"create-hierarchy": false
-									}
-								},
-								{
-									"id": "set-text",
-									"objectClass": "TextExtract",
-									"sid": 395557509582656,
-									"parameters": {
-										"text": "\"30\""
 									}
 								}
 							],
@@ -1754,17 +1856,6 @@
 									"parameters": {
 										"instance-variable": "OnExtract"
 									}
-								},
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 359710830380683,
-									"disabled": true,
-									"parameters": {
-										"variable": "Souls",
-										"comparison": 5,
-										"value": "30"
-									}
 								}
 							],
 							"actions": [],
@@ -1774,21 +1865,20 @@
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "compare-instance-variable",
-											"objectClass": "Slots",
-											"sid": 290450142752339,
-											"parameters": {
-												"instance-variable": "Index",
-												"comparison": 0,
-												"value": "Inventory.FilledSlots"
-											}
-										},
-										{
 											"id": "is-boolean-instance-variable-set",
 											"objectClass": "Gem2",
 											"sid": 487279115747833,
 											"parameters": {
 												"instance-variable": "OnExtract"
+											}
+										},
+										{
+											"id": "pick-parent",
+											"objectClass": "Gem2",
+											"sid": 210619720497140,
+											"parameters": {
+												"parent": "Slots",
+												"which": "own"
 											}
 										}
 									],
@@ -1850,15 +1940,6 @@
 											}
 										},
 										{
-											"id": "add-to-instvar",
-											"objectClass": "Inventory",
-											"sid": 903035853193827,
-											"parameters": {
-												"instance-variable": "FilledSlots",
-												"value": "1"
-											}
-										},
-										{
 											"id": "set-boolean-instvar",
 											"objectClass": "Slots",
 											"sid": 995516268743935,
@@ -1894,21 +1975,137 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "on-drop",
+									"objectClass": "Gem3",
+									"sid": 725168948654830,
+									"behaviorType": "DragDrop"
+								}
+							],
+							"actions": [],
+							"sid": 150699750691298,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "cursor-is-over-object",
+											"objectClass": "Mouse",
+											"sid": 753418177739582,
+											"parameters": {
+												"object": "ExtractGemSpot"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 978598340403859,
+											"disabled": true,
+											"parameters": {
+												"variable": "Souls",
+												"comparison": 5,
+												"value": "15"
+											}
+										},
+										{
+											"id": "pick-parent",
+											"objectClass": "Gem3",
+											"sid": 684129943903417,
+											"parameters": {
+												"parent": "Slots",
+												"which": "own"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position-to-another-object",
+											"objectClass": "Gem3",
+											"sid": 124757751037594,
+											"parameters": {
+												"object": "ExtractGemSpot",
+												"image-point-optional": "0"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 988009038030198,
+											"parameters": {
+												"seconds": "0.2"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Gem3",
+											"sid": 604590792363308,
+											"parameters": {
+												"instance-variable": "OnExtract",
+												"value": "true"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Slots",
+											"sid": 521759007390451,
+											"parameters": {
+												"instance-variable": "Filled",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 604033454852050
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 259025701249145
+										},
+										{
+											"id": "pick-parent",
+											"objectClass": "Gem3",
+											"sid": 254720994523649,
+											"parameters": {
+												"parent": "Slots",
+												"which": "own"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position-to-another-object",
+											"objectClass": "Gem3",
+											"sid": 970612287611127,
+											"parameters": {
+												"object": "Slots",
+												"image-point-optional": "0"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Gem3",
+											"sid": 469238862311593,
+											"parameters": {
+												"instance-variable": "OnExtract",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 257445131696961
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
 									"id": "is-boolean-instance-variable-set",
 									"objectClass": "Gem3",
 									"sid": 231240692566396,
 									"parameters": {
 										"instance-variable": "OnExtract"
-									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "TextExtract",
-									"sid": 959893870022978,
-									"parameters": {
-										"instance-variable": "TextIndex",
-										"comparison": 0,
-										"value": "\"Extract\""
 									}
 								}
 							],
@@ -1922,14 +2119,6 @@
 										"layer": "\"Extract\"",
 										"image-point": "1",
 										"create-hierarchy": false
-									}
-								},
-								{
-									"id": "set-text",
-									"objectClass": "TextExtract",
-									"sid": 508720581163463,
-									"parameters": {
-										"text": "\"30\""
 									}
 								}
 							],
@@ -1961,17 +2150,6 @@
 									"parameters": {
 										"instance-variable": "OnExtract"
 									}
-								},
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 595001543240365,
-									"disabled": true,
-									"parameters": {
-										"variable": "Souls",
-										"comparison": 5,
-										"value": "30"
-									}
 								}
 							],
 							"actions": [],
@@ -1981,21 +2159,20 @@
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "compare-instance-variable",
-											"objectClass": "Slots",
-											"sid": 859279216427899,
-											"parameters": {
-												"instance-variable": "Index",
-												"comparison": 0,
-												"value": "Inventory.FilledSlots"
-											}
-										},
-										{
 											"id": "is-boolean-instance-variable-set",
 											"objectClass": "Gem3",
 											"sid": 316259186654337,
 											"parameters": {
 												"instance-variable": "OnExtract"
+											}
+										},
+										{
+											"id": "pick-parent",
+											"objectClass": "Gem3",
+											"sid": 357288999737688,
+											"parameters": {
+												"parent": "Slots",
+												"which": "own"
 											}
 										}
 									],
@@ -2057,15 +2234,6 @@
 											}
 										},
 										{
-											"id": "add-to-instvar",
-											"objectClass": "Inventory",
-											"sid": 144830019623039,
-											"parameters": {
-												"instance-variable": "FilledSlots",
-												"value": "1"
-											}
-										},
-										{
 											"id": "set-boolean-instvar",
 											"objectClass": "Slots",
 											"sid": 642831972721837,
@@ -2101,21 +2269,137 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "on-drop",
+									"objectClass": "Gem4",
+									"sid": 830315230914590,
+									"behaviorType": "DragDrop"
+								}
+							],
+							"actions": [],
+							"sid": 981547728257065,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "cursor-is-over-object",
+											"objectClass": "Mouse",
+											"sid": 689638419123344,
+											"parameters": {
+												"object": "ExtractGemSpot"
+											}
+										},
+										{
+											"id": "pick-parent",
+											"objectClass": "Gem4",
+											"sid": 358175483126117,
+											"parameters": {
+												"parent": "Slots",
+												"which": "own"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 990733279744748,
+											"disabled": true,
+											"parameters": {
+												"variable": "Souls",
+												"comparison": 5,
+												"value": "15"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position-to-another-object",
+											"objectClass": "Gem4",
+											"sid": 742025587899641,
+											"parameters": {
+												"object": "ExtractGemSpot",
+												"image-point-optional": "0"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 536208514252885,
+											"parameters": {
+												"seconds": "0.2"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Gem4",
+											"sid": 517192480622817,
+											"parameters": {
+												"instance-variable": "OnExtract",
+												"value": "true"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Slots",
+											"sid": 108780914093535,
+											"parameters": {
+												"instance-variable": "Filled",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 555961608831603
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 856318175534068
+										},
+										{
+											"id": "pick-parent",
+											"objectClass": "Gem4",
+											"sid": 334551454162443,
+											"parameters": {
+												"parent": "Slots",
+												"which": "own"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position-to-another-object",
+											"objectClass": "Gem4",
+											"sid": 639951522897039,
+											"parameters": {
+												"object": "Slots",
+												"image-point-optional": "0"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Gem4",
+											"sid": 528017630439357,
+											"parameters": {
+												"instance-variable": "OnExtract",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 487302863440264
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
 									"id": "is-boolean-instance-variable-set",
 									"objectClass": "Gem4",
 									"sid": 820675221055080,
 									"parameters": {
 										"instance-variable": "OnExtract"
-									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "TextExtract",
-									"sid": 165743610373522,
-									"parameters": {
-										"instance-variable": "TextIndex",
-										"comparison": 0,
-										"value": "\"Extract\""
 									}
 								}
 							],
@@ -2129,14 +2413,6 @@
 										"layer": "\"Extract\"",
 										"image-point": "1",
 										"create-hierarchy": false
-									}
-								},
-								{
-									"id": "set-text",
-									"objectClass": "TextExtract",
-									"sid": 835203131698128,
-									"parameters": {
-										"text": "\"30\""
 									}
 								}
 							],
@@ -2168,17 +2444,6 @@
 									"parameters": {
 										"instance-variable": "OnExtract"
 									}
-								},
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 666696667361587,
-									"disabled": true,
-									"parameters": {
-										"variable": "Souls",
-										"comparison": 5,
-										"value": "30"
-									}
 								}
 							],
 							"actions": [],
@@ -2188,21 +2453,20 @@
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "compare-instance-variable",
-											"objectClass": "Slots",
-											"sid": 565224949016375,
-											"parameters": {
-												"instance-variable": "Index",
-												"comparison": 0,
-												"value": "Inventory.FilledSlots"
-											}
-										},
-										{
 											"id": "is-boolean-instance-variable-set",
 											"objectClass": "Gem4",
 											"sid": 839981019937135,
 											"parameters": {
 												"instance-variable": "OnExtract"
+											}
+										},
+										{
+											"id": "pick-parent",
+											"objectClass": "Gem4",
+											"sid": 265221673116879,
+											"parameters": {
+												"parent": "Slots",
+												"which": "own"
 											}
 										}
 									],
@@ -2261,15 +2525,6 @@
 												"transform-a": false,
 												"transform-z-elevation": false,
 												"destroy-with-parent": false
-											}
-										},
-										{
-											"id": "add-to-instvar",
-											"objectClass": "Inventory",
-											"sid": 477649154932351,
-											"parameters": {
-												"instance-variable": "FilledSlots",
-												"value": "1"
 											}
 										},
 										{
