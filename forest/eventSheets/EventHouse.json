@@ -451,12 +451,11 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 878207285820042,
-									"disabled": true,
+									"sid": 282475994833379,
 									"parameters": {
 										"variable": "Souls",
 										"comparison": 5,
-										"value": "15"
+										"value": "10"
 									}
 								},
 								{
@@ -491,11 +490,10 @@
 										{
 											"id": "subtract-from-eventvar",
 											"objectClass": "System",
-											"sid": 462954235875362,
-											"disabled": true,
+											"sid": 417846163850480,
 											"parameters": {
 												"variable": "Souls",
-												"value": "15"
+												"value": "10"
 											}
 										},
 										{
@@ -559,6 +557,18 @@
 											"parameters": {
 												"variable": "HealthPotions",
 												"value": "1"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 708917372509161,
+											"parameters": {
+												"audio-file": "confirm_style_2_005",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
 											}
 										}
 									],
@@ -647,12 +657,11 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 765222344357904,
-									"disabled": true,
+									"sid": 871676038619087,
 									"parameters": {
 										"variable": "Souls",
 										"comparison": 5,
-										"value": "15"
+										"value": "10"
 									}
 								},
 								{
@@ -683,6 +692,18 @@
 										"variable": "HealthPotions",
 										"value": "2"
 									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 466335486231880,
+									"parameters": {
+										"audio-file": "confirm_style_2_005",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 217588332284711,
@@ -694,11 +715,10 @@
 										{
 											"id": "subtract-from-eventvar",
 											"objectClass": "System",
-											"sid": 778424969614217,
-											"disabled": true,
+											"sid": 400046695774685,
 											"parameters": {
 												"variable": "Souls",
-												"value": "15"
+												"value": "10"
 											}
 										},
 										{
@@ -715,7 +735,7 @@
 										{
 											"id": "add-child",
 											"objectClass": "HealthIcon",
-											"sid": 722167046402326,
+											"sid": 653073372790464,
 											"parameters": {
 												"child": "Items",
 												"transform-x": false,
@@ -724,7 +744,7 @@
 												"transform-h": false,
 												"transform-a": false,
 												"transform-z-elevation": false,
-												"destroy-with-parent": false
+												"destroy-with-parent": true
 											}
 										}
 									],
@@ -782,12 +802,11 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 101622980952627,
-									"disabled": true,
+									"sid": 585892306245512,
 									"parameters": {
 										"variable": "Souls",
 										"comparison": 5,
-										"value": "15"
+										"value": "10"
 									}
 								},
 								{
@@ -817,6 +836,18 @@
 									"parameters": {
 										"variable": "HealthPotions",
 										"value": "1"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 282857022646604,
+									"parameters": {
+										"audio-file": "confirm_style_2_005",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -891,12 +922,11 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 447493469040776,
-									"disabled": true,
+									"sid": 795031166859071,
 									"parameters": {
 										"variable": "Souls",
 										"comparison": 5,
-										"value": "15"
+										"value": "10"
 									}
 								}
 							],
@@ -921,10 +951,10 @@
 										{
 											"id": "subtract-from-eventvar",
 											"objectClass": "System",
-											"sid": 493018258392303,
+											"sid": 684320580468644,
 											"parameters": {
 												"variable": "Souls",
-												"value": "15"
+												"value": "10"
 											}
 										},
 										{
@@ -943,7 +973,7 @@
 										{
 											"id": "add-child",
 											"objectClass": "Slots",
-											"sid": 637244697083617,
+											"sid": 719536624006414,
 											"parameters": {
 												"child": "ManaIcon",
 												"transform-x": false,
@@ -952,7 +982,7 @@
 												"transform-h": false,
 												"transform-a": false,
 												"transform-z-elevation": false,
-												"destroy-with-parent": false
+												"destroy-with-parent": true
 											}
 										},
 										{
@@ -988,6 +1018,18 @@
 											"parameters": {
 												"variable": "ManaPotions",
 												"value": "1"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 271655115865855,
+											"parameters": {
+												"audio-file": "confirm_style_2_005",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
 											}
 										}
 									],
@@ -1076,12 +1118,11 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 299606158757190,
-									"disabled": true,
+									"sid": 747968602622673,
 									"parameters": {
 										"variable": "Souls",
 										"comparison": 5,
-										"value": "15"
+										"value": "10"
 									}
 								},
 								{
@@ -1112,6 +1153,18 @@
 										"variable": "ManaPotions",
 										"value": "1"
 									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 431716932965788,
+									"parameters": {
+										"audio-file": "confirm_style_2_005",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 739552647681454,
@@ -1123,10 +1176,10 @@
 										{
 											"id": "subtract-from-eventvar",
 											"objectClass": "System",
-											"sid": 725559987549064,
+											"sid": 864650602644779,
 											"parameters": {
 												"variable": "Souls",
-												"value": "15"
+												"value": "10"
 											}
 										},
 										{
@@ -1143,7 +1196,7 @@
 										{
 											"id": "add-child",
 											"objectClass": "ManaIcon",
-											"sid": 405404685627843,
+											"sid": 649916188481716,
 											"parameters": {
 												"child": "Items",
 												"transform-x": false,
@@ -1152,7 +1205,7 @@
 												"transform-h": false,
 												"transform-a": false,
 												"transform-z-elevation": false,
-												"destroy-with-parent": false
+												"destroy-with-parent": true
 											}
 										},
 										{
@@ -1191,12 +1244,11 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 714484643563190,
-									"disabled": true,
+									"sid": 639317486662199,
 									"parameters": {
 										"variable": "Souls",
 										"comparison": 5,
-										"value": "15"
+										"value": "10"
 									}
 								},
 								{
@@ -1227,6 +1279,18 @@
 										"variable": "ManaPotions",
 										"value": "1"
 									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 127494033517040,
+									"parameters": {
+										"audio-file": "confirm_style_2_005",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 479621723362858,
@@ -1248,10 +1312,10 @@
 										{
 											"id": "subtract-from-eventvar",
 											"objectClass": "System",
-											"sid": 373448133602811,
+											"sid": 445500568981089,
 											"parameters": {
 												"variable": "Souls",
-												"value": "15"
+												"value": "10"
 											}
 										},
 										{
@@ -1305,6 +1369,100 @@
 								}
 							],
 							"sid": 251263226965253
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-click",
+									"objectClass": "Mouse",
+									"sid": 742073944885179,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked"
+									}
+								},
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 469004492705210,
+									"parameters": {
+										"object": "HealthIconBuy"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 443688195157158,
+									"parameters": {
+										"variable": "Souls",
+										"comparison": 2,
+										"value": "10"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 186654832309937,
+									"parameters": {
+										"audio-file": "033_Denied_03",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 176935970534211
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-click",
+									"objectClass": "Mouse",
+									"sid": 320183515845607,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked"
+									}
+								},
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 509397440553318,
+									"parameters": {
+										"object": "ManaIconBuy"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 540599912370093,
+									"parameters": {
+										"variable": "Souls",
+										"comparison": 2,
+										"value": "10"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 707728191988181,
+									"parameters": {
+										"audio-file": "033_Denied_03",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 188111035561428
 						}
 					],
 					"sid": 132669955605257
@@ -1391,17 +1549,6 @@
 									"objectClass": "Gem1",
 									"sid": 614157084281248,
 									"behaviorType": "DragDrop"
-								},
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 937284731365556,
-									"disabled": true,
-									"parameters": {
-										"variable": "Souls",
-										"comparison": 5,
-										"value": "15"
-									}
 								}
 							],
 							"actions": [],
@@ -1416,6 +1563,16 @@
 											"sid": 501368006379667,
 											"parameters": {
 												"object": "ExtractGemSpot"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 142663808050512,
+											"parameters": {
+												"variable": "Souls",
+												"comparison": 5,
+												"value": "15"
 											}
 										},
 										{
@@ -1502,6 +1659,18 @@
 											"parameters": {
 												"instance-variable": "OnExtract",
 												"value": "false"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 443977227266356,
+											"parameters": {
+												"audio-file": "033_Denied_03",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
 											}
 										}
 									],
@@ -1592,11 +1761,10 @@
 										{
 											"id": "subtract-from-eventvar",
 											"objectClass": "System",
-											"sid": 393229884480980,
-											"disabled": true,
+											"sid": 592715871152271,
 											"parameters": {
 												"variable": "Souls",
-												"value": "30"
+												"value": "15"
 											}
 										},
 										{
@@ -1671,6 +1839,18 @@
 												"instance-variable": "Picked",
 												"value": "true"
 											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 258287969769107,
+											"parameters": {
+												"audio-file": "confirm_style_1_007",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
 										}
 									],
 									"sid": 393415714135027
@@ -1705,7 +1885,6 @@
 											"id": "compare-eventvar",
 											"objectClass": "System",
 											"sid": 397312893082852,
-											"disabled": true,
 											"parameters": {
 												"variable": "Souls",
 												"comparison": 5,
@@ -1797,6 +1976,18 @@
 												"instance-variable": "OnExtract",
 												"value": "false"
 											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 512215548061252,
+											"parameters": {
+												"audio-file": "033_Denied_03",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
 										}
 									],
 									"sid": 118202457780959
@@ -1886,11 +2077,10 @@
 										{
 											"id": "subtract-from-eventvar",
 											"objectClass": "System",
-											"sid": 685480493058338,
-											"disabled": true,
+											"sid": 982799880879917,
 											"parameters": {
 												"variable": "Souls",
-												"value": "30"
+												"value": "15"
 											}
 										},
 										{
@@ -1965,6 +2155,18 @@
 												"instance-variable": "Picked",
 												"value": "true"
 											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 357420562706156,
+											"parameters": {
+												"audio-file": "confirm_style_1_007",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
 										}
 									],
 									"sid": 279204901497645
@@ -1999,7 +2201,6 @@
 											"id": "compare-eventvar",
 											"objectClass": "System",
 											"sid": 978598340403859,
-											"disabled": true,
 											"parameters": {
 												"variable": "Souls",
 												"comparison": 5,
@@ -2091,6 +2292,18 @@
 												"instance-variable": "OnExtract",
 												"value": "false"
 											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 816806682423529,
+											"parameters": {
+												"audio-file": "033_Denied_03",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
 										}
 									],
 									"sid": 257445131696961
@@ -2180,11 +2393,10 @@
 										{
 											"id": "subtract-from-eventvar",
 											"objectClass": "System",
-											"sid": 959489517921613,
-											"disabled": true,
+											"sid": 183819820898277,
 											"parameters": {
 												"variable": "Souls",
-												"value": "30"
+												"value": "15"
 											}
 										},
 										{
@@ -2259,6 +2471,18 @@
 												"instance-variable": "Picked",
 												"value": "true"
 											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 778557115508045,
+											"parameters": {
+												"audio-file": "confirm_style_1_007",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
 										}
 									],
 									"sid": 944101635617736
@@ -2302,7 +2526,6 @@
 											"id": "compare-eventvar",
 											"objectClass": "System",
 											"sid": 990733279744748,
-											"disabled": true,
 											"parameters": {
 												"variable": "Souls",
 												"comparison": 5,
@@ -2384,6 +2607,18 @@
 											"parameters": {
 												"instance-variable": "OnExtract",
 												"value": "false"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 778260098519737,
+											"parameters": {
+												"audio-file": "033_Denied_03",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
 											}
 										}
 									],
@@ -2474,11 +2709,10 @@
 										{
 											"id": "subtract-from-eventvar",
 											"objectClass": "System",
-											"sid": 701160891435422,
-											"disabled": true,
+											"sid": 637938846642267,
 											"parameters": {
 												"variable": "Souls",
-												"value": "30"
+												"value": "15"
 											}
 										},
 										{
@@ -2552,6 +2786,18 @@
 											"parameters": {
 												"instance-variable": "Picked",
 												"value": "true"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 533155865075644,
+											"parameters": {
+												"audio-file": "confirm_style_1_007",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
 											}
 										}
 									],
@@ -3353,10 +3599,10 @@
 										{
 											"id": "set-css-style",
 											"objectClass": "Extract",
-											"sid": 877814922963980,
+											"sid": 797793688231882,
 											"parameters": {
 												"property-name": "\"background\"",
-												"value": "\"rgb(118, 106, 124\""
+												"value": "\"rgb(244, 169, 254)\""
 											}
 										},
 										{
@@ -3443,11 +3689,11 @@
 									"actions": [
 										{
 											"id": "set-css-style",
-											"objectClass": "Exit",
-											"sid": 816628147772173,
+											"objectClass": "Extract",
+											"sid": 980300326531218,
 											"parameters": {
 												"property-name": "\"background\"",
-												"value": "\"rgb(118, 106, 124)\""
+												"value": "\"rgb(244, 169, 254)\""
 											}
 										},
 										{
@@ -3672,22 +3918,15 @@
 					],
 					"actions": [
 						{
-							"id": "set-scale",
-							"objectClass": "Hero",
-							"sid": 660339732916522,
-							"disabled": true,
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 554175261173872,
 							"parameters": {
-								"scale": "1"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "Hero",
-							"sid": 609553871844405,
-							"disabled": true,
-							"parameters": {
-								"x": "2221",
-								"y": "4470"
+								"audio-file": "35_Miss_Evade_02",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						},
 						{
@@ -3696,16 +3935,6 @@
 							"sid": 155135727504652,
 							"parameters": {
 								"layout": "Forest"
-							}
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "Hero",
-							"sid": 978590683323774,
-							"disabled": true,
-							"behaviorType": "ScrollTo",
-							"parameters": {
-								"state": "enabled"
 							}
 						},
 						{

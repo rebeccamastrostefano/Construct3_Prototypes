@@ -91,9 +91,9 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 840707541038633,
+							"sid": 534558293229792,
 							"parameters": {
-								"audio-file": "Regular",
+								"audio-file": "19 another LOOP",
 								"loop": "looping",
 								"volume": "-3",
 								"stereo-pan": "0",
@@ -102,6 +102,31 @@
 						}
 					],
 					"sid": 444296645319770
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-load-complete",
+							"objectClass": "System",
+							"sid": 374492898776730
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 344017831103924,
+							"parameters": {
+								"audio-file": "19 another LOOP",
+								"loop": "looping",
+								"volume": "-3",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 474156028094069
 				},
 				{
 					"eventType": "block",
@@ -563,55 +588,51 @@
 							"id": "move-to-top",
 							"objectClass": "IconsUI",
 							"sid": 521238308276550
-						},
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 643820497252276,
-							"parameters": {
-								"object-to-create": "DialogBox",
-								"layer": "\"Dialog\"",
-								"x": "138.162986",
-								"y": "264.627105",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 574139267358117,
-							"parameters": {
-								"object-to-create": "Dialog",
-								"layer": "\"Dialog\"",
-								"x": "138.162986",
-								"y": "264.627105",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "start-timer",
-							"objectClass": "Dialog",
-							"sid": 743681684377760,
-							"behaviorType": "Timer",
-							"parameters": {
-								"duration": "5",
-								"type": "once",
-								"tag": "\"0\""
-							}
-						},
-						{
-							"id": "typewriter-text",
-							"objectClass": "Dialog",
-							"sid": 766340954013060,
-							"parameters": {
-								"text": "\"Press 1 to change potion, Press Q to use it\"",
-								"duration": "0"
-							}
 						}
 					],
-					"sid": 191250149682531
+					"sid": 191250149682531,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 406098430290066,
+									"parameters": {
+										"object-to-create": "Dialog",
+										"layer": "\"Dialog\"",
+										"x": "138.162986",
+										"y": "264.627105",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "start-timer",
+									"objectClass": "Dialog",
+									"sid": 204002491551914,
+									"behaviorType": "Timer",
+									"parameters": {
+										"duration": "5",
+										"type": "once",
+										"tag": "\"0\""
+									}
+								},
+								{
+									"id": "typewriter-text",
+									"objectClass": "Dialog",
+									"sid": 243325756033887,
+									"parameters": {
+										"text": "\"Press 1 to change potion, Press Q to use it\"",
+										"duration": "0"
+									}
+								}
+							],
+							"sid": 345742504042166
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -1905,6 +1926,18 @@
 												"variable": "CurrentSpell",
 												"value": "1"
 											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 864885433272580,
+											"parameters": {
+												"audio-file": "071_Unequip_01",
+												"loop": "not-looping",
+												"volume": "1",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
 										}
 									],
 									"sid": 175458433571656
@@ -1937,6 +1970,18 @@
 											"parameters": {
 												"variable": "CurrentSpell",
 												"value": "2"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 622086484020097,
+											"parameters": {
+												"audio-file": "071_Unequip_01",
+												"loop": "not-looping",
+												"volume": "1",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
 											}
 										}
 									],
@@ -2194,6 +2239,18 @@
 												"variable": "CurrentSummon",
 												"value": "1"
 											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 301733411466131,
+											"parameters": {
+												"audio-file": "071_Unequip_01",
+												"loop": "not-looping",
+												"volume": "1",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
 										}
 									],
 									"sid": 296490242591251
@@ -2234,6 +2291,18 @@
 											"parameters": {
 												"variable": "CurrentSummon",
 												"value": "2"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 868575526214448,
+											"parameters": {
+												"audio-file": "071_Unequip_01",
+												"loop": "not-looping",
+												"volume": "1",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
 											}
 										}
 									],
@@ -2351,6 +2420,18 @@
 												"variable": "Health",
 												"value": "8"
 											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 756863909939885,
+											"parameters": {
+												"audio-file": "confirm_style_6_005",
+												"loop": "not-looping",
+												"volume": "1",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
 										}
 									],
 									"sid": 953171777369427
@@ -2402,6 +2483,18 @@
 											"parameters": {
 												"variable": "Mana",
 												"value": "9"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 164921488418167,
+											"parameters": {
+												"audio-file": "back_style_1_echo_002",
+												"loop": "not-looping",
+												"volume": "1",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
 											}
 										}
 									],
@@ -2616,6 +2709,18 @@
 												"variable": "CurrentPotion",
 												"value": "1"
 											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 288009529335267,
+											"parameters": {
+												"audio-file": "071_Unequip_01",
+												"loop": "not-looping",
+												"volume": "1",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
 										}
 									],
 									"sid": 640747244271716
@@ -2658,6 +2763,18 @@
 											"parameters": {
 												"variable": "CurrentPotion",
 												"value": "2"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 881053628246732,
+											"parameters": {
+												"audio-file": "071_Unequip_01",
+												"loop": "not-looping",
+												"volume": "1",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
 											}
 										}
 									],
@@ -3048,6 +3165,11 @@
 							"parameters": {
 								"object": "HealthIcon"
 							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 332328590612659
 						}
 					],
 					"actions": [
@@ -3057,6 +3179,18 @@
 							"sid": 820531281691529,
 							"parameters": {
 								"text": "\"An Health Potion that restores all Health Points\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 555725970969139,
+							"parameters": {
+								"audio-file": "cursor_style_2",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],
@@ -3087,6 +3221,11 @@
 							"parameters": {
 								"object": "ManaIcon"
 							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 216771875067260
 						}
 					],
 					"actions": [
@@ -3096,6 +3235,18 @@
 							"sid": 330153341486546,
 							"parameters": {
 								"text": "\"A Mana Potion that restores all Mana Points\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 877009388595170,
+							"parameters": {
+								"audio-file": "cursor_style_2",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],
@@ -3126,6 +3277,11 @@
 							"parameters": {
 								"object": "LightSpellIcon"
 							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 788324167128258
 						}
 					],
 					"actions": [
@@ -3135,6 +3291,18 @@
 							"sid": 744032009279413,
 							"parameters": {
 								"text": "\"A Lightning Spell, light but efficient\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 347930638102162,
+							"parameters": {
+								"audio-file": "cursor_style_2",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],
@@ -3165,6 +3333,11 @@
 							"parameters": {
 								"object": "HeavySpell"
 							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 845967175337887
 						}
 					],
 					"actions": [
@@ -3174,6 +3347,18 @@
 							"sid": 746403742870672,
 							"parameters": {
 								"text": "\"A Lightning Spell, heavy but at a cost\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 722217588487781,
+							"parameters": {
+								"audio-file": "cursor_style_2",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],
@@ -3204,6 +3389,11 @@
 							"parameters": {
 								"object": "ShiedlSPell"
 							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 970783530351359
 						}
 					],
 					"actions": [
@@ -3213,6 +3403,18 @@
 							"sid": 295665733595517,
 							"parameters": {
 								"text": "\"A Shield Spell, very powerful, blocks any attack\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 265409024480656,
+							"parameters": {
+								"audio-file": "cursor_style_2",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],
@@ -3243,6 +3445,11 @@
 							"parameters": {
 								"object": "FollowBall"
 							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 108139719820743
 						}
 					],
 					"actions": [
@@ -3252,6 +3459,18 @@
 							"sid": 475427229488999,
 							"parameters": {
 								"text": "\"A Summon Spell, evoke a Soul that follows and attacks enemies\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 879542078128619,
+							"parameters": {
+								"audio-file": "cursor_style_2",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],
@@ -4510,6 +4729,18 @@
 					],
 					"actions": [
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 716589747218434,
+							"parameters": {
+								"audio-file": "35_Miss_Evade_02",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "go-to-layout",
 							"objectClass": "System",
 							"sid": 187448555796901,
@@ -4701,6 +4932,18 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 701323796087974,
+							"parameters": {
+								"audio-file": "35_Miss_Evade_02",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
@@ -5206,6 +5449,18 @@
 									"parameters": {
 										"animation": "\"Death\"",
 										"from": "beginning"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 381805599018172,
+									"parameters": {
+										"audio-file": "88_Teleport_02",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								},
 								{
@@ -6047,6 +6302,18 @@
 									"parameters": {
 										"max-speed": "0"
 									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 767185559507174,
+									"parameters": {
+										"audio-file": "351807__plasterbrain__laser-charging",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 549844729868749,
@@ -6070,9 +6337,21 @@
 										{
 											"id": "wait",
 											"objectClass": "System",
-											"sid": 858048778571813,
+											"sid": 752707222085496,
 											"parameters": {
-												"seconds": "2"
+												"seconds": "1"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 344281418329503,
+											"parameters": {
+												"audio-file": "55_Encounter_02",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
 											}
 										},
 										{
@@ -6120,9 +6399,21 @@
 										{
 											"id": "wait",
 											"objectClass": "System",
-											"sid": 273413080847580,
+											"sid": 127000191150108,
 											"parameters": {
-												"seconds": "2"
+												"seconds": "1"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 765447225417017,
+											"parameters": {
+												"audio-file": "55_Encounter_02",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
 											}
 										},
 										{
@@ -6274,6 +6565,18 @@
 										"instance-variable": "Status",
 										"value": "\"Shield\""
 									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 438482534855844,
+									"parameters": {
+										"audio-file": "45_Landing_01",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 868489459380995
@@ -6327,6 +6630,18 @@
 										"on-time": "0.1",
 										"off-time": "0.1",
 										"duration": "1.0"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 509576192942592,
+									"parameters": {
+										"audio-file": "45_Landing_01",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -6382,6 +6697,18 @@
 										"off-time": "0.1",
 										"duration": "1.0"
 									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 621182603869931,
+									"parameters": {
+										"audio-file": "45_Landing_01",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 859111464163662
@@ -6423,6 +6750,18 @@
 										"off-time": "0.1",
 										"duration": "1.0"
 									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 648769688035641,
+									"parameters": {
+										"audio-file": "45_Landing_01",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 346090538651797
@@ -6460,11 +6799,34 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 438727445052631,
+									"sid": 728330566815421,
 									"parameters": {
 										"audio-file": "61_Hit_03",
 										"loop": "not-looping",
 										"volume": "1",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "flash",
+									"objectClass": "Hero",
+									"sid": 355025917801179,
+									"behaviorType": "Flash",
+									"parameters": {
+										"on-time": "0.1",
+										"off-time": "0.1",
+										"duration": "1.0"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 257223383408211,
+									"parameters": {
+										"audio-file": "45_Landing_01",
+										"loop": "not-looping",
+										"volume": "0",
 										"stereo-pan": "0",
 										"tag-optional": "\"\""
 									}
@@ -9074,18 +9436,6 @@
 							"parameters": {
 								"slot": "\"1checkpoint\""
 							}
-						},
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 565822790651255,
-							"parameters": {
-								"audio-file": "Regular",
-								"loop": "looping",
-								"volume": "-3",
-								"stereo-pan": "0",
-								"tag-optional": "\"\""
-							}
 						}
 					],
 					"sid": 697371765441793
@@ -9149,18 +9499,6 @@
 							"sid": 645615865883208,
 							"parameters": {
 								"slot": "\"2checkpoint\""
-							}
-						},
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 127912798522510,
-							"parameters": {
-								"audio-file": "Regular",
-								"loop": "looping",
-								"volume": "-3",
-								"stereo-pan": "0",
-								"tag-optional": "\"\""
 							}
 						}
 					],

@@ -449,6 +449,102 @@
 					"file-info": {
 						"purpose": "none"
 					}
+				},
+				{
+					"name": "071_Unequip_01.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 986892774017858,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "confirm_style_6_005.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 983829645906979,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "cursor_style_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 563270406651672,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "back_style_1_echo_002.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 629595114211075,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "18_Thunder_02.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 337856519226902,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "351807__plasterbrain__laser-charging.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 226137781836485,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "55_Encounter_02.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 439072325740242,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "confirm_style_1_007.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 669048752542438,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "confirm_style_2_005.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 727363716302164,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "88_Teleport_02.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 817487594387528,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "04_Fire_explosion_04_medium.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 551167724914666,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "033_Denied_03.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 592130060392945,
+					"file-info": {
+						"purpose": "none"
+					}
 				}
 			],
 			"subfolders": []
@@ -456,17 +552,25 @@
 		"music": {
 			"items": [
 				{
-					"name": "Regular.webm",
+					"name": "19 another LOOP.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 416596794658106,
+					"sid": 390295343512369,
 					"file-info": {
 						"purpose": "none"
 					}
 				},
 				{
-					"name": "Battle.webm",
+					"name": "3 critical LOOP.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 566812564892336,
+					"sid": 623617111651709,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "8 victory LOOP.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 125500938421743,
 					"file-info": {
 						"purpose": "none"
 					}

@@ -174,9 +174,9 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 470178893818282,
+					"sid": 266024119653935,
 					"parameters": {
-						"audio-file": "Battle",
+						"audio-file": "3 critical LOOP",
 						"loop": "looping",
 						"volume": "0",
 						"stereo-pan": "0",
@@ -478,6 +478,18 @@
 									}
 								},
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 857740658217072,
+									"parameters": {
+										"audio-file": "04_Fire_explosion_04_medium",
+										"loop": "not-looping",
+										"volume": "1",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"id": "set-animation",
 									"objectClass": "FireColumn",
 									"sid": 340277808189478,
@@ -749,6 +761,29 @@
 						"variable": "Health",
 						"value": "2"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 817174530327663,
+					"parameters": {
+						"audio-file": "61_Hit_03",
+						"loop": "not-looping",
+						"volume": "1",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "flash",
+					"objectClass": "Hero",
+					"sid": 536732437359106,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "1.0"
+					}
 				}
 			],
 			"sid": 421430574362330
@@ -879,6 +914,29 @@
 						"variable": "Health",
 						"value": "1"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 290906977761327,
+					"parameters": {
+						"audio-file": "61_Hit_03",
+						"loop": "not-looping",
+						"volume": "1",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "flash",
+					"objectClass": "Hero",
+					"sid": 319649478768779,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "1.0"
+					}
 				}
 			],
 			"sid": 564333436649432
@@ -921,6 +979,18 @@
 					"parameters": {
 						"instance-variable": "Health",
 						"value": "0.5"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 707240145562416,
+					"parameters": {
+						"audio-file": "45_Landing_01",
+						"loop": "not-looping",
+						"volume": "1",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
 					}
 				},
 				{
@@ -971,10 +1041,22 @@
 				{
 					"id": "subtract-from-instvar",
 					"objectClass": "Boss",
-					"sid": 969890037433269,
+					"sid": 360449419606277,
 					"parameters": {
 						"instance-variable": "Health",
-						"value": "1"
+						"value": "2"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 755544440792870,
+					"parameters": {
+						"audio-file": "45_Landing_01",
+						"loop": "not-looping",
+						"volume": "1",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
 					}
 				},
 				{
@@ -1025,10 +1107,22 @@
 				{
 					"id": "subtract-from-instvar",
 					"objectClass": "Boss",
-					"sid": 827848498308857,
+					"sid": 200658064474308,
 					"parameters": {
 						"instance-variable": "Health",
-						"value": "2"
+						"value": "3"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 812572325455169,
+					"parameters": {
+						"audio-file": "45_Landing_01",
+						"loop": "not-looping",
+						"volume": "1",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
 					}
 				},
 				{
@@ -1070,6 +1164,18 @@
 					"parameters": {
 						"instance-variable": "Health",
 						"value": "3"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 366549158027778,
+					"parameters": {
+						"audio-file": "45_Landing_01",
+						"loop": "not-looping",
+						"volume": "1",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
 					}
 				},
 				{
@@ -1933,6 +2039,15 @@
 							}
 						},
 						{
+							"id": "set-instvar-value",
+							"objectClass": "Boss",
+							"sid": 565662242295312,
+							"parameters": {
+								"instance-variable": "Status",
+								"value": "\"Death\""
+							}
+						},
+						{
 							"id": "set-animation",
 							"objectClass": "Boss",
 							"sid": 728045473453150,
@@ -1942,21 +2057,15 @@
 							}
 						},
 						{
-							"id": "set-instvar-value",
-							"objectClass": "Boss",
-							"sid": 682458225256394,
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 122799424984921,
 							"parameters": {
-								"instance-variable": "Status",
-								"value": "\"Death\""
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "Boss",
-							"sid": 827809015606996,
-							"parameters": {
-								"animation": "\"Death\"",
-								"from": "beginning"
+								"audio-file": "55_Encounter_02",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],
