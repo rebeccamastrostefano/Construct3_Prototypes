@@ -3045,6 +3045,18 @@
 									}
 								},
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 911481685824528,
+									"parameters": {
+										"audio-file": "satisfied3",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"id": "add-to-instvar",
 									"objectClass": "Skip",
 									"sid": 169928218235437,
@@ -3120,6 +3132,18 @@
 									}
 								},
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 246198530822861,
+									"parameters": {
+										"audio-file": "sceptical3",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"id": "add-to-instvar",
 									"objectClass": "Skip",
 									"sid": 715665700343531,
@@ -3184,6 +3208,18 @@
 									"parameters": {
 										"text": "\"Trofast has been playing with Death for too long, he must be stopped at once\"",
 										"duration": "5"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 115529319768798,
+									"parameters": {
+										"audio-file": "tired1",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								},
 								{
@@ -3318,6 +3354,18 @@
 									"parameters": {
 										"text": "\"I can Extract any Spell from Occult Gems, bring them to me\"",
 										"duration": "3"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 539413041489492,
+									"parameters": {
+										"audio-file": "satisfied3",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								},
 								{

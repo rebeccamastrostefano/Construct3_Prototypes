@@ -200,7 +200,8 @@
 			"Spot",
 			"FireColumn",
 			"Skull",
-			"Audio"
+			"Audio",
+			"BackCredits"
 		],
 		"subfolders": [
 			{
@@ -327,7 +328,8 @@
 			"Dialog",
 			"Inventory",
 			"Extract",
-			"Castle"
+			"Castle",
+			"Credits"
 		],
 		"subfolders": []
 	},
@@ -335,7 +337,8 @@
 		"items": [
 			"EventForest",
 			"EventHouse",
-			"EventCastle"
+			"EventCastle",
+			"EventCredits"
 		],
 		"subfolders": []
 	},
@@ -542,6 +545,38 @@
 					"name": "033_Denied_03.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 592130060392945,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "satisfied3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 935479421444146,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "sceptical3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 460481358016735,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "tired1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 338478357615149,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "laugh2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 863550114671563,
 					"file-info": {
 						"purpose": "none"
 					}

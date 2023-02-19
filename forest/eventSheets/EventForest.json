@@ -91,11 +91,11 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 534558293229792,
+							"sid": 676292583948880,
 							"parameters": {
 								"audio-file": "19 another LOOP",
 								"loop": "looping",
-								"volume": "-3",
+								"volume": "-10",
 								"stereo-pan": "0",
 								"tag-optional": "\"\""
 							}
@@ -116,11 +116,11 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 344017831103924,
+							"sid": 752644062952868,
 							"parameters": {
 								"audio-file": "19 another LOOP",
 								"loop": "looping",
-								"volume": "-3",
+								"volume": "-10",
 								"stereo-pan": "0",
 								"tag-optional": "\"\""
 							}

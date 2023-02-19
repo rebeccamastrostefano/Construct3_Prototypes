@@ -174,11 +174,11 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 266024119653935,
+					"sid": 286843901358019,
 					"parameters": {
 						"audio-file": "3 critical LOOP",
 						"loop": "looping",
-						"volume": "0",
+						"volume": "-10",
 						"stereo-pan": "0",
 						"tag-optional": "\"\""
 					}
@@ -711,6 +711,18 @@
 						"layer": "\"Hero\"",
 						"image-point": "0",
 						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 256957896436940,
+					"parameters": {
+						"audio-file": "laugh2",
+						"loop": "not-looping",
+						"volume": "1",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
 					}
 				}
 			],
@@ -2107,9 +2119,43 @@
 									"id": "destroy",
 									"objectClass": "Name",
 									"sid": 263126349966920
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "Hero",
+									"sid": 467559488270559,
+									"behaviorType": "Platform",
+									"parameters": {
+										"max-speed": "0"
+									}
 								}
 							],
-							"sid": 531672550995435
+							"sid": 531672550995435,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 982764938168834,
+											"parameters": {
+												"seconds": "2"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 372077727599192,
+											"parameters": {
+												"layout": "Credits"
+											}
+										}
+									],
+									"sid": 426435765998772
+								}
+							]
 						}
 					]
 				}
