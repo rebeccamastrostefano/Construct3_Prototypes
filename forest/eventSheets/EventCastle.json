@@ -1,0 +1,661 @@
+{
+	"name": "EventCastle",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "EventForest"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 366169963927122
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Hero",
+					"sid": 395516270293243,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Hero",
+					"sid": 583826588257793,
+					"parameters": {
+						"x": "35",
+						"y": "530"
+					}
+				},
+				{
+					"id": "move-to-layer",
+					"objectClass": "Hero",
+					"sid": 996394632411955,
+					"parameters": {
+						"layer": "\"Hero\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "InventoryFam",
+					"sid": 108011372217982,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Items",
+					"sid": 676637677405371,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ItemInventory",
+					"sid": 223723234984733,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "InventoryFam",
+					"sid": 796686973495559,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ExtractFam",
+					"sid": 869234100643992,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Items",
+					"sid": 379457598037611,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextExtract",
+					"sid": 953151086825784,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Skip",
+					"sid": 217253698552763,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "DialogBox",
+					"sid": 266670341084943
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Dialog",
+					"sid": 336168699639403
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "Hero",
+					"sid": 761299676077451,
+					"behaviorType": "Platform",
+					"parameters": {
+						"max-speed": "300"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ItemInventory",
+					"sid": 292100963071083,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 294126701831520
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 924546699690459,
+					"parameters": {
+						"interval-seconds": "5"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 301096834297265,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 659858926347082,
+							"parameters": {
+								"instance-variable": "Status",
+								"comparison": 0,
+								"value": "\"Lightning\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Boss",
+							"sid": 439292178505670,
+							"parameters": {
+								"instance-variable": "StatusIndex",
+								"value": "floor(random(2))"
+							}
+						}
+					],
+					"sid": 112512120247500
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 511714180993077,
+							"parameters": {
+								"instance-variable": "Status",
+								"comparison": 0,
+								"value": "\"Idle\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Boss",
+							"sid": 672231251973784,
+							"parameters": {
+								"instance-variable": "StatusIndex",
+								"value": "floor(random(2,3))"
+							}
+						}
+					],
+					"sid": 847736353743937
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 100348377476179,
+							"parameters": {
+								"instance-variable": "Status",
+								"comparison": 0,
+								"value": "\"Summon\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Boss",
+							"sid": 345638850967371,
+							"parameters": {
+								"instance-variable": "Status",
+								"value": "\"Idle\""
+							}
+						}
+					],
+					"sid": 220157267359607
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Boss",
+					"sid": 798455267131856,
+					"parameters": {
+						"instance-variable": "StatusIndex",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Boss",
+					"sid": 287995469208582,
+					"parameters": {
+						"instance-variable": "Status",
+						"value": "\"Idle\""
+					}
+				}
+			],
+			"sid": 989856968552624
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Boss",
+					"sid": 427748133036062,
+					"parameters": {
+						"instance-variable": "StatusIndex",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Boss",
+					"sid": 486491402758239,
+					"parameters": {
+						"instance-variable": "Status",
+						"value": "\"Summon\""
+					}
+				}
+			],
+			"sid": 130516626085303
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Boss",
+					"sid": 929135522479380,
+					"parameters": {
+						"instance-variable": "StatusIndex",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Boss",
+					"sid": 304783814147880,
+					"parameters": {
+						"instance-variable": "Status",
+						"value": "\"Lightning\""
+					}
+				}
+			],
+			"sid": 923562898192211
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Boss",
+					"sid": 562350095660552,
+					"parameters": {
+						"instance-variable": "Status",
+						"comparison": 0,
+						"value": "\"Lightning\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Boss",
+					"sid": 471726169506171,
+					"parameters": {
+						"animation": "\"Summon\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 115786912338444,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "Boss",
+							"sid": 428169390303984,
+							"parameters": {
+								"animation": "\"Summon\""
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Spot",
+							"sid": 930954803409529,
+							"parameters": {
+								"instance-variable": "Index",
+								"comparison": 0,
+								"value": "floor(random(6))"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "FireColumn",
+							"sid": 398754643015388,
+							"parameters": {
+								"object": "Spot"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 225507569034215,
+							"parameters": {
+								"object-to-create": "FireColumn",
+								"layer": "\"Hero\"",
+								"x": "Spot.X",
+								"y": "Spot.y",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 779413024303703,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Spot",
+									"sid": 967596939876343,
+									"parameters": {
+										"instance-variable": "Index",
+										"comparison": 0,
+										"value": "floor(random(6))"
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "FireColumn",
+									"sid": 667442853374688,
+									"parameters": {
+										"object": "Spot"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 424113712324037,
+									"parameters": {
+										"object-to-create": "FireColumn",
+										"layer": "\"Hero\"",
+										"x": "Spot.X",
+										"y": "Spot.y",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 640341183374386,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Spot",
+											"sid": 545716900761622,
+											"parameters": {
+												"instance-variable": "Index",
+												"comparison": 0,
+												"value": "floor(random(6))"
+											}
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "FireColumn",
+											"sid": 966461739058655,
+											"parameters": {
+												"object": "Spot"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 727886707168947,
+											"parameters": {
+												"object-to-create": "FireColumn",
+												"layer": "\"Hero\"",
+												"x": "Spot.X",
+												"y": "Spot.y",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										}
+									],
+									"sid": 283702928744464,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-instvar-value",
+													"objectClass": "Boss",
+													"sid": 796281547708909,
+													"parameters": {
+														"instance-variable": "Status",
+														"value": "\"Idle\""
+													}
+												}
+											],
+											"sid": 168144010174274
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Boss",
+					"sid": 117536206126008,
+					"parameters": {
+						"instance-variable": "Status",
+						"comparison": 0,
+						"value": "\"Idle\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Boss",
+					"sid": 917460690961310,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 900388171131941
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Boss",
+					"sid": 678895752318907,
+					"parameters": {
+						"instance-variable": "Status",
+						"comparison": 0,
+						"value": "\"Summon\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "start-timer",
+					"objectClass": "Boss",
+					"sid": 745445358375717,
+					"behaviorType": "Timer",
+					"parameters": {
+						"duration": "1",
+						"type": "once",
+						"tag": "\"1\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Boss",
+					"sid": 268851661385337,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 802713258318433,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-timer",
+							"objectClass": "Boss",
+							"sid": 551855196830669,
+							"behaviorType": "Timer",
+							"parameters": {
+								"tag": "\"1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Boss",
+							"sid": 562212125784049,
+							"parameters": {
+								"instance-variable": "Status",
+								"value": "\"Idle\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 693378132338969,
+							"parameters": {
+								"seconds": "0.2"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Boss",
+							"sid": 802804679875890,
+							"parameters": {
+								"object": "Skull",
+								"layer": "\"Hero\"",
+								"image-point": "1",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 176067260238049
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Skull",
+					"sid": 603471357182456,
+					"parameters": {
+						"object": "Hitbox"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Skull",
+					"sid": 249053186552811
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 663220832061305,
+					"parameters": {
+						"variable": "Health",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 421430574362330
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Skull",
+					"sid": 985782322935226,
+					"parameters": {
+						"object": "HitboxShield"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Skull",
+					"sid": 842751547652794
+				}
+			],
+			"sid": 837472098489217
+		}
+	],
+	"sid": 235825720790398
+}

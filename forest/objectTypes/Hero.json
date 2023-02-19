@@ -10,6 +10,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 274060527725819
+		},
+		{
+			"name": "FromForest",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 666497300873542
 		}
 	],
 	"behaviorTypes": [
@@ -516,6 +523,34 @@
 					{
 						"frames": [
 							{
+								"width": 55,
+								"height": 42,
+								"originX": 0.6363636363636364,
+								"originY": 0.9285714285714286,
+								"originalSource": "",
+								"exportFormat": "lossless",
+								"exportQuality": 0.8,
+								"imageSpriteId": 6368711,
+								"collisionPoly": {
+									"points": [
+										0.5785899192934368,
+										0,
+										1,
+										1,
+										1,
+										1,
+										1,
+										1,
+										0.5433835845896148,
+										1,
+										1,
+										1
+									]
+								},
+								"useCollisionPoly": true,
+								"duration": 1
+							},
+							{
 								"width": 49,
 								"height": 45,
 								"originX": 0.5714285714285714,
@@ -668,16 +703,16 @@
 								"originalSource": "",
 								"exportFormat": "lossless",
 								"exportQuality": 0.8,
-								"imageSpriteId": 8530544,
+								"imageSpriteId": 9702033,
 								"collisionPoly": {
 									"points": [
-										0.09429822888290669,
+										0.09429822888290673,
 										0.892500114440918,
-										0.21929827907629182,
+										0.21929827907629185,
 										0.8924999713897707,
 										0.2302631913569937,
 										0.9325000762939452,
-										0.08552634925173035,
+										0.0855263492517303,
 										0.939999961853027
 									]
 								},
@@ -882,8 +917,8 @@
 								"imagePoints": [
 									{
 										"name": "Image Point 1",
-										"x": 0.8294573643410853,
-										"y": 0.9425287356321839
+										"x": 0.781021897810219,
+										"y": 0.956140350877193
 									}
 								],
 								"duration": 1
@@ -986,8 +1021,8 @@
 								"imagePoints": [
 									{
 										"name": "Image Point 1",
-										"x": 0.74,
-										"y": 0.20192307692307693
+										"x": 0.82,
+										"y": 0.18269230769230768
 									}
 								],
 								"duration": 1
@@ -1017,7 +1052,7 @@
 								"imagePoints": [
 									{
 										"name": "Image Point 1",
-										"x": 0.74,
+										"x": 0.7647058823529411,
 										"y": 0.20192307692307693
 									}
 								],
@@ -1048,8 +1083,8 @@
 								"imagePoints": [
 									{
 										"name": "Image Point 1",
-										"x": 0.74,
-										"y": 0.20192307692307693
+										"x": 0.7017543859649122,
+										"y": 0.19230769230769232
 									}
 								],
 								"duration": 1
@@ -1132,6 +1167,13 @@
 									]
 								},
 								"useCollisionPoly": true,
+								"imagePoints": [
+									{
+										"name": "Image Point 1",
+										"x": 0.38,
+										"y": 0.5643564356435643
+									}
+								],
 								"duration": 1
 							},
 							{
@@ -1164,6 +1206,13 @@
 									]
 								},
 								"useCollisionPoly": true,
+								"imagePoints": [
+									{
+										"name": "Image Point 1",
+										"x": 0.38,
+										"y": 0.5643564356435643
+									}
+								],
 								"duration": 1
 							}
 						],
@@ -1210,14 +1259,14 @@
 								"duration": 1
 							},
 							{
-								"width": 122,
-								"height": 122,
-								"originX": 0.4180327868852459,
-								"originY": 0.860655737704918,
+								"width": 124,
+								"height": 121,
+								"originX": 0.4032258064516129,
+								"originY": 0.8677685950413223,
 								"originalSource": "",
 								"exportFormat": "lossless",
 								"exportQuality": 0.8,
-								"imageSpriteId": 3312639,
+								"imageSpriteId": 5629778,
 								"collisionPoly": {
 									"points": [
 										0,
@@ -1226,14 +1275,14 @@
 										0,
 										1,
 										0,
-										0.6311475409836066,
-										0,
-										0.7786885245901639,
 										0,
 										0,
-										0.8688524590163934,
 										0,
-										0.9016393442622951,
+										0,
+										0,
+										0.7944722937271371,
+										0,
+										0.8768459558325428,
 										0,
 										0
 									]
@@ -1248,7 +1297,7 @@
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 4
 					},
 					{
 						"frames": [

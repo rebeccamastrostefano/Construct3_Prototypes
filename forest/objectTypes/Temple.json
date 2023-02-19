@@ -1,0 +1,57 @@
+{
+	"name": "Temple",
+	"plugin-id": "Sprite",
+	"sid": 583674307924478,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 443,
+						"height": 378,
+						"originX": 0.49435665914221216,
+						"originY": 0.9444444444444444,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5089770,
+						"collisionPoly": {
+							"points": [
+								0.36343115124153497,
+								0.42592592592592593,
+								0.5,
+								0.42328042328042326,
+								0.636568848758465,
+								0.42592592592592593,
+								0.7652370203160271,
+								0.5,
+								0.7516930022573364,
+								0.708994708994709,
+								0.5,
+								0.9365079365079365,
+								0.291196388261851,
+								0.6587301587301587,
+								0.27539503386004516,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 763284025328143,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

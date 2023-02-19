@@ -2,7 +2,7 @@
 	"name": "UIPotions",
 	"plugin-id": "Sprite",
 	"sid": 310040404964729,
-	"isGlobal": false,
+	"isGlobal": true,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],

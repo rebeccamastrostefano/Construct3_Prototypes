@@ -4,6 +4,12 @@
 	"sid": 559234505256456,
 	"isGlobal": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 412408015195644
+		}
+	],
 	"effectTypes": []
 }

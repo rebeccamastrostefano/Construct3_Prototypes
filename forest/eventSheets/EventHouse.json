@@ -34,10 +34,10 @@
 				{
 					"id": "set-position",
 					"objectClass": "Hero",
-					"sid": 411214966045390,
+					"sid": 410773036956509,
 					"parameters": {
 						"x": "85",
-						"y": "340"
+						"y": "500"
 					}
 				},
 				{
@@ -2914,6 +2914,102 @@
 								}
 							],
 							"sid": 566647987443312
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 785308768604689,
+									"parameters": {
+										"key": 69
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Cat",
+									"sid": 259759611810776,
+									"parameters": {
+										"instance-variable": "IsClose"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "E",
+									"sid": 901542687063339,
+									"parameters": {
+										"instance-variable": "Index",
+										"comparison": 0,
+										"value": "3"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Skip",
+									"sid": 548754731344301,
+									"parameters": {
+										"instance-variable": "DialogIndex",
+										"comparison": 0,
+										"value": "6"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 319538683832542,
+									"parameters": {
+										"seconds": "0.2"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Skip",
+									"sid": 155994363449083,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "DialogBox",
+									"sid": 467951440512078
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Dialog",
+									"sid": 651961204761633
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 482601875790609,
+									"parameters": {
+										"object-to-create": "Exit",
+										"layer": "\"dialog\"",
+										"x": "390",
+										"y": "250",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 280556305357168,
+									"parameters": {
+										"object-to-create": "Extract",
+										"layer": "\"dialog\"",
+										"x": "370",
+										"y": "200",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 950931450788218
 						},
 						{
 							"eventType": "group",

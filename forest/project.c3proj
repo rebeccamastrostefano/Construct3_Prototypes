@@ -78,6 +78,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Pathfinding",
+			"name": "Pathfinding",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Persist",
 			"name": "Persist",
 			"author": "Scirra",
@@ -94,6 +101,13 @@
 			"type": "behavior",
 			"id": "Sin",
 			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Timer",
+			"name": "Timer",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -169,7 +183,21 @@
 			"GemAltar3",
 			"GemAltar4",
 			"Nimm",
-			"NimmHealth"
+			"NimmHealth",
+			"Ball",
+			"Temple",
+			"BackTemple",
+			"Castle",
+			"Wall",
+			"Flames",
+			"BackGourndCastle",
+			"SolidCastle",
+			"Boss",
+			"HealthBoss",
+			"Name",
+			"Spot",
+			"FireColumn",
+			"Skull"
 		],
 		"subfolders": [
 			{
@@ -240,7 +268,10 @@
 					"HitMelee",
 					"Hitbox",
 					"HitHero",
-					"HitboxNimm"
+					"HitboxNimm",
+					"HitLight",
+					"HitHeavy",
+					"HitboxShield"
 				],
 				"subfolders": [],
 				"name": "HitBox"
@@ -267,7 +298,8 @@
 			"Gems",
 			"Spells",
 			"Enemy",
-			"IconsUI"
+			"IconsUI",
+			"EnemyFind"
 		],
 		"subfolders": []
 	},
@@ -277,14 +309,16 @@
 			"House",
 			"Dialog",
 			"Inventory",
-			"Extract"
+			"Extract",
+			"Castle"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
 			"EventForest",
-			"EventHouse"
+			"EventHouse",
+			"EventCastle"
 		],
 		"subfolders": []
 	},

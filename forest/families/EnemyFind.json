@@ -1,0 +1,13 @@
+{
+	"name": "EnemyFind",
+	"plugin-id": "Sprite",
+	"sid": 225212957080323,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Hound",
+		"Nimm",
+		"Skeleton"
+	]
+}

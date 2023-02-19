@@ -1,0 +1,45 @@
+{
+	"name": "Spot",
+	"plugin-id": "Sprite",
+	"sid": 724298144935338,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Index",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 161693667588620
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 56,
+						"height": 3,
+						"originX": 0.4642857142857143,
+						"originY": 0.6666666666666666,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 349052,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 121843472685417,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

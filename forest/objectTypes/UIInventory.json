@@ -2,7 +2,7 @@
 	"name": "UIInventory",
 	"plugin-id": "Sprite",
 	"sid": 824389122525930,
-	"isGlobal": false,
+	"isGlobal": true,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],

@@ -1,0 +1,49 @@
+{
+	"name": "HitboxShield",
+	"plugin-id": "Sprite",
+	"sid": 759472343333518,
+	"isGlobal": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 222,
+						"height": 218,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7855523,
+						"collisionPoly": {
+							"points": [
+								0.0045045045045045045,
+								0,
+								0.9954954954954955,
+								0,
+								0.9954954954954955,
+								0.9954128440366973,
+								0.0045045045045045045,
+								0.9954128440366973
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 514295080612828,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
