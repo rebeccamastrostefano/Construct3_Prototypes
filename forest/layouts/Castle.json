@@ -72,7 +72,7 @@
 					"type": "FireColumn",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Start",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -311,10 +311,11 @@
 					"uid": 169,
 					"instanceVariables": {
 						"Status": "Idle",
-						"StatusIndex": 0
+						"StatusIndex": 0,
+						"Health": 30
 					},
 					"behaviors": {
-						"Timer": {
+						"Flash": {
 							"properties": {}
 						}
 					},

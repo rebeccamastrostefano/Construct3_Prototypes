@@ -859,7 +859,7 @@
 								"acceleration": 1000,
 								"deceleration": 2000,
 								"rotate-speed": 135,
-								"rotate-object": true,
+								"rotate-object": false,
 								"diagonals": true,
 								"enabled": true
 							}
@@ -903,7 +903,7 @@
 								"acceleration": 1000,
 								"deceleration": 2000,
 								"rotate-speed": 135,
-								"rotate-object": true,
+								"rotate-object": false,
 								"diagonals": true,
 								"enabled": true
 							}

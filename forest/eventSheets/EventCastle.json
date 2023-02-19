@@ -391,6 +391,60 @@
 					"children": [
 						{
 							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Boss",
+									"sid": 288475280145333,
+									"parameters": {
+										"instance-variable": "Status",
+										"value": "\"Idle\""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 788560948662546,
+									"parameters": {
+										"seconds": "3"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "FireColumn",
+									"sid": 340277808189478,
+									"parameters": {
+										"animation": "\"Fire\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "FireColumn",
+									"sid": 382106477322235,
+									"parameters": {
+										"collisions": "enabled"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 677226613626416,
+									"parameters": {
+										"seconds": "3"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "FireColumn",
+									"sid": 524201565573283
+								}
+							],
+							"sid": 721659019171121
+						},
+						{
+							"eventType": "block",
 							"conditions": [
 								{
 									"id": "compare-instance-variable",
@@ -467,25 +521,7 @@
 											}
 										}
 									],
-									"sid": 283702928744464,
-									"children": [
-										{
-											"eventType": "block",
-											"conditions": [],
-											"actions": [
-												{
-													"id": "set-instvar-value",
-													"objectClass": "Boss",
-													"sid": 796281547708909,
-													"parameters": {
-														"instance-variable": "Status",
-														"value": "\"Idle\""
-													}
-												}
-											],
-											"sid": 168144010174274
-										}
-									]
+									"sid": 283702928744464
 								}
 							]
 						}
@@ -536,72 +572,87 @@
 			],
 			"actions": [
 				{
-					"id": "start-timer",
+					"id": "set-animation",
 					"objectClass": "Boss",
-					"sid": 745445358375717,
-					"behaviorType": "Timer",
+					"sid": 421876952680924,
 					"parameters": {
-						"duration": "1",
-						"type": "once",
-						"tag": "\"1\""
+						"animation": "\"Summon2\"",
+						"from": "beginning"
 					}
 				},
 				{
-					"id": "set-animation",
-					"objectClass": "Boss",
-					"sid": 268851661385337,
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 545102523024574,
 					"parameters": {
-						"animation": "\"Idle\"",
-						"from": "beginning"
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Boss",
+					"sid": 656271172412235,
+					"parameters": {
+						"instance-variable": "Status",
+						"value": "\"Idle\""
 					}
 				}
 			],
-			"sid": 802713258318433,
+			"sid": 802713258318433
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Boss",
+					"sid": 517654686088874,
+					"parameters": {
+						"animation": "\"Summon2\""
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 743468951354735,
+					"parameters": {
+						"first-value": "Skull.Count",
+						"comparison": 2,
+						"second-value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Boss",
+					"sid": 590321313713794,
+					"parameters": {
+						"object": "Skull",
+						"layer": "\"Hero\"",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 943883125306651,
 			"children": [
 				{
 					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-timer",
-							"objectClass": "Boss",
-							"sid": 551855196830669,
-							"behaviorType": "Timer",
-							"parameters": {
-								"tag": "\"1\""
-							}
-						}
-					],
+					"conditions": [],
 					"actions": [
 						{
-							"id": "set-instvar-value",
-							"objectClass": "Boss",
-							"sid": 562212125784049,
+							"id": "find-path",
+							"objectClass": "Skull",
+							"sid": 327746759062229,
+							"behaviorType": "Pathfinding",
 							"parameters": {
-								"instance-variable": "Status",
-								"value": "\"Idle\""
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 693378132338969,
-							"parameters": {
-								"seconds": "0.2"
-							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "Boss",
-							"sid": 802804679875890,
-							"parameters": {
-								"object": "Skull",
-								"layer": "\"Hero\"",
-								"image-point": "1",
-								"create-hierarchy": false
+								"x": "Hero.X",
+								"y": "Hero.Y"
 							}
 						}
 					],
-					"sid": 176067260238049
+					"sid": 273254164039931
 				}
 			]
 		},
@@ -655,6 +706,1234 @@
 				}
 			],
 			"sid": 837472098489217
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-path-found",
+					"objectClass": "Skull",
+					"sid": 619496199458017,
+					"behaviorType": "Pathfinding"
+				}
+			],
+			"actions": [
+				{
+					"id": "move-along-path",
+					"objectClass": "Skull",
+					"sid": 166370861881775,
+					"behaviorType": "Pathfinding"
+				}
+			],
+			"sid": 833855590875039
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 529462527777154,
+					"parameters": {
+						"interval-seconds": "0.5"
+					}
+				},
+				{
+					"id": "is-moving-along-path",
+					"objectClass": "Skull",
+					"sid": 926924670080195,
+					"behaviorType": "Pathfinding"
+				},
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "Hero",
+					"sid": 496612830897575,
+					"parameters": {
+						"unique-id": "Hero.UID"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "find-path",
+					"objectClass": "Skull",
+					"sid": 756509211535292,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"x": "Hero.X",
+						"y": "Hero.Y"
+					}
+				}
+			],
+			"sid": 176088443765347
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-arrived",
+					"objectClass": "Skull",
+					"sid": 288788095838599,
+					"behaviorType": "Pathfinding"
+				}
+			],
+			"actions": [
+				{
+					"id": "find-path",
+					"objectClass": "Skull",
+					"sid": 449425815351647,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"x": "Hero.X",
+						"y": "Hero.Y"
+					}
+				}
+			],
+			"sid": 645855780553566
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Hitbox",
+					"sid": 870313772759425,
+					"parameters": {
+						"object": "FireColumn"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 128876155354690,
+					"parameters": {
+						"variable": "Health",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 564333436649432
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "HitMelee",
+					"sid": 512981192141834,
+					"parameters": {
+						"object": "Boss"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Boss",
+					"sid": 100669368090830,
+					"parameters": {
+						"instance-variable": "Health",
+						"comparison": 1,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 348525041895084,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Boss",
+					"sid": 770742965946479,
+					"parameters": {
+						"instance-variable": "Health",
+						"value": "0.5"
+					}
+				},
+				{
+					"id": "flash",
+					"objectClass": "Boss",
+					"sid": 989763017511317,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "1.0"
+					}
+				}
+			],
+			"sid": 918490410487787
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "HitLight",
+					"sid": 690375438012177,
+					"parameters": {
+						"object": "Boss"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Boss",
+					"sid": 908717559589568,
+					"parameters": {
+						"instance-variable": "Health",
+						"comparison": 1,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 840294886353725,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Boss",
+					"sid": 969890037433269,
+					"parameters": {
+						"instance-variable": "Health",
+						"value": "1"
+					}
+				},
+				{
+					"id": "flash",
+					"objectClass": "Boss",
+					"sid": 507144320587647,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "1.0"
+					}
+				}
+			],
+			"sid": 893563496880201
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "HitHeavy",
+					"sid": 894597369885920,
+					"parameters": {
+						"object": "Boss"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Boss",
+					"sid": 131577685327595,
+					"parameters": {
+						"instance-variable": "Health",
+						"comparison": 1,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 138760539597136,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Boss",
+					"sid": 827848498308857,
+					"parameters": {
+						"instance-variable": "Health",
+						"value": "2"
+					}
+				},
+				{
+					"id": "flash",
+					"objectClass": "Boss",
+					"sid": 481625911169974,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "1.0"
+					}
+				}
+			],
+			"sid": 820779025083146
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Ball",
+					"sid": 333668547379870,
+					"parameters": {
+						"object": "Boss"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Ball",
+					"sid": 333783547655910
+				},
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Boss",
+					"sid": 528985297617853,
+					"parameters": {
+						"instance-variable": "Health",
+						"value": "3"
+					}
+				},
+				{
+					"id": "flash",
+					"objectClass": "Boss",
+					"sid": 100812436963037,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "1.0"
+					}
+				}
+			],
+			"sid": 662386559376939
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "BossHealth",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 377592942048223,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "30"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 927924836912477,
+							"parameters": {
+								"animation": "\"30\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 316036765930772
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 940841254490889,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "29"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 808432122355556,
+							"parameters": {
+								"animation": "\"29\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 413958913369107
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 610464247665662,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "28"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 591645361343105,
+							"parameters": {
+								"animation": "\"28\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 312469573879740
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 762035804709250,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "27"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 542317635170126,
+							"parameters": {
+								"animation": "\"27\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 214765015224787
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 989463018122495,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "26"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 288745450860009,
+							"parameters": {
+								"animation": "\"26\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 918328156325128
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 323244340478622,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "25"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 635921614800838,
+							"parameters": {
+								"animation": "\"25\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 180665495819419
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 414730175433868,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "24"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 321049772942771,
+							"parameters": {
+								"animation": "\"24\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 468025586714638
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 599633552052002,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "23"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 578807639041661,
+							"parameters": {
+								"animation": "\"23\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 486057291035371
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 830785607454158,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "22"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 699684986738187,
+							"parameters": {
+								"animation": "\"22\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 465272259420717
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 784940091599529,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "21"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 549018862440613,
+							"parameters": {
+								"animation": "\"21\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 285179074480328
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 617142074083483,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "20"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 442402315551080,
+							"parameters": {
+								"animation": "\"20\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 849692477687723
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 656361469004849,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "19"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 924323431161305,
+							"parameters": {
+								"animation": "\"19\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 446505332591732
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 469433486951559,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "18"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 615499762074973,
+							"parameters": {
+								"animation": "\"18\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 989460381844461
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 932916844332639,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "17"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 186312123185379,
+							"parameters": {
+								"animation": "\"17\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 652308452156343
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 961266588537629,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "16"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 334999294041021,
+							"parameters": {
+								"animation": "\"16\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 591917424860516
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 301314250426648,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "15"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 823496100188567,
+							"parameters": {
+								"animation": "\"15\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 306017831663438
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 851211895052998,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "14"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 829233901976710,
+							"parameters": {
+								"animation": "\"14\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 459595588465334
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 142903966979770,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "13"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 891647371690088,
+							"parameters": {
+								"animation": "\"13\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 494165126152276
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 976929963604591,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "12"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 969217707593056,
+							"parameters": {
+								"animation": "\"12\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 178341606998711
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 191668381927552,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "11"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 743904634616870,
+							"parameters": {
+								"animation": "\"11\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 462654873826913
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 677533977857477,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 765635594216860,
+							"parameters": {
+								"animation": "\"10\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 695537120554897
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 636864313061465,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "9"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 684839243460182,
+							"parameters": {
+								"animation": "\"9\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 636978301074859
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 920668569418823,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "8"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 587947486155553,
+							"parameters": {
+								"animation": "\"8\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 972138746133421
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 209874003723835,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "7"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 404994588017817,
+							"parameters": {
+								"animation": "\"7\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 294745021248083
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 922767766523938,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "6"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 814010296515671,
+							"parameters": {
+								"animation": "\"6\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 871588204545056
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 824215120270028,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 156020427290803,
+							"parameters": {
+								"animation": "\"5\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 355495903764768
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 682531270414092,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 668514833173459,
+							"parameters": {
+								"animation": "\"4\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 825698677955247
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 771415804235590,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 147178029447801,
+							"parameters": {
+								"animation": "\"3\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 836065212901482
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 965770661180730,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 878904742394512,
+							"parameters": {
+								"animation": "\"2\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 345455456075243
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 953477266951908,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 812702769189989,
+							"parameters": {
+								"animation": "\"1\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 610055431658304
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Boss",
+							"sid": 726129655161064,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HealthBoss",
+							"sid": 990078350308870,
+							"parameters": {
+								"animation": "\"0\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Boss",
+							"sid": 728045473453150,
+							"parameters": {
+								"animation": "\"Death\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Boss",
+							"sid": 682458225256394,
+							"parameters": {
+								"instance-variable": "Status",
+								"value": "\"Death\""
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Boss",
+							"sid": 827809015606996,
+							"parameters": {
+								"animation": "\"Death\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 116291625453677,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-animation-finished",
+									"objectClass": "Boss",
+									"sid": 420227722944482,
+									"parameters": {
+										"animation": "\"Death\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Boss",
+									"sid": 283658348772509
+								},
+								{
+									"id": "destroy",
+									"objectClass": "HealthBoss",
+									"sid": 154498994358403
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 957126646158620,
+									"parameters": {
+										"variable": "Souls",
+										"value": "50"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Name",
+									"sid": 263126349966920
+								}
+							],
+							"sid": 531672550995435
+						}
+					]
+				}
+			],
+			"sid": 728814509199046
 		}
 	],
 	"sid": 235825720790398

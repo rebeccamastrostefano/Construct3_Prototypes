@@ -17,13 +17,20 @@
 			"desc": "",
 			"show": true,
 			"sid": 346538907863523
+		},
+		{
+			"name": "Health",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 364439419839415
 		}
 	],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Timer",
-			"name": "Timer",
-			"sid": 708258405946279
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 435185311885201
 		}
 	],
 	"effectTypes": [],
@@ -466,6 +473,110 @@
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 3
+			},
+			{
+				"frames": [
+					{
+						"width": 48,
+						"height": 57,
+						"originX": 0.375,
+						"originY": 0.9649122807017544,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5359424,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.944517432597646,
+								0,
+								0.9413376732876424
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.7916666666666666,
+								"y": 0.38596491228070173
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 51,
+						"height": 63,
+						"originX": 0.39215686274509803,
+						"originY": 0.9682539682539683,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 698558,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.944517432597646,
+								0,
+								0.9413376732876424
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.7647058823529411,
+								"y": 0.4444444444444444
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 51,
+						"height": 65,
+						"originX": 0.4117647058823529,
+						"originY": 0.9692307692307692,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3681015,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.944517432597646,
+								0,
+								0.9413376732876424
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.803921568627451,
+								"y": 0.47692307692307695
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 914732488379680,
+				"name": "Summon2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
 			}
 		],
 		"subfolders": []
