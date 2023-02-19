@@ -74,6 +74,233 @@
 		{
 			"eventType": "group",
 			"disabled": false,
+			"title": "Sounds",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 214649280057776
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 840707541038633,
+							"parameters": {
+								"audio-file": "Regular",
+								"loop": "looping",
+								"volume": "-3",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 444296645319770
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "Hero",
+							"sid": 350090127390751,
+							"parameters": {
+								"comparison": 0,
+								"number": "0"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 759652409110616
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "Hero",
+							"sid": 503892532651055,
+							"parameters": {
+								"animation": "\"Run\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 545756996151722,
+							"parameters": {
+								"audio-file": "12_Step_wood_03",
+								"loop": "not-looping",
+								"volume": "1",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 254556630080726
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "Hero",
+							"sid": 798549070378633,
+							"parameters": {
+								"comparison": 0,
+								"number": "2"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 534848596963314
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "Hero",
+							"sid": 388590487180348,
+							"parameters": {
+								"animation": "\"Run\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 675683589625177,
+							"parameters": {
+								"audio-file": "12_Step_wood_03",
+								"loop": "not-looping",
+								"volume": "1",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 535529101860682
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "Hero",
+							"sid": 308176100807682,
+							"parameters": {
+								"comparison": 0,
+								"number": "4"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 777513147972769
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "Hero",
+							"sid": 305435865248862,
+							"parameters": {
+								"animation": "\"Run\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 121343417937225,
+							"parameters": {
+								"audio-file": "12_Step_wood_03",
+								"loop": "not-looping",
+								"volume": "1",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 741846504914898
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "Skeleton",
+							"sid": 296148180223472,
+							"parameters": {
+								"animation": "\"Attack\""
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 749706332039102
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 139489534930062,
+							"parameters": {
+								"audio-file": "35_Miss_Evade_02",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 374947646555999
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "Hound",
+							"sid": 819366185736510,
+							"parameters": {
+								"animation": "\"Attack\""
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 744082592339519
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 108766514361681,
+							"parameters": {
+								"audio-file": "03_Claw_03",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 167454198817404
+				}
+			],
+			"sid": 999797434707184
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
 			"title": "Commands",
 			"description": "",
 			"isActiveOnStart": true,
@@ -587,6 +814,18 @@
 								"animation": "\"jump\"",
 								"from": "beginning"
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 256916901985625,
+							"parameters": {
+								"audio-file": "30_Jump_03",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 834138882556517
@@ -735,6 +974,18 @@
 							"parameters": {
 								"animation": "\"Walk\"",
 								"from": "beginning"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 710921689120833,
+							"parameters": {
+								"audio-file": "21_Debuff_01",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						},
 						{
@@ -1067,34 +1318,32 @@
 												"variable": "Health",
 												"value": "1"
 											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 841747074363625,
+											"parameters": {
+												"audio-file": "61_Hit_03",
+												"loop": "not-looping",
+												"volume": "1",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										},
+										{
+											"id": "flash",
+											"objectClass": "Hero",
+											"sid": 362574634428611,
+											"behaviorType": "Flash",
+											"parameters": {
+												"on-time": "0.1",
+												"off-time": "0.1",
+												"duration": "1.0"
+											}
 										}
 									],
 									"sid": 358147107956410
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "on-collision-with-another-object",
-											"objectClass": "Hitbox",
-											"sid": 166395629465385,
-											"parameters": {
-												"object": "HitHero"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "subtract-from-eventvar",
-											"objectClass": "System",
-											"sid": 852964364422444,
-											"parameters": {
-												"variable": "Health",
-												"value": "1"
-											}
-										}
-									],
-									"sid": 240221433508758
 								},
 								{
 									"eventType": "block",
@@ -3272,6 +3521,18 @@
 											"parameters": {
 												"visibility": "invisible"
 											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 560116243397819,
+											"parameters": {
+												"audio-file": "013_Confirm_03",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
 										}
 									],
 									"sid": 934709806933922
@@ -3524,6 +3785,18 @@
 											"sid": 682308125783132,
 											"parameters": {
 												"visibility": "invisible"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 943252638516509,
+											"parameters": {
+												"audio-file": "013_Confirm_03",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
 											}
 										}
 									],
@@ -3778,6 +4051,18 @@
 											"parameters": {
 												"visibility": "invisible"
 											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 657292449829041,
+											"parameters": {
+												"audio-file": "013_Confirm_03",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
 										}
 									],
 									"sid": 216217006083900
@@ -4030,6 +4315,18 @@
 											"sid": 370409445755163,
 											"parameters": {
 												"visibility": "invisible"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 904576124284518,
+											"parameters": {
+												"audio-file": "013_Confirm_03",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
 											}
 										}
 									],
@@ -6159,6 +6456,18 @@
 										"variable": "Health",
 										"value": "1"
 									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 438727445052631,
+									"parameters": {
+										"audio-file": "61_Hit_03",
+										"loop": "not-looping",
+										"volume": "1",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 481546698148385,
@@ -7500,6 +7809,18 @@
 							}
 						},
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 725546143699690,
+							"parameters": {
+								"audio-file": "56_Attack_03",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "spawn-another-object",
 							"objectClass": "Hero",
 							"sid": 867396091319743,
@@ -7581,6 +7902,18 @@
 							}
 						},
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 639304236011850,
+							"parameters": {
+								"audio-file": "56_Attack_03",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "spawn-another-object",
 							"objectClass": "Hero",
 							"sid": 261028827314312,
@@ -7653,6 +7986,18 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 431580546893795,
+							"parameters": {
+								"audio-file": "30_Earth_02",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
 						{
 							"id": "set-animation",
 							"objectClass": "Hero",
@@ -7788,6 +8133,18 @@
 							}
 						},
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 769718663986057,
+							"parameters": {
+								"audio-file": "22_Water_02",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "spawn-another-object",
 							"objectClass": "Hero",
 							"sid": 412378289322128,
@@ -7920,6 +8277,18 @@
 							"parameters": {
 								"animation": "\"Shield\"",
 								"from": "beginning"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 538212504087600,
+							"parameters": {
+								"audio-file": "39_Absorb_04",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						},
 						{
@@ -8146,6 +8515,18 @@
 							}
 						},
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 430904301141512,
+							"parameters": {
+								"audio-file": "13_Ice_explosion_01",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "spawn-another-object",
 							"objectClass": "Hero",
 							"sid": 786674203009966,
@@ -8345,6 +8726,18 @@
 								"animation": "\"Hit\"",
 								"from": "beginning"
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 914173770086215,
+							"parameters": {
+								"audio-file": "45_Landing_01",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 218097151918792
@@ -8396,6 +8789,18 @@
 							"parameters": {
 								"animation": "\"Hit\"",
 								"from": "beginning"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 710003811046940,
+							"parameters": {
+								"audio-file": "45_Landing_01",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],
@@ -8449,6 +8854,18 @@
 								"animation": "\"Hit\"",
 								"from": "beginning"
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 887141759568154,
+							"parameters": {
+								"audio-file": "45_Landing_01",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 314276006936891
@@ -8497,6 +8914,18 @@
 							"parameters": {
 								"animation": "\"Hit\"",
 								"from": "beginning"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 761923215752252,
+							"parameters": {
+								"audio-file": "45_Landing_01",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],
@@ -8645,6 +9074,18 @@
 							"parameters": {
 								"slot": "\"1checkpoint\""
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 565822790651255,
+							"parameters": {
+								"audio-file": "Regular",
+								"loop": "looping",
+								"volume": "-3",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 697371765441793
@@ -8708,6 +9149,18 @@
 							"sid": 645615865883208,
 							"parameters": {
 								"slot": "\"2checkpoint\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 127912798522510,
+							"parameters": {
+								"audio-file": "Regular",
+								"loop": "looping",
+								"volume": "-3",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],

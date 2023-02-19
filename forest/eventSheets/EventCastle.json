@@ -170,6 +170,26 @@
 					"id": "move-to-top",
 					"objectClass": "IconsUI",
 					"sid": 746652892368754
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 470178893818282,
+					"parameters": {
+						"audio-file": "Battle",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 686228009356506,
+					"parameters": {
+						"tag": "\"Regular\""
+					}
 				}
 			],
 			"sid": 294126701831520

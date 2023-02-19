@@ -39,6 +39,11 @@
 			"behaviorId": "Persist",
 			"name": "Persist",
 			"sid": 525646926510905
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 278177762764921
 		}
 	],
 	"effectTypes": [],

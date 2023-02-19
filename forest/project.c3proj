@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Button",
 			"name": "Button",
 			"author": "Scirra",
@@ -192,7 +199,8 @@
 			"Name",
 			"Spot",
 			"FireColumn",
-			"Skull"
+			"Skull",
+			"Audio"
 		],
 		"subfolders": [
 			{
@@ -337,11 +345,133 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "12_Step_wood_03.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 804699714538728,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "30_Jump_03.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 329234194394019,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "56_Attack_03.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 378527829161751,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "30_Earth_02.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 530838860049366,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "22_Water_02.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 217874640611898,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "13_Ice_explosion_01.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 140584174827104,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "39_Absorb_04.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 599979252081300,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "21_Debuff_01.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 650817127268071,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "03_Claw_03.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 642119001385596,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "35_Miss_Evade_02.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 150649554526118,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "61_Hit_03.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 178276002873034,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "45_Landing_01.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 222199231725318,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "013_Confirm_03.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 607855308518700,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "Regular.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 416596794658106,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Battle.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 566812564892336,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"video": {
