@@ -149,29 +149,6 @@
 					}
 				},
 				{
-					"id": "move-to-top",
-					"objectClass": "Items",
-					"sid": 574244084986197
-				},
-				{
-					"id": "move-to-top",
-					"objectClass": "ItemInventory",
-					"sid": 425904971921788
-				},
-				{
-					"id": "move-to-layer",
-					"objectClass": "IconsUI",
-					"sid": 244916927185229,
-					"parameters": {
-						"layer": "\"UI\""
-					}
-				},
-				{
-					"id": "move-to-top",
-					"objectClass": "IconsUI",
-					"sid": 746652892368754
-				},
-				{
 					"id": "play",
 					"objectClass": "Audio",
 					"sid": 286843901358019,
@@ -190,6 +167,69 @@
 					"parameters": {
 						"tag": "\"Regular\""
 					}
+				},
+				{
+					"id": "move-to-layer",
+					"objectClass": "Items",
+					"sid": 805911671224205,
+					"parameters": {
+						"layer": "\"Inventory\""
+					}
+				},
+				{
+					"id": "move-to-layer",
+					"objectClass": "ItemInventory",
+					"sid": 710597026507201,
+					"parameters": {
+						"layer": "\"Inventory\""
+					}
+				},
+				{
+					"id": "move-to-layer",
+					"objectClass": "InventoryFam",
+					"sid": 276699365714588,
+					"parameters": {
+						"layer": "\"Inventory\""
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "Items",
+					"sid": 857860828103560
+				},
+				{
+					"id": "move-to-layer",
+					"objectClass": "UI",
+					"sid": 640133081579674,
+					"parameters": {
+						"layer": "\"UI\""
+					}
+				},
+				{
+					"id": "move-to-layer",
+					"objectClass": "SoulsCount",
+					"sid": 937486325304849,
+					"parameters": {
+						"layer": "\"UI\""
+					}
+				},
+				{
+					"id": "move-to-layer",
+					"objectClass": "IconsUI",
+					"sid": 409251732648749,
+					"parameters": {
+						"layer": "\"UI\""
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "ItemInventory",
+					"sid": 674390640449858
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "IconsUI",
+					"sid": 175085643144184
 				}
 			],
 			"sid": 294126701831520
@@ -647,6 +687,11 @@
 						"comparison": 0,
 						"value": "\"Summon\""
 					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 416627215782750
 				}
 			],
 			"actions": [
@@ -2033,11 +2078,6 @@
 								"comparison": 0,
 								"value": "0"
 							}
-						},
-						{
-							"id": "trigger-once-while-true",
-							"objectClass": "System",
-							"sid": 566492663549007
 						}
 					],
 					"actions": [
@@ -2069,15 +2109,25 @@
 							}
 						},
 						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 122799424984921,
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 143368958856391,
 							"parameters": {
-								"audio-file": "55_Encounter_02",
-								"loop": "not-looping",
-								"volume": "0",
-								"stereo-pan": "0",
-								"tag-optional": "\"\""
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Boss",
+							"sid": 805633814306107
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 201855499033569,
+							"parameters": {
+								"variable": "Souls",
+								"value": "200"
 							}
 						}
 					],
@@ -2107,27 +2157,9 @@
 									"sid": 154498994358403
 								},
 								{
-									"id": "add-to-eventvar",
-									"objectClass": "System",
-									"sid": 225328363533796,
-									"parameters": {
-										"variable": "Souls",
-										"value": "200"
-									}
-								},
-								{
 									"id": "destroy",
 									"objectClass": "Name",
 									"sid": 263126349966920
-								},
-								{
-									"id": "set-max-speed",
-									"objectClass": "Hero",
-									"sid": 467559488270559,
-									"behaviorType": "Platform",
-									"parameters": {
-										"max-speed": "0"
-									}
 								}
 							],
 							"sid": 531672550995435,
@@ -2135,29 +2167,62 @@
 								{
 									"eventType": "block",
 									"conditions": [],
-									"actions": [
-										{
-											"id": "wait",
-											"objectClass": "System",
-											"sid": 982764938168834,
-											"parameters": {
-												"seconds": "2"
-											}
-										},
-										{
-											"id": "go-to-layout",
-											"objectClass": "System",
-											"sid": 372077727599192,
-											"parameters": {
-												"layout": "Credits"
-											}
-										}
-									],
+									"actions": [],
 									"sid": 426435765998772
 								}
 							]
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "Boss",
+							"sid": 689768272355231
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 305585764397466,
+							"parameters": {
+								"audio-file": "55_Encounter_02",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Hero",
+							"sid": 897673141615572,
+							"behaviorType": "Platform",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 613880096202735,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 906383773906910,
+							"parameters": {
+								"layout": "Credits"
+							}
+						}
+					],
+					"sid": 799420587239697
 				}
 			],
 			"sid": 728814509199046

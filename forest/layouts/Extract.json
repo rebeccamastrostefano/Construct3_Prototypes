@@ -161,14 +161,14 @@
 						"text": "0",
 						"enable-bbcode": true,
 						"font": "Minecraft",
-						"size": 7,
+						"size": 11,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
 						"color": [
-							0.054901960784313725,
-							0.06274509803921569,
-							0.06274509803921569,
+							1,
+							1,
+							1,
 							1
 						],
 						"horizontal-alignment": "left",
@@ -184,10 +184,10 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 399.5314681021932,
-						"y": 73.53953755331631,
+						"x": 399.96121243430946,
+						"y": 65.37427229039172,
 						"width": 25.30727897246814,
-						"height": 12.369836843154193,
+						"height": 19.24586091288231,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -211,9 +211,9 @@
 						"bold": true,
 						"italic": false,
 						"color": [
-							0.054901960784313725,
-							0.06274509803921569,
-							0.06274509803921569,
+							1,
+							1,
+							1,
 							1
 						],
 						"horizontal-alignment": "left",
@@ -229,8 +229,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 429.1794143811606,
-						"y": 62.36751733473605,
+						"x": 433.47692327710485,
+						"y": 60.2187628867639,
 						"width": 86.38294101090108,
 						"height": 20.58172417500811,
 						"originX": 0,
@@ -256,9 +256,9 @@
 						"bold": true,
 						"italic": false,
 						"color": [
-							0.054901960784313725,
-							0.06274509803921569,
-							0.06274509803921569,
+							1,
+							1,
+							1,
 							1
 						],
 						"horizontal-alignment": "left",
@@ -303,10 +303,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 388.37043904588614,
-						"y": 70.45824577569311,
-						"width": 9.776610254354699,
-						"height": 14.664915381532047,
+						"x": 378.0564439255325,
+						"y": 59.71446533898468,
+						"width": 20.090638162099147,
+						"height": 26.697945208284672,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -322,17 +322,17 @@
 				{
 					"type": "TextExtract",
 					"properties": {
-						"text": "Health Potion: 15",
+						"text": "Health Potion: 10",
 						"enable-bbcode": true,
 						"font": "Minecraft",
-						"size": 6,
+						"size": 7,
 						"line-height": 0,
 						"bold": false,
 						"italic": true,
 						"color": [
-							0.054901960784313725,
-							0.06274509803921569,
-							0.06274509803921569,
+							1,
+							1,
+							1,
 							1
 						],
 						"horizontal-alignment": "left",
@@ -348,9 +348,9 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 289.79988203684536,
-						"y": 166.70073929090194,
-						"width": 70,
+						"x": 278.19658834536125,
+						"y": 164.98174556874147,
+						"width": 82.0330380236004,
 						"height": 11.583358372652786,
 						"originX": 0,
 						"originY": 0,
@@ -367,17 +367,17 @@
 				{
 					"type": "TextExtract",
 					"properties": {
-						"text": "Mana Potion: 15",
+						"text": "Mana Potion: 10",
 						"enable-bbcode": true,
 						"font": "Minecraft",
-						"size": 6,
+						"size": 7,
 						"line-height": -1,
 						"bold": false,
 						"italic": true,
 						"color": [
-							0.054901960784313725,
-							0.06274509803921569,
-							0.06274509803921569,
+							1,
+							1,
+							1,
 							1
 						],
 						"horizontal-alignment": "left",
@@ -393,9 +393,9 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 294.62858021456407,
-						"y": 259.9073402824057,
-						"width": 62.92154375433483,
+						"x": 281.30627640722406,
+						"y": 259.47759595028947,
+						"width": 74.52483744581895,
 						"height": 11.583358372652786,
 						"originX": 0,
 						"originY": 0,
@@ -470,20 +470,20 @@
 				{
 					"type": "TextExtract",
 					"properties": {
-						"text": "0",
+						"text": "15",
 						"enable-bbcode": true,
 						"font": "Minecraft",
-						"size": 6,
+						"size": 15,
 						"line-height": 0,
 						"bold": false,
 						"italic": true,
 						"color": [
-							0.054901960784313725,
-							0.06274509803921569,
-							0.06274509803921569,
+							1,
+							1,
+							1,
 							1
 						],
-						"horizontal-alignment": "left",
+						"horizontal-alignment": "center",
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"initially-visible": true,
@@ -496,10 +496,10 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 456.3859103521912,
-						"y": 248.71039766592165,
-						"width": 19.54532962820025,
-						"height": 11.583358372652786,
+						"x": 450.8760076760327,
+						"y": 243.71073421626045,
+						"width": 33.13210430788416,
+						"height": 22.732145608015717,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -525,10 +525,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 475.4098017120968,
-						"y": 246.50477138169362,
-						"width": 8.39806757791087,
-						"height": 12.73496404846751,
+						"x": 484.86437374299965,
+						"y": 248.22374871015865,
+						"width": 13.125353593362268,
+						"height": 16.60272861229553,
 						"originX": 0,
 						"originY": 0,
 						"color": [

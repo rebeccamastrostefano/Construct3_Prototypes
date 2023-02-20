@@ -1042,6 +1042,31 @@
 						}
 					],
 					"sid": 807059508807511
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "Hero",
+							"sid": 123354860039252,
+							"parameters": {
+								"animation": "\"Idle\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-max-speed",
+							"objectClass": "Hero",
+							"sid": 296253124329406,
+							"behaviorType": "Platform",
+							"parameters": {
+								"max-speed": "200"
+							}
+						}
+					],
+					"sid": 154607807580091
 				}
 			],
 			"sid": 225172342191985
@@ -5473,6 +5498,11 @@
 									}
 								},
 								{
+									"id": "destroy",
+									"objectClass": "Nimm",
+									"sid": 856065775592108
+								},
+								{
 									"id": "set-max-speed",
 									"objectClass": "Nimm",
 									"sid": 118056450940558,
@@ -5480,11 +5510,6 @@
 									"parameters": {
 										"max-speed": "0"
 									}
-								},
-								{
-									"id": "destroy",
-									"objectClass": "HitboxNimm",
-									"sid": 261073432044275
 								}
 							],
 							"sid": 198049637074220,
@@ -5502,11 +5527,6 @@
 										}
 									],
 									"actions": [
-										{
-											"id": "destroy",
-											"objectClass": "Nimm",
-											"sid": 507004716044778
-										},
 										{
 											"id": "destroy",
 											"objectClass": "NimmHealth",
@@ -5981,6 +6001,17 @@
 										"comparison": 3,
 										"y-co-ordinate": "Hero.Y+50"
 									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Nimm",
+									"sid": 763498360739930,
+									"parameters": {
+										"instance-variable": "Status",
+										"comparison": 0,
+										"value": "\"Laser\""
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [
@@ -5991,6 +6022,14 @@
 									"parameters": {
 										"instance-variable": "Status",
 										"value": "\"Melee\""
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "Nimm",
+									"sid": 776259483769341,
+									"parameters": {
+										"collisions": "enabled"
 									}
 								}
 							],
@@ -6008,6 +6047,11 @@
 												"comparison": 0,
 												"value": "\"Melee\""
 											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 782042771695883
 										}
 									],
 									"actions": [
@@ -6027,6 +6071,33 @@
 											"behaviorType": "Platform",
 											"parameters": {
 												"max-speed": "0"
+											}
+										},
+										{
+											"id": "set-collisions-enabled",
+											"objectClass": "Nimm",
+											"sid": 376850677299564,
+											"parameters": {
+												"collisions": "enabled"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 181680069252614,
+											"parameters": {
+												"seconds": "0.5"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Nimm",
+											"sid": 226581840742642,
+											"parameters": {
+												"object": "HitHero",
+												"layer": "\"Hero\"",
+												"image-point": "0",
+												"create-hierarchy": false
 											}
 										}
 									],
@@ -6078,10 +6149,10 @@
 										{
 											"id": "set-instvar-value",
 											"objectClass": "Nimm",
-											"sid": 174387986360901,
+											"sid": 580232882088584,
 											"parameters": {
 												"instance-variable": "StatusIndex",
-												"value": "floor(random(3))"
+												"value": "floor(random(2))"
 											}
 										}
 									],
@@ -6141,7 +6212,8 @@
 									}
 								}
 							],
-							"sid": 640640414605841
+							"sid": 640640414605841,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -6149,11 +6221,11 @@
 								{
 									"id": "compare-instance-variable",
 									"objectClass": "Nimm",
-									"sid": 837497968020559,
+									"sid": 925485976990243,
 									"parameters": {
 										"instance-variable": "StatusIndex",
 										"comparison": 0,
-										"value": "2"
+										"value": "1"
 									}
 								}
 							],
@@ -6182,6 +6254,11 @@
 										"comparison": 0,
 										"value": "\"Idle\""
 									}
+								},
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 248837882406185
 								}
 							],
 							"actions": [
@@ -6210,8 +6287,21 @@
 								},
 								{
 									"id": "destroy",
+									"objectClass": "HitHero",
+									"sid": 916680226759290
+								},
+								{
+									"id": "destroy",
 									"objectClass": "HitHeroLaser2",
 									"sid": 712728235463428
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "HitboxNimm",
+									"sid": 815005376900082,
+									"parameters": {
+										"collisions": "enabled"
+									}
 								}
 							],
 							"sid": 843190675890999
@@ -6228,6 +6318,11 @@
 										"comparison": 0,
 										"value": "\"Shield\""
 									}
+								},
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 379623339835603
 								}
 							],
 							"actions": [
@@ -6250,14 +6345,6 @@
 									}
 								},
 								{
-									"id": "set-collisions-enabled",
-									"objectClass": "HitboxNimm",
-									"sid": 872137124325832,
-									"parameters": {
-										"collisions": "disabled"
-									}
-								},
-								{
 									"id": "destroy",
 									"objectClass": "HitHeroLaser2",
 									"sid": 460239783053025
@@ -6266,9 +6353,15 @@
 									"id": "destroy",
 									"objectClass": "HitHeroLaser",
 									"sid": 352082693925326
+								},
+								{
+									"id": "destroy",
+									"objectClass": "HitHero",
+									"sid": 581436687560796
 								}
 							],
-							"sid": 615320255414070
+							"sid": 615320255414070,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -6282,6 +6375,11 @@
 										"comparison": 0,
 										"value": "\"Laser\""
 									}
+								},
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 745789651116082
 								}
 							],
 							"actions": [
@@ -6306,14 +6404,27 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 767185559507174,
+									"sid": 543098830550557,
 									"parameters": {
 										"audio-file": "351807__plasterbrain__laser-charging",
 										"loop": "not-looping",
-										"volume": "0",
+										"volume": "-10",
 										"stereo-pan": "0",
 										"tag-optional": "\"\""
 									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "HitboxNimm",
+									"sid": 527423830861343,
+									"parameters": {
+										"collisions": "enabled"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "HitHero",
+									"sid": 790151925163189
 								}
 							],
 							"sid": 549844729868749,
@@ -6330,7 +6441,7 @@
 										{
 											"id": "trigger-once-while-true",
 											"objectClass": "System",
-											"sid": 802516443524515
+											"sid": 554602830770730
 										}
 									],
 									"actions": [
@@ -6340,18 +6451,6 @@
 											"sid": 752707222085496,
 											"parameters": {
 												"seconds": "1"
-											}
-										},
-										{
-											"id": "play",
-											"objectClass": "Audio",
-											"sid": 344281418329503,
-											"parameters": {
-												"audio-file": "55_Encounter_02",
-												"loop": "not-looping",
-												"volume": "0",
-												"stereo-pan": "0",
-												"tag-optional": "\"\""
 											}
 										},
 										{
@@ -6377,9 +6476,41 @@
 											"id": "destroy",
 											"objectClass": "HitHeroLaser",
 											"sid": 558749529736942
+										},
+										{
+											"id": "destroy",
+											"objectClass": "HitHero",
+											"sid": 626492427201089
 										}
 									],
-									"sid": 234292223208002
+									"sid": 234292223208002,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 764431366129194
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 191773031612263,
+													"parameters": {
+														"audio-file": "55_Encounter_02",
+														"loop": "not-looping",
+														"volume": "-10",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												}
+											],
+											"sid": 126871219556920
+										}
+									]
 								},
 								{
 									"eventType": "block",
@@ -6388,11 +6519,6 @@
 											"id": "is-mirrored",
 											"objectClass": "Nimm",
 											"sid": 557954926411254
-										},
-										{
-											"id": "trigger-once-while-true",
-											"objectClass": "System",
-											"sid": 181349442345029
 										}
 									],
 									"actions": [
@@ -6402,18 +6528,6 @@
 											"sid": 127000191150108,
 											"parameters": {
 												"seconds": "1"
-											}
-										},
-										{
-											"id": "play",
-											"objectClass": "Audio",
-											"sid": 765447225417017,
-											"parameters": {
-												"audio-file": "55_Encounter_02",
-												"loop": "not-looping",
-												"volume": "0",
-												"stereo-pan": "0",
-												"tag-optional": "\"\""
 											}
 										},
 										{
@@ -6439,37 +6553,48 @@
 											"id": "destroy",
 											"objectClass": "HitHeroLaser2",
 											"sid": 685890627212274
+										},
+										{
+											"id": "destroy",
+											"objectClass": "HitHero",
+											"sid": 893686545865330
 										}
 									],
-									"sid": 873262389982943
+									"sid": 873262389982943,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 114782457363377
+												},
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 224610319002733
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 361127783224894,
+													"parameters": {
+														"audio-file": "55_Encounter_02",
+														"loop": "not-looping",
+														"volume": "-10",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												}
+											],
+											"sid": 656273749893291
+										}
+									]
 								}
 							]
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "Nimm",
-									"sid": 201468049536644,
-									"parameters": {
-										"instance-variable": "Status",
-										"comparison": 1,
-										"value": "\"Shield\""
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-collisions-enabled",
-									"objectClass": "HitboxNimm",
-									"sid": 646312585849496,
-									"parameters": {
-										"collisions": "enabled"
-									}
-								}
-							],
-							"sid": 795510290528265
 						},
 						{
 							"eventType": "block",
@@ -6510,6 +6635,11 @@
 										"instance-variable": "Status",
 										"value": "\"Idle\""
 									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "HitHero",
+									"sid": 949004415590796
 								}
 							],
 							"sid": 120920461522956
@@ -6520,19 +6650,9 @@
 								{
 									"id": "on-collision-with-another-object",
 									"objectClass": "HitMelee",
-									"sid": 116743163379173,
+									"sid": 250051869624884,
 									"parameters": {
-										"object": "HitboxNimm"
-									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "Nimm",
-									"sid": 686977171100525,
-									"parameters": {
-										"instance-variable": "Health",
-										"comparison": 1,
-										"value": "0"
+										"object": "Nimm"
 									}
 								}
 							],
@@ -6587,19 +6707,9 @@
 								{
 									"id": "on-collision-with-another-object",
 									"objectClass": "HitLight",
-									"sid": 409641181735288,
+									"sid": 508116756550859,
 									"parameters": {
 										"object": "Nimm"
-									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "Nimm",
-									"sid": 917407574259998,
-									"parameters": {
-										"instance-variable": "Health",
-										"comparison": 1,
-										"value": "0"
 									}
 								}
 							],
@@ -6653,19 +6763,9 @@
 								{
 									"id": "on-collision-with-another-object",
 									"objectClass": "HitHeavy",
-									"sid": 534297684354251,
+									"sid": 500064255426461,
 									"parameters": {
 										"object": "Nimm"
-									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "Nimm",
-									"sid": 356350206132982,
-									"parameters": {
-										"instance-variable": "Health",
-										"comparison": 1,
-										"value": "0"
 									}
 								}
 							],
@@ -6719,7 +6819,7 @@
 								{
 									"id": "on-collision-with-another-object",
 									"objectClass": "Ball",
-									"sid": 919926065437073,
+									"sid": 477682359121905,
 									"parameters": {
 										"object": "Nimm"
 									}
@@ -6770,70 +6870,215 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "on-collision-with-another-object",
-									"objectClass": "Hero",
-									"sid": 209740748325941,
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 494426854992749,
 									"parameters": {
-										"object": "HitHeroLaser"
+										"interval-seconds": "0.5"
 									}
-								},
+								}
+							],
+							"actions": [],
+							"sid": 509376721400590,
+							"children": [
 								{
-									"id": "on-collision-with-another-object",
-									"objectClass": "Hero",
-									"sid": 406128822734947,
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Hero",
+											"sid": 254487007375439,
+											"parameters": {
+												"object": "HitHeroLaser2"
+											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 450757744502592
+										}
+									],
+									"actions": [
+										{
+											"id": "subtract-from-eventvar",
+											"objectClass": "System",
+											"sid": 291139750059302,
+											"parameters": {
+												"variable": "Health",
+												"value": "1"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 382648621098301,
+											"parameters": {
+												"audio-file": "61_Hit_03",
+												"loop": "not-looping",
+												"volume": "1",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										},
+										{
+											"id": "flash",
+											"objectClass": "Hero",
+											"sid": 469197995679360,
+											"behaviorType": "Flash",
+											"parameters": {
+												"on-time": "0.1",
+												"off-time": "0.1",
+												"duration": "1.0"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 150460711368431,
+											"parameters": {
+												"audio-file": "45_Landing_01",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 860962265188044
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 895568488277429,
 									"parameters": {
-										"object": "HitHeroLaser2"
+										"interval-seconds": "0.5"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 103551143903864,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Hero",
+											"sid": 103073368287862,
+											"parameters": {
+												"object": "HitHeroLaser"
+											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 391871975496188
+										}
+									],
+									"actions": [
+										{
+											"id": "subtract-from-eventvar",
+											"objectClass": "System",
+											"sid": 876866158063688,
+											"parameters": {
+												"variable": "Health",
+												"value": "1"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 440697591609670,
+											"parameters": {
+												"audio-file": "61_Hit_03",
+												"loop": "not-looping",
+												"volume": "1",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										},
+										{
+											"id": "flash",
+											"objectClass": "Hero",
+											"sid": 665640228628092,
+											"behaviorType": "Flash",
+											"parameters": {
+												"on-time": "0.1",
+												"off-time": "0.1",
+												"duration": "1.0"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 529890894848711,
+											"parameters": {
+												"audio-file": "45_Landing_01",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 777899848090268
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "Nimm",
+									"sid": 110645642329056,
+									"parameters": {
+										"animation": "\"Shield\""
 									}
 								}
 							],
 							"actions": [
 								{
-									"id": "subtract-from-eventvar",
-									"objectClass": "System",
-									"sid": 321016560587285,
+									"id": "set-collisions-enabled",
+									"objectClass": "Nimm",
+									"sid": 827273348815108,
 									"parameters": {
-										"variable": "Health",
-										"value": "1"
-									}
-								},
-								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 728330566815421,
-									"parameters": {
-										"audio-file": "61_Hit_03",
-										"loop": "not-looping",
-										"volume": "1",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
-									}
-								},
-								{
-									"id": "flash",
-									"objectClass": "Hero",
-									"sid": 355025917801179,
-									"behaviorType": "Flash",
-									"parameters": {
-										"on-time": "0.1",
-										"off-time": "0.1",
-										"duration": "1.0"
-									}
-								},
-								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 257223383408211,
-									"parameters": {
-										"audio-file": "45_Landing_01",
-										"loop": "not-looping",
-										"volume": "0",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
+										"collisions": "disabled"
 									}
 								}
 							],
-							"sid": 481546698148385,
-							"isOrBlock": true
+							"sid": 808683009876751,
+							"disabled": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "Nimm",
+									"sid": 732604564015637,
+									"parameters": {
+										"animation": "\"Shield\""
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "Nimm",
+									"sid": 862251998441718,
+									"parameters": {
+										"collisions": "enabled"
+									}
+								}
+							],
+							"sid": 345259184471971
 						}
 					],
 					"sid": 243818769186173
@@ -8450,11 +8695,11 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 313672001417374,
+							"sid": 847429745043336,
 							"parameters": {
 								"variable": "Mana",
 								"comparison": 5,
-								"value": "4"
+								"value": "3"
 							}
 						},
 						{
@@ -8533,10 +8778,10 @@
 						{
 							"id": "subtract-from-eventvar",
 							"objectClass": "System",
-							"sid": 557328539645362,
+							"sid": 395338064120292,
 							"parameters": {
 								"variable": "Mana",
-								"value": "4"
+								"value": "3"
 							}
 						}
 					],
@@ -8574,6 +8819,16 @@
 							"id": "is-visible",
 							"objectClass": "SummonIcon",
 							"sid": 545961925386639
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 279181704902052,
+							"parameters": {
+								"variable": "Mana",
+								"comparison": 5,
+								"value": "2"
+							}
 						}
 					],
 					"actions": [
@@ -8629,6 +8884,25 @@
 							"id": "is-visible",
 							"objectClass": "SummonIcon",
 							"sid": 801381441889320
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 605882960157384,
+							"parameters": {
+								"variable": "Mana",
+								"comparison": 5,
+								"value": "2"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "Hero",
+							"sid": 749182479072003,
+							"parameters": {
+								"animation": "\"Jump\""
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -8841,11 +9115,11 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 266562597993562,
+							"sid": 117054371314018,
 							"parameters": {
 								"variable": "Mana",
 								"comparison": 5,
-								"value": "5"
+								"value": "3"
 							}
 						},
 						{
@@ -8902,10 +9176,10 @@
 						{
 							"id": "subtract-from-eventvar",
 							"objectClass": "System",
-							"sid": 968195651455227,
+							"sid": 407433593290664,
 							"parameters": {
 								"variable": "Mana",
-								"value": "5"
+								"value": "3"
 							}
 						}
 					],
@@ -9114,16 +9388,6 @@
 							"parameters": {
 								"object": "Enemy"
 							}
-						},
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Enemy",
-							"sid": 980401760365946,
-							"parameters": {
-								"instance-variable": "HealthEenemy",
-								"comparison": 1,
-								"value": "0"
-							}
 						}
 					],
 					"actions": [
@@ -9178,16 +9442,6 @@
 							"parameters": {
 								"object": "Enemy"
 							}
-						},
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Enemy",
-							"sid": 337698630988267,
-							"parameters": {
-								"instance-variable": "HealthEenemy",
-								"comparison": 1,
-								"value": "0"
-							}
 						}
 					],
 					"actions": [
@@ -9241,16 +9495,6 @@
 							"sid": 931933195384188,
 							"parameters": {
 								"object": "Enemy"
-							}
-						},
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Enemy",
-							"sid": 740154062429151,
-							"parameters": {
-								"instance-variable": "HealthEenemy",
-								"comparison": 1,
-								"value": "0"
 							}
 						}
 					],

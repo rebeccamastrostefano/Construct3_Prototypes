@@ -3556,6 +3556,15 @@
 										"create-hierarchy": false,
 										"template-name": "\"\""
 									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "Hero",
+									"sid": 618090219715101,
+									"behaviorType": "Platform",
+									"parameters": {
+										"max-speed": "0"
+									}
 								}
 							],
 							"sid": 950931450788218
@@ -4034,6 +4043,15 @@
 							"parameters": {
 								"state": "enabled"
 							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Hero",
+							"sid": 625154788205002,
+							"behaviorType": "Platform",
+							"parameters": {
+								"max-speed": "300"
+							}
 						}
 					],
 					"sid": 207801962175329
@@ -4064,6 +4082,15 @@
 							"behaviorType": "Platform",
 							"parameters": {
 								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Hero",
+							"sid": 363095928448006,
+							"behaviorType": "Platform",
+							"parameters": {
+								"max-speed": "300"
 							}
 						},
 						{
