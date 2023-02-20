@@ -620,7 +620,40 @@
 			"subfolders": []
 		},
 		"font": {
-			"items": [],
+			"items": [
+				{
+					"name": "MinecraftBoldItalic-1y1e.otf",
+					"type": "application/font-sfnt",
+					"sid": 842396639305628,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "MinecraftBold-nMK1.otf",
+					"type": "application/font-sfnt",
+					"sid": 382602580510751,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "MinecraftItalic-R8Mo.otf",
+					"type": "application/font-sfnt",
+					"sid": 664436536495477,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "MinecraftRegular-Bmg3.otf",
+					"type": "application/font-sfnt",
+					"sid": 588012662885649,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"icon": {
