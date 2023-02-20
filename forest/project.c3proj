@@ -201,7 +201,9 @@
 			"FireColumn",
 			"Skull",
 			"Audio",
-			"BackCredits"
+			"BackCredits",
+			"Credits",
+			"NimmName"
 		],
 		"subfolders": [
 			{
