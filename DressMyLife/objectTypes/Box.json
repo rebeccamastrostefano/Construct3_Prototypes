@@ -1,0 +1,37 @@
+{
+	"name": "Box",
+	"plugin-id": "Sprite",
+	"sid": 296732006410903,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 224,
+						"height": 113,
+						"originX": 0.48214285714285715,
+						"originY": 0.5575221238938053,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4119182,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 461048975506201,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

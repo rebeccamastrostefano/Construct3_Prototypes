@@ -1,0 +1,37 @@
+{
+	"name": "pants4",
+	"plugin-id": "Sprite",
+	"sid": 261694194109636,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 370,
+						"height": 293,
+						"originX": 0.4870967741935484,
+						"originY": 0.5178571428571429,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9586447,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 690940843577045,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

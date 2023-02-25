@@ -1,0 +1,49 @@
+{
+	"name": "sweater3",
+	"plugin-id": "Sprite",
+	"sid": 347986451146121,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 455,
+						"height": 441,
+						"originX": 0.5098901098901099,
+						"originY": 0.546485260770975,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9444620,
+						"collisionPoly": {
+							"points": [
+								0.19780219780219788,
+								0.17913832199546487,
+								0.5384615384615384,
+								0.049886621315192746,
+								0.7978021978021979,
+								0.26303854875283444,
+								0.5384615384615384,
+								0.8662131519274376
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 514633066257815,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"name": "tights",
+	"plugin-id": "Sprite",
+	"sid": 185071152705283,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 312,
+						"height": 1043,
+						"originX": 0.4967948717948718,
+						"originY": 0.40939597315436244,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4714980,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 523506498173461,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

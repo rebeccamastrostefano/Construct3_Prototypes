@@ -1,0 +1,80 @@
+{
+	"name": "EventDiary",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 631490190750276,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 395506894686375,
+					"parameters": {
+						"object": "Start"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 888936622938850,
+					"parameters": {
+						"layer": "\"requirements\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 828041273270135,
+					"parameters": {
+						"layout": "wardrobe"
+					}
+				}
+			],
+			"sid": 584568277512919
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Sprite2",
+					"sid": 152357000645132,
+					"parameters": {
+						"animation": "\"Animation 1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 322424684221874,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 200883384880865,
+					"parameters": {
+						"layer": "\"requirements\"",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 438300455911167
+		}
+	],
+	"sid": 875858652366400
+}

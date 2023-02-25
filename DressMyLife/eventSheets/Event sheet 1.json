@@ -1,0 +1,86 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 265470701191768,
+					"parameters": {
+						"object": "diary"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "diary",
+					"sid": 258839833296372,
+					"parameters": {
+						"animation": "\"on\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 665500871371411
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 885356332261963
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "diary",
+					"sid": 185930465815951,
+					"parameters": {
+						"animation": "\"off\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 162382679917120
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 650958033069231,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 723352470913813,
+					"parameters": {
+						"object": "diary"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 940707994909954,
+					"parameters": {
+						"layout": "diary"
+					}
+				}
+			],
+			"sid": 411246169197977
+		}
+	],
+	"sid": 292739397973334
+}

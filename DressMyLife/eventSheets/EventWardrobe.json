@@ -1,0 +1,2934 @@
+{
+	"name": "EventWardrobe",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "sweater",
+					"sid": 404675851947846,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater",
+					"sid": 767359028202879,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "slot",
+					"sid": 477821365957130,
+					"parameters": {
+						"instance-variable": "Index",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "sweater",
+					"sid": 431375817168046,
+					"parameters": {
+						"object": "slot",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 685073590645956
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "sweater2",
+					"sid": 372446347545074,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater2",
+					"sid": 605765042266283,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "slot",
+					"sid": 860150155733170,
+					"parameters": {
+						"instance-variable": "Index",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "sweater2",
+					"sid": 148444991848204,
+					"parameters": {
+						"object": "slot",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 785095909189736
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "sweater3",
+					"sid": 860638035530702,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater3",
+					"sid": 672841890214865,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "slot",
+					"sid": 321271481979475,
+					"parameters": {
+						"instance-variable": "Index",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "sweater3",
+					"sid": 851842455393228,
+					"parameters": {
+						"object": "slot",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 926590823600684
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "sweater4",
+					"sid": 420641358256473,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater4",
+					"sid": 786877363736722,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "slot",
+					"sid": 839360559804558,
+					"parameters": {
+						"instance-variable": "Index",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "sweater4",
+					"sid": 937140697156528,
+					"parameters": {
+						"object": "slot",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 294122227754529
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "pants",
+					"sid": 572912601594626,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants",
+					"sid": 638641254134570,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "slot",
+					"sid": 526136658994685,
+					"parameters": {
+						"instance-variable": "Index",
+						"comparison": 0,
+						"value": "6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "pants",
+					"sid": 523326866254784,
+					"parameters": {
+						"object": "slot",
+						"image-point-optional": "0"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "pants",
+					"sid": 484618807418864,
+					"parameters": {
+						"scale": "0.3"
+					}
+				}
+			],
+			"sid": 556149111515205
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "pants2",
+					"sid": 370594128801312,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants2",
+					"sid": 129975488349258,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "slot",
+					"sid": 796443081784209,
+					"parameters": {
+						"instance-variable": "Index",
+						"comparison": 0,
+						"value": "7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "pants2",
+					"sid": 514060905817274,
+					"parameters": {
+						"object": "slot",
+						"image-point-optional": "0"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "pants2",
+					"sid": 320746647764457,
+					"parameters": {
+						"scale": "0.3"
+					}
+				}
+			],
+			"sid": 558072560569256
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "tights",
+					"sid": 541685851235113,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "tights",
+					"sid": 739752978369657,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "slot",
+					"sid": 827963881983628,
+					"parameters": {
+						"instance-variable": "Index",
+						"comparison": 0,
+						"value": "8"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "tights",
+					"sid": 903140456954260,
+					"parameters": {
+						"object": "slot",
+						"image-point-optional": "0"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "tights",
+					"sid": 175514629722793,
+					"parameters": {
+						"scale": "0.3"
+					}
+				}
+			],
+			"sid": 211607917626257
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "pants3",
+					"sid": 187656040183657,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants3",
+					"sid": 575138735205754,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "slot",
+					"sid": 487562675467804,
+					"parameters": {
+						"instance-variable": "Index",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "pants3",
+					"sid": 136270969917148,
+					"parameters": {
+						"object": "slot",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 917726301593045
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "pants4",
+					"sid": 414799094828338,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants4",
+					"sid": 630759875204214,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "slot",
+					"sid": 805107658706105,
+					"parameters": {
+						"instance-variable": "Index",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "pants4",
+					"sid": 632555284877124,
+					"parameters": {
+						"object": "slot",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 102000931653977
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "sweater",
+					"sid": 644115810761376,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater",
+					"sid": 112400853057620,
+					"parameters": {
+						"object": "Bliss"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater2",
+					"sid": 957803096233374,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater4",
+					"sid": 604412486751151,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "sweater",
+					"sid": 548342320038087,
+					"parameters": {
+						"object": "Bliss",
+						"image-point-optional": "1"
+					}
+				}
+			],
+			"sid": 468449198849056
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "sweater",
+					"sid": 586744524117674,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater",
+					"sid": 362472991458586,
+					"parameters": {
+						"object": "Bliss"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "slot",
+					"sid": 951620756247258,
+					"parameters": {
+						"instance-variable": "Index",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 615899008228505,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "sweater4",
+							"sid": 165449409045098,
+							"parameters": {
+								"object": "Bliss"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "sweater2",
+							"sid": 653544754429248,
+							"parameters": {
+								"object": "Bliss"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "sweater",
+							"sid": 849234843205234,
+							"parameters": {
+								"object": "slot",
+								"image-point-optional": "0"
+							}
+						}
+					],
+					"sid": 508080769764227,
+					"isOrBlock": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "sweater2",
+					"sid": 363041264540597,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater2",
+					"sid": 153182172193755,
+					"parameters": {
+						"object": "Bliss"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater",
+					"sid": 397734230617397,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater4",
+					"sid": 739829496100498,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "sweater2",
+					"sid": 301884256520929,
+					"parameters": {
+						"object": "Bliss",
+						"image-point-optional": "1"
+					}
+				}
+			],
+			"sid": 570429531079673
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "sweater2",
+					"sid": 287582063622892,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater2",
+					"sid": 861330708168974,
+					"parameters": {
+						"object": "Bliss"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "slot",
+					"sid": 380771862291975,
+					"parameters": {
+						"instance-variable": "Index",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 270533084794900,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "sweater",
+							"sid": 540721446388505,
+							"parameters": {
+								"object": "Bliss"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "sweater4",
+							"sid": 946426380740446,
+							"parameters": {
+								"object": "Bliss"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "sweater2",
+							"sid": 753609168778837,
+							"parameters": {
+								"object": "slot",
+								"image-point-optional": "0"
+							}
+						}
+					],
+					"sid": 131772120471178,
+					"isOrBlock": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "sweater4",
+					"sid": 538703883599821,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater4",
+					"sid": 869607825928847,
+					"parameters": {
+						"object": "Bliss"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater",
+					"sid": 191013048343228,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater2",
+					"sid": 784557432649368,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "sweater4",
+					"sid": 471225789381872,
+					"parameters": {
+						"object": "Bliss",
+						"image-point-optional": "1"
+					}
+				}
+			],
+			"sid": 287095059763490
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "sweater4",
+					"sid": 922948702362026,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater4",
+					"sid": 975834830201484,
+					"parameters": {
+						"object": "Bliss"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "slot",
+					"sid": 737652628651918,
+					"parameters": {
+						"instance-variable": "Index",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 298531533321507,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "sweater",
+							"sid": 431676875557414,
+							"parameters": {
+								"object": "Bliss"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "sweater2",
+							"sid": 416726346029216,
+							"parameters": {
+								"object": "Bliss"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "sweater4",
+							"sid": 807400191559427,
+							"parameters": {
+								"object": "slot",
+								"image-point-optional": "0"
+							}
+						}
+					],
+					"sid": 264893694942960,
+					"isOrBlock": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "sweater3",
+					"sid": 704069233643804,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater3",
+					"sid": 816070706238637,
+					"parameters": {
+						"object": "Bliss"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "sweater3",
+					"sid": 861158951123763,
+					"parameters": {
+						"object": "Bliss",
+						"image-point-optional": "1"
+					}
+				},
+				{
+					"id": "move-to-bottom",
+					"objectClass": "sweater3",
+					"sid": 815710278999306
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "colletto",
+					"sid": 383729669697894,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 110273419690446
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "pants",
+					"sid": 259102487776139,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants",
+					"sid": 411448429022817,
+					"parameters": {
+						"object": "Bliss"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants2",
+					"sid": 933735813972441,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants3",
+					"sid": 376543091470070,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants4",
+					"sid": 640675855033410,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "pants",
+					"sid": 769435673904351,
+					"parameters": {
+						"object": "Bliss",
+						"image-point-optional": "2"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "pants",
+					"sid": 196071321164826,
+					"parameters": {
+						"scale": "0.6"
+					}
+				}
+			],
+			"sid": 221695715374127
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "pants",
+					"sid": 854890280030402,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants",
+					"sid": 235807516164192,
+					"parameters": {
+						"object": "Bliss"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "slot",
+					"sid": 474585450602837,
+					"parameters": {
+						"instance-variable": "Index",
+						"comparison": 0,
+						"value": "6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "pants",
+					"sid": 986889277312858,
+					"parameters": {
+						"object": "Bliss",
+						"image-point-optional": "2"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "pants",
+					"sid": 684743724368277,
+					"parameters": {
+						"scale": "0.6"
+					}
+				}
+			],
+			"sid": 443747392115721,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "pants2",
+							"sid": 116409212572755,
+							"parameters": {
+								"object": "Bliss"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "pants4",
+							"sid": 549251353237669,
+							"parameters": {
+								"object": "Bliss"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "pants3",
+							"sid": 742243435941555,
+							"parameters": {
+								"object": "Bliss"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "pants",
+							"sid": 940614110169840,
+							"parameters": {
+								"object": "slot",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "pants",
+							"sid": 855668105894943,
+							"parameters": {
+								"scale": "0.3"
+							}
+						}
+					],
+					"sid": 494329097814723,
+					"isOrBlock": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "pants2",
+					"sid": 666098034180841,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants2",
+					"sid": 370181696310599,
+					"parameters": {
+						"object": "Bliss"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants",
+					"sid": 878380415668795,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants3",
+					"sid": 486550191178219,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants4",
+					"sid": 710294781166512,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "pants2",
+					"sid": 871492051481598,
+					"parameters": {
+						"object": "Bliss",
+						"image-point-optional": "2"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "pants2",
+					"sid": 304928699009784,
+					"parameters": {
+						"scale": "0.6"
+					}
+				}
+			],
+			"sid": 884302277990666
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "pants2",
+					"sid": 430708651642798,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants2",
+					"sid": 218315760819094,
+					"parameters": {
+						"object": "Bliss"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "slot",
+					"sid": 126030939717338,
+					"parameters": {
+						"instance-variable": "Index",
+						"comparison": 0,
+						"value": "7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "pants2",
+					"sid": 328538439626787,
+					"parameters": {
+						"object": "Bliss",
+						"image-point-optional": "2"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "pants2",
+					"sid": 653486339653513,
+					"parameters": {
+						"scale": "0.6"
+					}
+				}
+			],
+			"sid": 437855827389237,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "pants",
+							"sid": 414884359481455,
+							"parameters": {
+								"object": "Bliss"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "pants4",
+							"sid": 743706458641333,
+							"parameters": {
+								"object": "Bliss"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "pants3",
+							"sid": 904311311913825,
+							"parameters": {
+								"object": "Bliss"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "pants2",
+							"sid": 123737193032580,
+							"parameters": {
+								"object": "slot",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "pants2",
+							"sid": 440229099489494,
+							"parameters": {
+								"scale": "0.3"
+							}
+						}
+					],
+					"sid": 939827519841128,
+					"isOrBlock": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "pants3",
+					"sid": 913449034009058,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants3",
+					"sid": 953895030505063,
+					"parameters": {
+						"object": "Bliss"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants",
+					"sid": 847751141758360,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants2",
+					"sid": 613370235379556,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants4",
+					"sid": 787177376124549,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "pants3",
+					"sid": 366089476549177,
+					"parameters": {
+						"object": "Bliss",
+						"image-point-optional": "3"
+					}
+				}
+			],
+			"sid": 510528176409618
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "pants3",
+					"sid": 832035217268932,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants3",
+					"sid": 704530355396129,
+					"parameters": {
+						"object": "Bliss"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "slot",
+					"sid": 907741386174770,
+					"parameters": {
+						"instance-variable": "Index",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 264547709054258,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "pants",
+							"sid": 267545894313800,
+							"parameters": {
+								"object": "Bliss"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "pants4",
+							"sid": 391826643303462,
+							"parameters": {
+								"object": "Bliss"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "pants2",
+							"sid": 881148802855680,
+							"parameters": {
+								"object": "Bliss"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "pants3",
+							"sid": 510255101712277,
+							"parameters": {
+								"object": "slot",
+								"image-point-optional": "0"
+							}
+						}
+					],
+					"sid": 461981344953920,
+					"isOrBlock": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "pants4",
+					"sid": 675060728150083,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants4",
+					"sid": 439760108334310,
+					"parameters": {
+						"object": "Bliss"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants",
+					"sid": 617698544191695,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants2",
+					"sid": 389139102424325,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants3",
+					"sid": 416110062346107,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "pants4",
+					"sid": 407131681049318,
+					"parameters": {
+						"object": "Bliss",
+						"image-point-optional": "3"
+					}
+				}
+			],
+			"sid": 961918685068948
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "pants4",
+					"sid": 342108816802070,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants4",
+					"sid": 863947650021082,
+					"parameters": {
+						"object": "Bliss"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "slot",
+					"sid": 585941369360820,
+					"parameters": {
+						"instance-variable": "Index",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 435503332723696,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "pants",
+							"sid": 534654939627609,
+							"parameters": {
+								"object": "Bliss"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "pants2",
+							"sid": 551755371361121,
+							"parameters": {
+								"object": "Bliss"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "pants3",
+							"sid": 968963018285200,
+							"parameters": {
+								"object": "Bliss"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "pants4",
+							"sid": 718748063200794,
+							"parameters": {
+								"object": "slot",
+								"image-point-optional": "0"
+							}
+						}
+					],
+					"sid": 159752994144793,
+					"isOrBlock": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "tights",
+					"sid": 421309092087408,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "tights",
+					"sid": 911754372075801,
+					"parameters": {
+						"object": "Bliss"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "tights",
+					"sid": 644077412602228,
+					"parameters": {
+						"object": "Bliss",
+						"image-point-optional": "2"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "tights",
+					"sid": 666498841405325,
+					"parameters": {
+						"scale": "0.615"
+					}
+				}
+			],
+			"sid": 734005363166150
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater3",
+					"sid": 305942601762538,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "colletto",
+					"sid": 419876988170792,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 564825644941178
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "shoes",
+					"sid": 575991077106710,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "shoes",
+					"sid": 780681810856679,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "slot",
+					"sid": 914885230913815,
+					"parameters": {
+						"instance-variable": "Index",
+						"comparison": 0,
+						"value": "9"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "shoes",
+					"sid": 442226642106103,
+					"parameters": {
+						"object": "slot",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 149789654021894
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "shoes2",
+					"sid": 354088455337665,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "shoes2",
+					"sid": 223055380886312,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "slot",
+					"sid": 882619603113672,
+					"parameters": {
+						"instance-variable": "Index",
+						"comparison": 0,
+						"value": "10"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "shoes2",
+					"sid": 686022164937908,
+					"parameters": {
+						"object": "slot",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 620392376409000
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "shoes",
+					"sid": 450198215380666,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "shoes",
+					"sid": 934624373310711,
+					"parameters": {
+						"object": "Bliss"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "shoes2",
+					"sid": 386880561690587,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "shoes",
+					"sid": 988621778727770,
+					"parameters": {
+						"object": "Bliss",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 857378504134201
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "shoes",
+					"sid": 384137021956156,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "shoes",
+					"sid": 514725346444087,
+					"parameters": {
+						"object": "Bliss"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "slot",
+					"sid": 638752152033362,
+					"parameters": {
+						"instance-variable": "Index",
+						"comparison": 0,
+						"value": "9"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 380037603097702,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "shoes2",
+							"sid": 879066083880975,
+							"parameters": {
+								"object": "Bliss"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "shoes",
+							"sid": 524011104235657,
+							"parameters": {
+								"object": "slot",
+								"image-point-optional": "0"
+							}
+						}
+					],
+					"sid": 668438368148037,
+					"isOrBlock": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "shoes2",
+					"sid": 170089739084693,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "shoes2",
+					"sid": 962358938521705,
+					"parameters": {
+						"object": "Bliss"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "shoes",
+					"sid": 756067807495196,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "shoes2",
+					"sid": 648417183742472,
+					"parameters": {
+						"object": "Bliss",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 485733996225256
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "shoes2",
+					"sid": 561864963346193,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "shoes2",
+					"sid": 936627798225625,
+					"parameters": {
+						"object": "Bliss"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "slot",
+					"sid": 288998988320588,
+					"parameters": {
+						"instance-variable": "Index",
+						"comparison": 0,
+						"value": "10"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 965807012988854,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "shoes",
+							"sid": 978796849596071,
+							"parameters": {
+								"object": "Bliss"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "shoes2",
+							"sid": 828542604875907,
+							"parameters": {
+								"object": "slot",
+								"image-point-optional": "0"
+							}
+						}
+					],
+					"sid": 270057379045346,
+					"isOrBlock": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 824735957962568,
+					"parameters": {
+						"object": "sweater"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater",
+					"sid": 651289490618926,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-dragging",
+					"objectClass": "sweater",
+					"sid": 505009476942746,
+					"behaviorType": "DragDrop",
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Bob",
+					"sid": 216556677661166,
+					"parameters": {
+						"instance-variable": "index",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Iconsù2",
+					"sid": 315760506160439,
+					"parameters": {
+						"instance-variable": "index",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Iconsù2",
+					"sid": 785945508092443,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bob",
+					"sid": 506003874400255,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 491631152550515
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 799577021104486
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Bob",
+					"sid": 536107186943544,
+					"parameters": {
+						"instance-variable": "index",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Iconsù2",
+					"sid": 459094433883366,
+					"parameters": {
+						"instance-variable": "index",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Iconsù2",
+					"sid": 148881462944546,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bob",
+					"sid": 129537560081312,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 471847808539955
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 506765079000555,
+					"parameters": {
+						"object": "sweater2"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater2",
+					"sid": 720027920891433,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-dragging",
+					"objectClass": "sweater2",
+					"sid": 372809869708817,
+					"behaviorType": "DragDrop",
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Iconsù2",
+					"sid": 588419528750564,
+					"parameters": {
+						"instance-variable": "index",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Bob",
+					"sid": 951549655125769,
+					"parameters": {
+						"instance-variable": "index",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Iconsù2",
+					"sid": 450423396129299,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bob",
+					"sid": 426186839482453,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 232108929516849
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 657519403015426
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Iconsù2",
+					"sid": 800199663965530,
+					"parameters": {
+						"instance-variable": "index",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Bob",
+					"sid": 302183346241281,
+					"parameters": {
+						"instance-variable": "index",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Iconsù2",
+					"sid": 258858948998418,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bob",
+					"sid": 671461976739192,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 701860426893946
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 141169938263950,
+					"parameters": {
+						"object": "sweater3"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater3",
+					"sid": 642965673663438,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-dragging",
+					"objectClass": "sweater3",
+					"sid": 271391470970794,
+					"behaviorType": "DragDrop",
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Iconsù2",
+					"sid": 486765034220181,
+					"parameters": {
+						"instance-variable": "index",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Bob",
+					"sid": 245778395097309,
+					"parameters": {
+						"instance-variable": "index",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Iconsù2",
+					"sid": 127766544135350,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bob",
+					"sid": 666913474014815,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 297433672330529
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 110379835997323
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Iconsù2",
+					"sid": 259250903924064,
+					"parameters": {
+						"instance-variable": "index",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Bob",
+					"sid": 342912448880119,
+					"parameters": {
+						"instance-variable": "index",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Iconsù2",
+					"sid": 830654185216573,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bob",
+					"sid": 716124970488968,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 321356265406295
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 712339329696151,
+					"parameters": {
+						"object": "pants3"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants3",
+					"sid": 450121519932726,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-dragging",
+					"objectClass": "pants3",
+					"sid": 385419611429689,
+					"behaviorType": "DragDrop",
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Iconsù2",
+					"sid": 524210400660184,
+					"parameters": {
+						"instance-variable": "index",
+						"comparison": 0,
+						"value": "3"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Bob",
+					"sid": 214130678882435,
+					"parameters": {
+						"instance-variable": "index",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Iconsù2",
+					"sid": 822644525703796,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bob",
+					"sid": 389227537632867,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 106160629202990
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 711983376775139
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Iconsù2",
+					"sid": 100275563756156,
+					"parameters": {
+						"instance-variable": "index",
+						"comparison": 0,
+						"value": "3"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Bob",
+					"sid": 194017984226136,
+					"parameters": {
+						"instance-variable": "index",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Iconsù2",
+					"sid": 382288599106928,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bob",
+					"sid": 440178716590372,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 957572488764383
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 424321159302606,
+					"parameters": {
+						"object": "sweater4"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater4",
+					"sid": 266850165582673,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-dragging",
+					"objectClass": "sweater4",
+					"sid": 191826785698079,
+					"behaviorType": "DragDrop",
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Iconsù2",
+					"sid": 943466958037679,
+					"parameters": {
+						"instance-variable": "index",
+						"comparison": 0,
+						"value": "5"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Bob",
+					"sid": 181097904808394,
+					"parameters": {
+						"instance-variable": "index",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Iconsù2",
+					"sid": 944565848284164,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bob",
+					"sid": 704430443438230,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 689040272818619
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 647588615767906
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Iconsù2",
+					"sid": 752596106599179,
+					"parameters": {
+						"instance-variable": "index",
+						"comparison": 0,
+						"value": "5"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Bob",
+					"sid": 206641279668764,
+					"parameters": {
+						"instance-variable": "index",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Iconsù2",
+					"sid": 500587275777687,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bob",
+					"sid": 798656025476924,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 418110484182164
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 716561617175423,
+					"parameters": {
+						"object": "pants"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants",
+					"sid": 392284075371935,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-dragging",
+					"objectClass": "pants",
+					"sid": 565538813619999,
+					"behaviorType": "DragDrop",
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Iconsù2",
+					"sid": 244633805314631,
+					"parameters": {
+						"instance-variable": "index",
+						"comparison": 0,
+						"value": "6"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Bob",
+					"sid": 900594637767991,
+					"parameters": {
+						"instance-variable": "index",
+						"comparison": 0,
+						"value": "6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Iconsù2",
+					"sid": 580071241948223,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bob",
+					"sid": 346465163251346,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 924888669844553
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 939581603525171
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Iconsù2",
+					"sid": 432075180191584,
+					"parameters": {
+						"instance-variable": "index",
+						"comparison": 0,
+						"value": "6"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Bob",
+					"sid": 553696625610681,
+					"parameters": {
+						"instance-variable": "index",
+						"comparison": 0,
+						"value": "6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Iconsù2",
+					"sid": 933259679250455,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bob",
+					"sid": 520544698768611,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 556498532449749
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 621056051355069,
+					"parameters": {
+						"object": "pants2"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants2",
+					"sid": 599344948441906,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-dragging",
+					"objectClass": "pants2",
+					"sid": 185073258744394,
+					"behaviorType": "DragDrop",
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Iconsù2",
+					"sid": 359620771933310,
+					"parameters": {
+						"instance-variable": "index",
+						"comparison": 0,
+						"value": "7"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Bob",
+					"sid": 870944426602895,
+					"parameters": {
+						"instance-variable": "index",
+						"comparison": 0,
+						"value": "7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Iconsù2",
+					"sid": 687290699214288,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bob",
+					"sid": 593997597672217,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 388755689637789
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 448665412996176
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Iconsù2",
+					"sid": 787066178400933,
+					"parameters": {
+						"instance-variable": "index",
+						"comparison": 0,
+						"value": "7"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Bob",
+					"sid": 661070266756475,
+					"parameters": {
+						"instance-variable": "index",
+						"comparison": 0,
+						"value": "7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Iconsù2",
+					"sid": 935038124391168,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bob",
+					"sid": 185733579140520,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 606583019526457
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater3",
+					"sid": 734247428535792,
+					"parameters": {
+						"object": "Bliss"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater4",
+					"sid": 899726842391602,
+					"parameters": {
+						"object": "Bliss"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater",
+					"sid": 600429801382199,
+					"parameters": {
+						"object": "Bliss"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-blend-mode",
+					"objectClass": "Iconsù3",
+					"sid": 383345051017620,
+					"parameters": {
+						"blend-mode": "normal"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Iconsù3",
+					"sid": 100647439483395,
+					"parameters": {
+						"instance-variable": "done",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 766364272527949,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 449299133748282
+				}
+			],
+			"actions": [
+				{
+					"id": "set-blend-mode",
+					"objectClass": "Iconsù3",
+					"sid": 959493333022759,
+					"parameters": {
+						"blend-mode": "additive"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Iconsù3",
+					"sid": 555915881608393,
+					"parameters": {
+						"instance-variable": "done",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 240904861897218
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater2",
+					"sid": 215233189452171,
+					"parameters": {
+						"object": "Bliss"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater",
+					"sid": 437853350452992,
+					"parameters": {
+						"object": "Bliss"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-blend-mode",
+					"objectClass": "Iconsù",
+					"sid": 580266848413497,
+					"parameters": {
+						"blend-mode": "normal"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Iconsù",
+					"sid": 361202335514620,
+					"parameters": {
+						"instance-variable": "done",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 449666391598079,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 915383460040651
+				}
+			],
+			"actions": [
+				{
+					"id": "set-blend-mode",
+					"objectClass": "Iconsù",
+					"sid": 318702652371114,
+					"parameters": {
+						"blend-mode": "additive"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Iconsù",
+					"sid": 723677500014513,
+					"parameters": {
+						"instance-variable": "done",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 477690051942056
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Iconsù",
+					"sid": 449452526785229,
+					"parameters": {
+						"instance-variable": "done"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Iconsù3",
+					"sid": 999910603624446,
+					"parameters": {
+						"instance-variable": "done"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 889006651695758,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "sweater3",
+							"sid": 629849682095530,
+							"parameters": {
+								"object": "Bliss"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "sweater4",
+							"sid": 645588583329477,
+							"parameters": {
+								"object": "Bliss"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "sweater",
+							"sid": 223769616579672,
+							"parameters": {
+								"object": "Bliss"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "sweater2",
+							"sid": 478716602247482,
+							"parameters": {
+								"object": "Bliss"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 526198974979710,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "pants",
+									"sid": 207460290648738,
+									"parameters": {
+										"object": "Bliss"
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "pants4",
+									"sid": 263100441909144,
+									"parameters": {
+										"object": "Bliss"
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "pants2",
+									"sid": 790713519094179,
+									"parameters": {
+										"object": "Bliss"
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "pants3",
+									"sid": 701717972114504,
+									"parameters": {
+										"object": "Bliss"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 603347986349892,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "shoes2",
+											"sid": 768111733346052,
+											"parameters": {
+												"object": "Bliss"
+											}
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "shoes",
+											"sid": 544243444968088,
+											"parameters": {
+												"object": "Bliss"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "startbutton",
+											"sid": 698447541944579,
+											"parameters": {
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "Start",
+											"sid": 119552182089892,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 631635372002039,
+									"isOrBlock": true
+								}
+							],
+							"isOrBlock": true
+						}
+					],
+					"isOrBlock": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 349207113503964
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Start",
+					"sid": 631231564727921,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "startbutton",
+					"sid": 896300521214039,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 664695213333740
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 568500938643251,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 755508979655235,
+					"parameters": {
+						"object": "Start"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Start",
+					"sid": 735417703216344
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 453936700802058,
+					"parameters": {
+						"layout": "diary2"
+					}
+				}
+			],
+			"sid": 227639401493042
+		}
+	],
+	"sid": 112764068542557
+}

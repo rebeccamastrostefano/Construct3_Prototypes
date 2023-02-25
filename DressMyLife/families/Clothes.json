@@ -1,0 +1,28 @@
+{
+	"name": "Clothes",
+	"plugin-id": "Sprite",
+	"sid": 196650170530750,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 415368166818433
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"sweater",
+		"pants",
+		"pants2",
+		"tights",
+		"sweater2",
+		"sweater3",
+		"colletto",
+		"pants3",
+		"pants4",
+		"sweater4",
+		"shoes",
+		"shoes2"
+	]
+}

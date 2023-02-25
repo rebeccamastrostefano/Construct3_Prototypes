@@ -1,0 +1,49 @@
+{
+	"name": "colletto",
+	"plugin-id": "Sprite",
+	"sid": 488652315916802,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 195,
+						"height": 87,
+						"originX": 0.48205128205128206,
+						"originY": 0.6091954022988506,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3787066,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.9080459770114943,
+								0.6051282051282051,
+								0.25287356321839083,
+								1,
+								1,
+								0.6051282051282051,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 710947712197726,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

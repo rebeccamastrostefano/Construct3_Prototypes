@@ -1,0 +1,54 @@
+{
+	"name": "Bliss",
+	"plugin-id": "Sprite",
+	"sid": 701888665412186,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 638,
+						"height": 1628,
+						"originX": 0.5,
+						"originY": 0.9987714987714987,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1274288,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.5094043887147336,
+								"y": 0.3015970515970516
+							},
+							{
+								"name": "Image Point 2",
+								"x": 0.49843260188087773,
+								"y": 0.6185503685503686
+							},
+							{
+								"name": "Image Point 3",
+								"x": 0.49686520376175547,
+								"y": 0.4582309582309582
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 370686964912447,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

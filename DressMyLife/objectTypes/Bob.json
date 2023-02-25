@@ -1,0 +1,45 @@
+{
+	"name": "Bob",
+	"plugin-id": "Sprite",
+	"sid": 237806282294320,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "index",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 668011124511311
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 129,
+						"height": 73,
+						"originX": 0.49612403100775193,
+						"originY": 0.5068493150684932,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7996075,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 910178135377545,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
