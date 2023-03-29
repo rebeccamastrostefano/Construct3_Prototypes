@@ -448,6 +448,18 @@
 						"object": "Bliss",
 						"image-point-optional": "1"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 729779679192665,
+					"parameters": {
+						"audio-file": "back_style_2_004",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 468449198849056
@@ -563,6 +575,18 @@
 					"parameters": {
 						"object": "Bliss",
 						"image-point-optional": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 727250355195279,
+					"parameters": {
+						"audio-file": "back_style_2_004",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
 					}
 				}
 			],
@@ -680,6 +704,18 @@
 						"object": "Bliss",
 						"image-point-optional": "1"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 769516356581349,
+					"parameters": {
+						"audio-file": "back_style_2_004",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 287095059763490
@@ -791,6 +827,18 @@
 					"parameters": {
 						"visibility": "visible"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 355945099853547,
+					"parameters": {
+						"audio-file": "back_style_2_004",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 110273419690446
@@ -857,6 +905,18 @@
 					"parameters": {
 						"scale": "0.6"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 215116970735036,
+					"parameters": {
+						"audio-file": "back_style_2_004",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 221695715374127
@@ -889,25 +949,7 @@
 					}
 				}
 			],
-			"actions": [
-				{
-					"id": "set-position-to-another-object",
-					"objectClass": "pants",
-					"sid": 986889277312858,
-					"parameters": {
-						"object": "Bliss",
-						"image-point-optional": "2"
-					}
-				},
-				{
-					"id": "set-scale",
-					"objectClass": "pants",
-					"sid": 684743724368277,
-					"parameters": {
-						"scale": "0.6"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 443747392115721,
 			"children": [
 				{
@@ -1024,6 +1066,18 @@
 					"parameters": {
 						"scale": "0.6"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 721064492328541,
+					"parameters": {
+						"audio-file": "back_style_2_004",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 884302277990666
@@ -1056,25 +1110,7 @@
 					}
 				}
 			],
-			"actions": [
-				{
-					"id": "set-position-to-another-object",
-					"objectClass": "pants2",
-					"sid": 328538439626787,
-					"parameters": {
-						"object": "Bliss",
-						"image-point-optional": "2"
-					}
-				},
-				{
-					"id": "set-scale",
-					"objectClass": "pants2",
-					"sid": 653486339653513,
-					"parameters": {
-						"scale": "0.6"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 437855827389237,
 			"children": [
 				{
@@ -1182,6 +1218,18 @@
 					"parameters": {
 						"object": "Bliss",
 						"image-point-optional": "3"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 166028617735186,
+					"parameters": {
+						"audio-file": "back_style_2_004",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
 					}
 				}
 			],
@@ -1316,6 +1364,18 @@
 						"object": "Bliss",
 						"image-point-optional": "3"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 576545123655372,
+					"parameters": {
+						"audio-file": "back_style_2_004",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 961918685068948
@@ -1429,6 +1489,18 @@
 					"sid": 666498841405325,
 					"parameters": {
 						"scale": "0.615"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 912129115621445,
+					"parameters": {
+						"audio-file": "back_style_2_004",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
 					}
 				}
 			],
@@ -1579,6 +1651,18 @@
 						"object": "Bliss",
 						"image-point-optional": "0"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 936983490895419,
+					"parameters": {
+						"audio-file": "back_style_2_004",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 857378504134201
@@ -1677,6 +1761,18 @@
 					"parameters": {
 						"object": "Bliss",
 						"image-point-optional": "0"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 830828294706030,
+					"parameters": {
+						"audio-file": "back_style_2_004",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
 					}
 				}
 			],
@@ -1807,7 +1903,34 @@
 					}
 				}
 			],
-			"sid": 491631152550515
+			"sid": 491631152550515,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 708401733430935
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 599969846756501,
+							"parameters": {
+								"audio-file": "cursor_style_3",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 983168780709744
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -1924,7 +2047,34 @@
 					}
 				}
 			],
-			"sid": 232108929516849
+			"sid": 232108929516849,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 561274467237747
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 707553661570970,
+							"parameters": {
+								"audio-file": "cursor_style_3",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 221069843764571
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -2041,7 +2191,34 @@
 					}
 				}
 			],
-			"sid": 297433672330529
+			"sid": 297433672330529,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 977889257546399
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 758144024136930,
+							"parameters": {
+								"audio-file": "cursor_style_3",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 905040330162110
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -2158,7 +2335,34 @@
 					}
 				}
 			],
-			"sid": 106160629202990
+			"sid": 106160629202990,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 112469708853703
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 924173446578190,
+							"parameters": {
+								"audio-file": "cursor_style_3",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 752930692966021
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -2275,7 +2479,34 @@
 					}
 				}
 			],
-			"sid": 689040272818619
+			"sid": 689040272818619,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 488521645884566
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 449855094538586,
+							"parameters": {
+								"audio-file": "cursor_style_3",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 714419891845523
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -2392,7 +2623,34 @@
 					}
 				}
 			],
-			"sid": 924888669844553
+			"sid": 924888669844553,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 414592595605837
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 476058807380471,
+							"parameters": {
+								"audio-file": "cursor_style_3",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 859592372883432
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -2509,7 +2767,34 @@
 					}
 				}
 			],
-			"sid": 388755689637789
+			"sid": 388755689637789,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 373965548092433
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 487510732851906,
+							"parameters": {
+								"audio-file": "cursor_style_3",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 114029074473036
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -2559,6 +2844,138 @@
 				}
 			],
 			"sid": 606583019526457
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 265159613812940,
+					"parameters": {
+						"object": "tights"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 643248253354933
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 630588707696277,
+					"parameters": {
+						"audio-file": "cursor_style_3",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 288962288709926
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 530847340299787,
+					"parameters": {
+						"object": "pants4"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 519824480845538
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 618694411091457,
+					"parameters": {
+						"audio-file": "cursor_style_3",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 931937616751599
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 286631167825776,
+					"parameters": {
+						"object": "shoes"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 768190667832436
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 258100364407305,
+					"parameters": {
+						"audio-file": "cursor_style_3",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 440883212188625
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 699280414047063,
+					"parameters": {
+						"object": "shoes2"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 620605719115410
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 942228897336770,
+					"parameters": {
+						"audio-file": "cursor_style_3",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 764085038757316
 		},
 		{
 			"eventType": "block",
@@ -2852,6 +3269,33 @@
 										}
 									],
 									"sid": 631635372002039,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 741195149212079
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 369355531857228,
+													"parameters": {
+														"audio-file": "confirm_style_3_001",
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												}
+											],
+											"sid": 385717518532591
+										}
+									],
 									"isOrBlock": true
 								}
 							],
@@ -2866,9 +3310,175 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "else",
-					"objectClass": "System",
-					"sid": 349207113503964
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants",
+					"sid": 931532684657582,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants4",
+					"sid": 581679351675119,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants2",
+					"sid": 254513026946089,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "pants3",
+					"sid": 687173908736094,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Start",
+					"sid": 939045424567032,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "startbutton",
+					"sid": 167466582727639,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 759954921940532
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater3",
+					"sid": 802688010491153,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater4",
+					"sid": 561069057044643,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater",
+					"sid": 384300931359826,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "sweater2",
+					"sid": 557006805719973,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Start",
+					"sid": 621571871341791,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "startbutton",
+					"sid": 992928398468810,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 414182561374275
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "shoes2",
+					"sid": 440678967990564,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "shoes",
+					"sid": 784250126977517,
+					"parameters": {
+						"object": "Bliss"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Start",
+					"sid": 129440048614887,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "startbutton",
+					"sid": 950513134638968,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 780592877562639
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Iconsù",
+					"sid": 784449687605719,
+					"parameters": {
+						"instance-variable": "done"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -2890,6 +3500,39 @@
 				}
 			],
 			"sid": 664695213333740
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Iconsù3",
+					"sid": 778799321660980,
+					"parameters": {
+						"instance-variable": "done"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Start",
+					"sid": 770516157387635,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "startbutton",
+					"sid": 141730222738383,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 920858406452319
 		},
 		{
 			"eventType": "block",
@@ -2924,6 +3567,30 @@
 					"sid": 453936700802058,
 					"parameters": {
 						"layout": "diary2"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 502273058609172,
+					"parameters": {
+						"audio-file": "confirm_style_4_echo_005",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 922472084010379,
+					"parameters": {
+						"audio-file": "416179__inspectorj__book-flipping-through-pages-a",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
 					}
 				}
 			],

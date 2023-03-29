@@ -146,7 +146,7 @@
 					"world": {
 						"x": 764.5178571428571,
 						"y": 695.433628318584,
-						"width": 456.4885282760034,
+						"width": 456.48852827600336,
 						"height": 217.2151950678053,
 						"originX": 0.48214285714285715,
 						"originY": 0.5575221238938053,
@@ -163,9 +163,9 @@
 				{
 					"type": "requirementstext",
 					"properties": {
-						"text": "Dress Up for your first day at school                                 \n                                                      \nRequirements:",
+						"text": "Dress Up for your first day at school                                 \nRequirements:",
 						"enable-bbcode": true,
-						"font": "Trebuchet MS",
+						"font": "cursive",
 						"size": 23,
 						"line-height": 0,
 						"bold": true,
@@ -187,8 +187,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 555,
-						"y": 587,
+						"x": 565,
+						"y": 595,
 						"width": 439,
 						"height": 197,
 						"originX": 0,
@@ -219,7 +219,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 806,
+						"x": 844,
 						"y": 709,
 						"width": 62.73157099897946,
 						"height": 68.43444108979577,
@@ -251,7 +251,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 889,
+						"x": 921,
 						"y": 710,
 						"width": 34.217220544897884,
 						"height": 83.64209466530595,
@@ -301,7 +301,7 @@
 					"properties": {
 						"text": "START",
 						"enable-bbcode": true,
-						"font": "sans-serif",
+						"font": "cursive",
 						"size": 28,
 						"line-height": 0,
 						"bold": true,
@@ -372,8 +372,8 @@
 	"sid": 126850673647464,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 3840,
-	"height": 2160,
+	"width": 1920,
+	"height": 1080,
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,

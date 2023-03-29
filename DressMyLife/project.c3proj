@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Mouse",
 			"name": "Mouse",
 			"author": "Scirra",
@@ -66,7 +73,9 @@
 			"Bob",
 			"Iconsù2",
 			"Iconsù3",
-			"Sprite2"
+			"Sprite2",
+			"Audio",
+			"y"
 		],
 		"subfolders": []
 	},
@@ -80,6 +89,7 @@
 	},
 	"layouts": {
 		"items": [
+			"start",
 			"Layout 1",
 			"diary",
 			"wardrobe",
@@ -92,7 +102,8 @@
 			"Event sheet 1",
 			"EventDiary",
 			"EventWardrobe",
-			"EventDiary2"
+			"EventDiary2",
+			"Event sheet 2"
 		],
 		"subfolders": []
 	},
@@ -102,11 +113,77 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "back_style_2_003.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 538870875626177,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "416179__inspectorj__book-flipping-through-pages-a.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 288907566171698,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "confirm_style_3_001.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 996627343498983,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "confirm_style_6_007.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 556497443616027,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "confirm_style_4_echo_005.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 816682008150728,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "cursor_style_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 910734150075080,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "back_style_2_004.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 814642810371981,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "12 heart LOOP.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 580516980958354,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"video": {

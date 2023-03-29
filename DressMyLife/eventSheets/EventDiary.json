@@ -38,9 +38,101 @@
 					"parameters": {
 						"layout": "wardrobe"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 202400159604759,
+					"parameters": {
+						"audio-file": "confirm_style_4_echo_005",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 584568277512919
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 144609022300020,
+					"parameters": {
+						"object": "Start"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 170913778610448,
+					"parameters": {
+						"layer": "\"requirements\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-scale",
+					"objectClass": "Start",
+					"sid": 470401643539991,
+					"parameters": {
+						"scale": "1.1"
+					}
+				}
+			],
+			"sid": 581772098346917,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 538952013988763
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 997071968914287,
+							"parameters": {
+								"audio-file": "cursor_style_3",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 626708163491542
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 710184553940778
+				}
+			],
+			"actions": [
+				{
+					"id": "set-scale",
+					"objectClass": "Start",
+					"sid": 309262560349175,
+					"parameters": {
+						"scale": "1"
+					}
+				}
+			],
+			"sid": 243349984034010
 		},
 		{
 			"eventType": "block",
@@ -70,6 +162,18 @@
 					"parameters": {
 						"layer": "\"requirements\"",
 						"visibility": "visible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 388894444234231,
+					"parameters": {
+						"audio-file": "confirm_style_3_001",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
 					}
 				}
 			],

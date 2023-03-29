@@ -24,7 +24,34 @@
 					}
 				}
 			],
-			"sid": 665500871371411
+			"sid": 665500871371411,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 650263707098278
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 831937887905976,
+							"parameters": {
+								"audio-file": "back_style_2_003",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 294463639488482
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -76,6 +103,18 @@
 					"sid": 940707994909954,
 					"parameters": {
 						"layout": "diary"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 750176435381660,
+					"parameters": {
+						"audio-file": "416179__inspectorj__book-flipping-through-pages-a",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
 					}
 				}
 			],
